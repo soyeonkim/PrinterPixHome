@@ -121,7 +121,7 @@ img {
 	z-index: 999;
 }
 .slide-page-pg {
-	width: 20px; height: 150px; position: absolute; top:45%; left: 3%;
+	width: 20px; height: 150px; position: absolute; top:33%; left: 3%;
 	z-index: 999;
 }
 .slide-page-pg ul {
@@ -168,7 +168,7 @@ img {
 .pd-img { padding: 0px; margin: 0px 10px; width: 294px; }
 .pd-img img { width: 294px; height: 294px; }
 .pd-img h4{ margin: 5px 0px; }
-.pd_prev ,.pd_next{	width: 18px; height: 34px;	position: absolute; top: 45%; z-index:300; text-indent: -9999px;}
+.pd_prev ,.pd_next{	width: 18px; height: 34px;	position: absolute; top: 35%; z-index:300; text-indent: -9999px;}
 .pd_prev {	background: url('../img/buttons/Arrow-L.png') no-repeat left top; left: 1px;}
 .pd_next {	background: url('../img/buttons/Arrow-R.png') no-repeat right top; right: 1px;}
 .pd_next
