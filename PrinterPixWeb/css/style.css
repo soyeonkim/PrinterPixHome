@@ -29,6 +29,13 @@ img {
 .center {
 	margin: 0 auto;
 }
+.middle-div {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 .header-box,.pd-containder{
 	width: 100%;
 
@@ -101,26 +108,42 @@ img {
 }
 
 .slide-showcase {
-
+    position: relative;
+    overflow: hidden;	
+    width: 100%;
 }
 .slide-page-btn {
 	width: 56px;
 }
 .slide-next {
+	width: 56px; height: 28px;	position: absolute; bottom: 4%; left: 49%; text-indent: -9999px;
 	background: url('../img/buttons/Arrow-Top-Banner.png') no-repeat;
 	z-index: 999;
 }
 .slide-page-pg {
-
+	width: 20px; height: 150px; position: absolute; top:45%; left: 3%;
+	z-index: 999;
 }
-.pd-contents {
-	width: 100%;
+.slide-page-pg ul {
+	list-style: none;
 }
-.pp_next { background: url(/Themes/images/sprite_arrow.png) 
-	no-repeat left top; width: 34px; height: 33px; 
+.banner-slide {
+	/*float: left;*/
+}
+.pd-contents { width: 100%; }
+.pp_next { background: url(/Themes/images/sprite_arrow.png) no-repeat left top; width: 34px; height: 33px; 
 	display: block; text-indent: -9999px; position: absolute; top: 201px; z-index:300; }
-
-
+.cd-dot{
+	 height: 15px;
+	  width: 15px;
+	  border-radius: 50%;
+	  border: solid 1px;
+	  background-color: #000;
+	  margin: 8px 0px;
+}
+.cycle-pager-active {
+	background-color: #fff;
+}
 /*----------------------------------------------------------------------*/
 .best-product, .inst-product {
 	height: 475px;
@@ -137,7 +160,8 @@ img {
     float: left;
     width: 100%;
 }
-.product-box,.promo-product, .footer-box { width: 942px; margin: 10px auto; }
+.product-box,.promo-product  { width: 942px; margin: 10px auto; }
+.footer-box { width: 918px; margin: 10px auto; }
 .silder-holder {
 	width: 100%;
 }
@@ -170,23 +194,22 @@ img {
 .col-w-pro {width: 33.3%}
 .col-w-pro img { width: 294px; }
 .footer-menu-box {width: 100%;  height: 50px;}
-.footer-menu { width: 100%; padding: 2px 0px; font-size: 1.3em;}
-.footer-menu ul { list-style: none; margin: 12px 0px;}
-.footer-menu li { display: inline; width: 20%; float: left;}
+.footer-menu { width: 100%; font-size: 1.3em;}
+.footer-menu ul { list-style: none; margin: 12px 0px; padding-left: 2px;}
+.footer-menu li { display: inline; width: 20%; float: left; padding-top: 12px;}
 .hoz-line { display: block; background: url('../img/outline/Line-Horizontal.jpg'); width: 100%; height: 1px;}
-
-.social-box {
-	width: 26%;
-	height: 70px;
-}
-.social-link {
-	width: 100%;
-	height: auto;
-	padding: 16px 0px;
-}
+.footer-catagory {width:100%; font-size: 1.0em; line-height: 130%;}
+.footer-catagory ul { list-style: none; margin: 12px 0px; padding-left: 2px;}
+.footer-catagory li { display: inline; float: left; width: 20%;}
+.products li {  display: list-item; float: none; width: 100%; margin: 2px 0px;}
+.social-box { width: 27%; 	height: 70px; }
+.social-link { 	width: 100%; height: auto; }
 .social-link a {
 	margin: auto 5px;
 }
+.flag-box { width: 100%; 	height: 70px; }
+.flag-link {margin: 0px 5px;}
+.footer-catagory-box,.promo-box {width: auto; height: 172px;}
 
 
 .dropit { list-style: none; padding: 0; margin: 0; }
