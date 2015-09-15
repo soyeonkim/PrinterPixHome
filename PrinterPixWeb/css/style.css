@@ -1,0 +1,237 @@
+/* ---------------------------------------------------------------------
+
+
+
+
+-----------------------------------------------------------------------------*/
+@font-face {
+  	font-family: 'MYRIADPROREGULAR';
+	src:  url('../fonts/MYRIADPROREGULAR.ttf');
+}
+html {
+  font-family: MYRIADPROREGULAR;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body {  margin: 0; background: #fff; font-family: MYRIADPROREGULAR; color: #414141; }
+footer { background: #ececec; }
+a {
+	text-decoration: none;
+}
+img {
+   max-width: 100% !important;
+}
+/*-----------------------------------------------------------------------------
+------------------------------------------------------------------------------*/
+/* Flag Drop down */
+
+.center {
+	margin: 0 auto;
+}
+.header-box,.pd-containder{
+	width: 100%;
+
+}
+.top-bar-up {
+	height: 38px;
+	background: #000;
+}
+.top-bar-center{
+	width: 926px;
+	height: 100%;
+}
+.pd-containder {
+	width: 1002px;
+	height: 100%;
+}
+.select-country {
+	width: 80px;
+    float: left;
+    margin: 5px 15px;
+    position: relative;
+    text-align: center;
+}
+.print-cart{
+ 	font-size: 1.0em;
+}  
+.print-cart ul {
+	float: right;
+	list-style: none;
+	margin: 8px 20px;
+}
+.print-cart li {
+	display: inline;
+}
+.print-cart li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0px 15px;
+}
+.main-manu-box {
+	height: 66px;
+	width: 100%;
+}
+.logo-box {
+	width: 20%;
+    height: 46px;
+    padding: 10px 15px;
+    float: left;
+}
+.pp_navigation {
+	float: right;
+    margin: 0px 15px;
+}
+.pp_navigation ul {
+	list-style: none;
+}
+.pp_navigation li {
+	display: inline;
+	font-size: 1.3em;
+}
+.pp_navigation li a {
+	color: #414141;
+	text-decoration: none;
+	padding: 0px 5px;
+}
+.pp_header-right {
+	width: 75%;
+    float: right;
+    margin-top: 8px;
+}
+
+.slide-showcase {
+
+}
+.slide-page-btn {
+	width: 56px;
+}
+.slide-next {
+	background: url('../img/buttons/Arrow-Top-Banner.png') no-repeat;
+	z-index: 999;
+}
+.slide-page-pg {
+
+}
+.pd-contents {
+	width: 100%;
+}
+.pp_next { background: url(/Themes/images/sprite_arrow.png) 
+	no-repeat left top; width: 34px; height: 33px; 
+	display: block; text-indent: -9999px; position: absolute; top: 201px; z-index:300; }
+
+
+/*----------------------------------------------------------------------*/
+.best-product, .inst-product {
+	height: 475px;
+}
+.text-center {
+	text-align: center;
+}
+.pd-title {
+	font-size: 1.4em;
+}
+.slider-box {
+    position: relative;
+    overflow: hidden;	
+    float: left;
+    width: 100%;
+}
+.product-box,.promo-product, .footer-box { width: 942px; margin: 10px auto; }
+.silder-holder {
+	width: 100%;
+}
+.pd-img { padding: 0px; margin: 0px 10px; width: 294px; }
+.pd-img img { width: 294px; height: 294px; }
+.pd-img h4{ margin: 5px 0px; }
+.pd_prev ,.pd_next{	width: 18px; height: 34px;	position: absolute; top: 45%; z-index:300; text-indent: -9999px;}
+.pd_prev {	background: url('../img/buttons/Arrow-L.png') no-repeat left top; left: 1px;}
+.pd_next {	background: url('../img/buttons/Arrow-R.png') no-repeat right top; right: 1px;}
+.pd_next
+.each-slide {
+	text-decoration: none;
+	display: inline;
+}
+.each-slide h1,.each-slide p {
+	margin: 0px;
+	color: #414141;
+    white-space: normal;
+    padding: 3px 0px;
+}
+
+.readmore {
+	margin: 0px;
+	color: #2a83c7;
+}
+.promo-row-box { width: 100%; height: 294px; }
+.col-w-app,.col-w-pro {	float: left; }
+.col-w-app {width: 66.7%}
+.col-w-app img , .col-w-pro img  { width: auto; height: 294px; margin: 0px auto;}
+.col-w-pro {width: 33.3%}
+.col-w-pro img { width: 294px; }
+.footer-menu-box {width: 100%;  height: 50px;}
+.footer-menu { width: 100%; padding: 2px 0px; font-size: 1.3em;}
+.footer-menu ul { list-style: none; margin: 12px 0px;}
+.footer-menu li { display: inline; width: 20%; float: left;}
+.hoz-line { display: block; background: url('../img/outline/Line-Horizontal.jpg'); width: 100%; height: 1px;}
+
+.social-box {
+	width: 26%;
+	height: 70px;
+}
+.social-link {
+	width: 100%;
+	height: auto;
+	padding: 16px 0px;
+}
+.social-link a {
+	margin: auto 5px;
+}
+
+
+.dropit { list-style: none; padding: 0; margin: 0; }
+.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-submenu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; min-width: 150px; list-style:none; background-color: #fff; border: 1px solid #b2b2b2; padding:3px 0; margin:0; -webkit-border-radius: 3px; -moz-border-radius: 3px;  border-radius: 3px; -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15); -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.15); box-shadow: 0px 1px 3px rgba(0,0,0,0.15); }
+.dropit .dropit-open .dropit-submenu { display: block; }
+.dropit .dropit-submenu li { padding:2px 5px; }
+.dropit .dropit-submenu li a { display:block; line-height:15px; }
+
+
+.pp_country-flags { list-style:none; margin:0 auto; width:550px;}
+.pp_country-flags li { float:left; margin:0 3px 0 3px; background:none !important; list-style:none !important; padding:0 !important; }
+.pp_country-flags li a { display:block; background:url(/Themes/images/img_flag_all.png) no-repeat; width:31px; height:29px; text-indent:-9999px; }
+.pp_country-flags li a.gb { background-position:0 0; }
+.pp_country-flags li a.us { background-position:-31px 0; }
+.pp_country-flags li a.it { background-position:-62px 0; }
+.pp_country-flags li a.fr { background-position:-93px 0; }
+.pp_country-flags li a.es { background-position:-124px 0; }
+.pp_country-flags li a.nl { background-position:-155px 0; }
+.pp_country-flags li a.mx { background-position:-186px 0; }
+.pp_country-flags li a.br { background-position:-217px 0; }
+.pp_country-flags li a.cd { background-position:-248px 0; }
+.pp_country-flags li a.fl { background-position:-279px 0; }
+.pp_country-flags li a.no { background-position:-310px 0; }
+.pp_country-flags li a.dk { background-position:-341px 0; }
+.pp_country-flags li a.gr { background-position:-372px 0; }
+.pp_country-flags li a.de { background-position:-404px 0; }
+
+/* Country Flags Drop down */
+.pp_country-flags-dd { margin:0 auto; width:150px; display:none;}
+/*.pp_country-flags-dd li {  }*/
+.pp_country-flags-dd li span { display:inline-block; background:url(/Themes/images/sprite_flags.png) no-repeat; width:22px; height:21px; vertical-align:middle; margin-right:5px;}
+.pp_country-flags-dd li span.gb { background-position:0 0; }
+.pp_country-flags-dd li span.us { background-position:-23px 0; }
+.pp_country-flags-dd li span.it { background-position:-45px 0; }
+.pp_country-flags-dd li span.fr { background-position:-68px 0; }
+.pp_country-flags-dd li span.es { background-position:-91px 0; }
+.pp_country-flags-dd li span.nl { background-position:-113px 0; }
+.pp_country-flags-dd li span.mx { background-position:-135px 0; }
+.pp_country-flags-dd li span.br { background-position:-157px 0; }
+.pp_country-flags-dd li span.cd { background-position:-180px 0; }
+.pp_country-flags-dd li span.fl { background-position:-203px 0; }
+.pp_country-flags-dd li span.no { background-position:-224px 0; }
+.pp_country-flags-dd li span.dk { background-position:-247px 0; }
+.pp_country-flags-dd li span.gr { background-position:-270px 0; }
+.pp_country-flags-dd li span.de { background-position:-293px 0; }
+.pp_country-flags-dd li:hover a { color: #000; text-decoration:none;}
+.pp_country-flags-dd li:hover { background-color:#cdcdcd; box-shadow: rgba(0, 0, 0, 0.13) 4px 0px 4px; }
