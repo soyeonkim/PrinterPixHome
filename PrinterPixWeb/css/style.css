@@ -57,7 +57,7 @@ img {
     float: left;
     margin: 5px 15px;
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 .print-cart{
  	font-size: 1.0em;
@@ -214,47 +214,58 @@ img {
 
 .dropit { list-style: none; padding: 0; margin: 0; }
 .dropit .dropit-trigger { position: relative; }
-.dropit .dropit-submenu { position: absolute; top: 100%; left: 0; z-index: 1000; display: none; min-width: 150px; list-style:none; background-color: #fff; border: 1px solid #b2b2b2; padding:3px 0; margin:0; -webkit-border-radius: 3px; -moz-border-radius: 3px;  border-radius: 3px; -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15); -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.15); box-shadow: 0px 1px 3px rgba(0,0,0,0.15); }
+.dropit .dropit-submenu { position: absolute; top: 100%; left: 0; z-index: 1000; 
+display: none; min-width: 150px; list-style:none; background-color: #fff; 
+border: 1px solid #b2b2b2; padding:3px 0; margin:0; -webkit-border-radius: 3px; 
+-moz-border-radius: 3px;  border-radius: 3px; -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+ -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.15); box-shadow: 0px 1px 3px rgba(0,0,0,0.15); }
 .dropit .dropit-open .dropit-submenu { display: block; }
 .dropit .dropit-submenu li { padding:2px 5px; }
 .dropit .dropit-submenu li a { display:block; line-height:15px; }
 
-
-.pp_country-flags { list-style:none; margin:0 auto; width:550px;}
-.pp_country-flags li { float:left; margin:0 3px 0 3px; background:none !important; list-style:none !important; padding:0 !important; }
-.pp_country-flags li a { display:block; background:url(/Themes/images/img_flag_all.png) no-repeat; width:31px; height:29px; text-indent:-9999px; }
-.pp_country-flags li a.gb { background-position:0 0; }
-.pp_country-flags li a.us { background-position:-31px 0; }
-.pp_country-flags li a.it { background-position:-62px 0; }
-.pp_country-flags li a.fr { background-position:-93px 0; }
-.pp_country-flags li a.es { background-position:-124px 0; }
-.pp_country-flags li a.nl { background-position:-155px 0; }
-.pp_country-flags li a.mx { background-position:-186px 0; }
-.pp_country-flags li a.br { background-position:-217px 0; }
-.pp_country-flags li a.cd { background-position:-248px 0; }
-.pp_country-flags li a.fl { background-position:-279px 0; }
-.pp_country-flags li a.no { background-position:-310px 0; }
-.pp_country-flags li a.dk { background-position:-341px 0; }
-.pp_country-flags li a.gr { background-position:-372px 0; }
-.pp_country-flags li a.de { background-position:-404px 0; }
-
 /* Country Flags Drop down */
-.pp_country-flags-dd { margin:0 auto; width:150px; display:none;}
-/*.pp_country-flags-dd li {  }*/
-.pp_country-flags-dd li span { display:inline-block; background:url(/Themes/images/sprite_flags.png) no-repeat; width:22px; height:21px; vertical-align:middle; margin-right:5px;}
-.pp_country-flags-dd li span.gb { background-position:0 0; }
-.pp_country-flags-dd li span.us { background-position:-23px 0; }
-.pp_country-flags-dd li span.it { background-position:-45px 0; }
-.pp_country-flags-dd li span.fr { background-position:-68px 0; }
-.pp_country-flags-dd li span.es { background-position:-91px 0; }
-.pp_country-flags-dd li span.nl { background-position:-113px 0; }
-.pp_country-flags-dd li span.mx { background-position:-135px 0; }
-.pp_country-flags-dd li span.br { background-position:-157px 0; }
-.pp_country-flags-dd li span.cd { background-position:-180px 0; }
-.pp_country-flags-dd li span.fl { background-position:-203px 0; }
-.pp_country-flags-dd li span.no { background-position:-224px 0; }
-.pp_country-flags-dd li span.dk { background-position:-247px 0; }
-.pp_country-flags-dd li span.gr { background-position:-270px 0; }
-.pp_country-flags-dd li span.de { background-position:-293px 0; }
-.pp_country-flags-dd li:hover a { color: #000; text-decoration:none;}
-.pp_country-flags-dd li:hover { background-color:#cdcdcd; box-shadow: rgba(0, 0, 0, 0.13) 4px 0px 4px; }
+/*
+.top-bar-flags-dd { margin:0 auto; width:150px; display:none; font-size: 0.8em;}
+.top-bar-flags-dd li {  }
+.top-bar-flags-dd li span { display:inline-block; background:url('../img/flag/Flags_small.png') no-repeat; 
+width:26px; height:26px; vertical-align:middle; margin-right:5px;}
+.top-bar-flags-dd li span.gb { background-position:0 0; }
+.top-bar-flags-dd li span.us { background-position:-63px 0; }
+.top-bar-flags-dd li span.de { background-position:-126px 0; }
+.top-bar-flags-dd li span.fr { background-position:-189px 0; }
+.top-bar-flags-dd li span.es { background-position:-91px 0; }
+.top-bar-flags-dd li span.it { background-position:-45px 0; }
+.top-bar-flags-dd li span.dk { background-position:-247px 0; }
+.top-bar-flags-dd li span.cd { background-position:-180px 0; }
+.top-bar-flags-dd li span.fl { background-position:-203px 0; }
+.top-bar-flags-dd li span.no { background-position:-224px 0; }
+.top-bar-flags-dd li span.mx { background-position:-135px 0; }
+.top-bar-flags-dd li span.gr { background-position:-270px 0; }
+.top-bar-flags-dd li span.nl { background-position:-113px 0; }
+.top-bar-flags-dd li span.br { background-position:-157px 0; }
+.top-bar-flags-dd li:hover a { color: #000; text-decoration:none;}
+.top-bar-flags-dd li:hover { background-color:#cdcdcd; box-shadow: rgba(0, 0, 0, 0.13) 4px 0px 4px; }
+*/
+/* Country Flags Drop down */
+.top-bar-flags-dd { margin:0 auto; width:150px; display:none; font-size: 0.8em;}
+.top-bar-flags-dd li { color: #414141; }
+.top-bar-flags-dd li span { display:inline-block; background:url('../img/flag/Flags_small.png') no-repeat; 
+width:26px; height:26px; vertical-align:middle; margin-right:5px;}
+.top-bar-flags-dd li span.gb { background-position:0 0; }
+.top-bar-flags-dd li span.us { background-position:-42px 0; }
+.top-bar-flags-dd li span.de { background-position:-84px 0; }
+.top-bar-flags-dd li span.fr { background-position:-126px 0; }
+.top-bar-flags-dd li span.es { background-position:-168px 0; }
+.top-bar-flags-dd li span.it { background-position:-210px 0; }
+.top-bar-flags-dd li span.dk { background-position:-252px 0; }
+.top-bar-flags-dd li span.cd { background-position:-294px 0; }
+.top-bar-flags-dd li span.fl { background-position:-336px 0; }
+.top-bar-flags-dd li span.no { background-position:-420px 0; }
+.top-bar-flags-dd li span.mx { background-position:-462px 0; }
+.top-bar-flags-dd li span.gr { background-position:-503px 0; }
+.top-bar-flags-dd li span.nl { background-position:-545px 0; }
+.top-bar-flags-dd li span.br { background-position:-587px 0; }
+
+.top-bar-flags-dd li a {color:#414141; }
+.top-bar-flags-dd li:hover a { color: #000; text-decoration:none;}
+.top-bar-flags-dd li:hover { background-color:#cdcdcd; box-shadow: rgba(0, 0, 0, 0.13) 4px 0px 4px; }
