@@ -77,82 +77,109 @@ var menu = {
 };
 
 var footer = { 
-  products: [
+  Products: [
       { 
         url: "/photo-books/leather-cover", 
         title:"Photo Books" },
       { 
-        url: "/photo-books/leather-cover", 
-        title:"" },
+        url: "/CalendarLandingPage.aspx", 
+        title:"Photo Calendars" },
       { 
-        url: "/photo-books/leather-cover", 
-        title:"" },
+        url: "/CanvasLandingPage.aspx", 
+        title:"Photo Canvases" },
       { 
-        url: "/photo-books/leather-cover", 
-        title:"" },
+        url: "/posters",         
+        title:"Posters" },
       { 
-        url: "/photo-books/leather-cover", 
-        title:"" },
+        url: "/posters",      // need to define
+        title:"Stock Photography" },
       { 
-        url: "/photo-books/leather-cover", 
-        title:"" }
+        url: "/fineArts",     
+        title:"Fine Art" }
   ],
   Pricing:[
       { 
-        url: "/photo-books/PhotoHardCover", 
-          img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg", 
-          title:"Instagram Calendars", 
-          description: "Relieve the moments of your holidays every day with our new calendars!" },
-      {   
-        url: "/photo-books/leather-cover", 
-        img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-        title:"Instagram Poster", 
-        description: "Perfect ornaments for the wall, really nice gift every occasion!" },
+        url: "/pricing",   
+        title:"Prices" },
       { 
-        url: "/photo-books/SoftCover/", 
-        img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-        title:"Instagram Photo Books", 
-        description: "The perfect gift for a birthday, wedding, birth of a child or other occasion" },
+        url: "/Payment-Methods.html", 
+        title:"Payment Methods" },
       { 
-        url: "/photo-canvas/", 
-        img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-        title:"Instagram Calendars", 
-        description: "Relieve the moments of your holidays every day with out new calendars!" },
-
-      { 
-        url: "/shape-collage/", 
-        img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-        title:"Instagram Poster", 
-        description: "Perfect ornaments for the wall, really nice gift every occasion" }
+        url: "/Delivery.html", 
+        title:"Delivery" }
   ],
-  nav_flag: [
+  PhotoTips:[
       { 
-        url: "/photo-books/PhotoHardCover", 
-          img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg", 
-          title:"Instagram Calendars", 
-          description: "Relieve the moments of your holidays every day with our new calendars!" },
-      {   
-        url: "/photo-books/leather-cover", 
-        img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-        title:"Instagram Poster", 
-        description: "Perfect ornaments for the wall, really nice gift every occasion!" },
+        url: "/photoquality",  
+        title:"Photo Quality" },
       { 
-        url: "/photo-books/SoftCover/", 
-        img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-        title:"Instagram Photo Books", 
-        description: "The perfect gift for a birthday, wedding, birth of a child or other occasion" },
+        url: "/Delivery.html", 
+        title:"Image Resolution" }
+  ],
+  AboutUs: [
       { 
-        url: "/photo-canvas/", 
-        img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-        title:"Instagram Calendars", 
-        description: "Relieve the moments of your holidays every day with out new calendars!" },
+        url: "/printerpixsuppliers", 
+        title:"Why Printpix?" },
+      { 
+        url: "/AboutUs.html", 
+        title:"About Us" },
+      { 
+        url: "/testimonials.html", 
+        title:"Testimoials" },
+      { 
+        url: "/terms-and-conditions.html",    
+        title:"Terms and Conditions" },
+      { 
+        url: "/affiliates/",    
+        title:"Partners" }
 
+  ],
+  CustomerCare: [
       { 
-        url: "/shape-collage/", 
-        img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-        title:"Instagram Poster", 
-        description: "Perfect ornaments for the wall, really nice gift every occasion" }
+        url: "/ContactUs.html", 
+        title:"Contact Us" },
+      { 
+        url: "/Privacy-Policy.html", 
+        title:"Privacy Policy" },
+      { 
+        url: "/returns-policy.html", 
+        title:"Returns Policy" },
+      { 
+        url: "/complaints-procedure-policy.html",    
+        title:"Complaints Procedure" },
+      { 
+        url: "/",     // need to define
+        title:"Frequently Questions" }
+
+  ],
+  SocialLink: [
+      { 
+        url: "https://twitter.com/printerpix", 
+        img_url:  "./img/social/Social-Twitter.png",
+        description: "twitter" },
+      { 
+        url: "https://www.facebook.com/PrinterPixUK", 
+        img_url: "./img/social/Social-Facebook.png",
+        description: "facebook" },
+      { 
+        url: "https://uk.pinterest.com/printerpixuk/", 
+        img_url:  "./img/social/Social-Pinterest.png",
+        description: "pinterest" },
+      { 
+        url: "https://instagram.com/printerpixuk/", 
+        img_url: "./img/social/Social-Instagram.png",
+        description: "instagram" },
+     { 
+        url: "http://printerpix.tumblr.com", 
+        img_url:  "./img/social/Social-Tumbler.png",
+        description: "tumblr" },
+      { 
+        url: "https://www.youtube.com/user/printerpix", 
+        img_url:  "./img/social/Social-Youtube.png",
+        description: "youtube" }
   ]
+  
 
 };
 
+ 

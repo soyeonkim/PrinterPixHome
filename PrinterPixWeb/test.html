@@ -236,6 +236,7 @@
               <li><a class="footer-text">Photo tips</a></li>
               <li><a class="footer-text">About us</a></li>
               <li><a class="footer-text">Customer care</a></li>
+              
             </ul>
           </div>
         </div>
@@ -246,42 +247,37 @@
           <ul>
               <li>
                 <ul class="products">
-                  <li><a href="#">Photo Bools</a></li>
-                  <li>Photo Calendars</li>
-                  <li>Photo Canvases</li>
-                  <li>Stock Photography</li>
-                  <li>Fine Art</li>
+                  {{#Products}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/Products}}
                 </ul>
               </li>
               <li> 
                  <ul class="products">
-                  <li>Prices</li>
-                  <li>Payment Methods</li>
-                  <li>Delivery</li>
+                 {{#Pricing}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/Pricing}}
                 </ul>
               </li>
               <li>
                 <ul class="products">
-                  <li>Photo Quality</li>
-                  <li>Image Resolution</li>
+                {{#PhotoTips}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/PhotoTips}}
                 </ul>
               </li>
               <li>
                 <ul class="products">
-                  <li>Why Printpix?</li>
-                  <li>About us</li>
-                  <li>Testimoials</li>
-                  <li>Terms and Conditions</li>
-                  <li>Partners</li>
+                {{#AboutUs}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/AboutUs}}
                 </ul>
               </li>
               <li>  
                 <ul class="products">
-                  <li>Contact us</li>
-                  <li>Privacy Policy</li>
-                  <li>Return Policy</li>
-                  <li>Complaints Procedure</li>
-                  <li>Requently Questions</li>
+                {{#CustomerCare}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/CustomerCare}}
                 </ul>
               </li>
           </ul>
@@ -291,11 +287,10 @@
         </div>
         <div class="social-box center"> <!-- social link -->
           <div class="social-link middle-div">
-            <a target="_blank" href="https://www.facebook.com/PrinterPixUK"><img alt="" src="img/social/Social-Facebook.png"></a>
-            <a target="_blank" href="http://printerpix.tumblr.com"><img alt=""src="img/social/Social-Pinterest.png"></a>
-            <a target="_blank" href="https://instagram.com/printerpixuk/"><img alt="" src="img/social/Social-Instagram.png"></a>
-            <a target="_blank" href="https://twitter.com/printerpix"><img alt="" src="img/social/Social-Twitter.png"></a>
-            <a target="_blank" href="https://www.youtube.com/user/printerpix"><img alt="" src="img/social/Social-Youtube.png"></a>
+            {{#SocialLink}}
+            <a target="_blank" href="{{url}}"><img alt="" src="{{img_url}}"></a>
+ 
+            {{/SocialLink}}
           </div>
         </div>
         <!--<div class="hoz-line"> <!-- horizontal line-->

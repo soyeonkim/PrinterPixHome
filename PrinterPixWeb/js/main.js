@@ -101,7 +101,7 @@ $(document).ready(function () {
 	$('#instagram-seller').append(template(data));
 
 	template = Handlebars.compile($('#footerTemplate').html()); 
-	$('#footer-main').append(template);
+	$('#footer-main').append(template(footer));
 
 
 	function initCycle () {
