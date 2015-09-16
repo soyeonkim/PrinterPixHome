@@ -1,4 +1,3 @@
-/*
 var data = { 
 	promotion: [
     	{ 
@@ -80,61 +79,4 @@ var data = {
   ]
 
 };
-*/
 
-$(document).ready(function () {
-	var template;
-	template = Handlebars.compile($('#titleTemplate').html()); 
-	$('#top-memu-bar').append(template);
-
-	template = Handlebars.compile($('#navTemplate').html()); 
-	$('#nav-memu-bar').append(template(menu));
-
-
-	template = Handlebars.compile($('#promoSliderTemplate').html()); 
-	$('#promotion-slider-bar').append(template(data));
-
-	template = Handlebars.compile($('#bestSellerTemplate').html()); 
-	$('#best-seller').append(template(data));
-
-	template = Handlebars.compile($('#instagramSellerTemplate').html()); 
-	$('#instagram-seller').append(template(data));
-
-	template = Handlebars.compile($('#footerTemplate').html()); 
-	$('#footer-main').append(template);
-
-
-	function initCycle () {
-		$('#slider-source').cycle({
-			fx: 'scrollVert',
-			speed: 600,
-			sildes: 'div',
-			next :'#next_banner',
-			prev :'#prev_banner',
-			pager: '#page-pager',
-
-		});
-       // data-cycle-prev="#prev_PhotoBookPage" data-cycle-next="#next_PhotoBookPage" data-cycle-slides="div">
-		$('#best-slider').cycle({
-			fx: 'carousel',
-			timeout: 0,
-			sildes: 'div',
-			next :'#prev_PhotoBookPage',
-			prev :'#next_PhotoBookPage',
-			carouselVisible:3
-		});
-		$('#instagram-slider').cycle({
-			fx: 'carousel',
-			timeout: 0,
-			sildes: 'div',
-			next :'#prev_InstagramPage',
-			prev :'#nex_InstagramPage',
-			carouselVisible:3
-		});
-
-
-	}
-	initCycle();
-
-    $('.flag-drop-down').dropit();
-});

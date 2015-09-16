@@ -171,7 +171,12 @@ img {
 .pd_prev ,.pd_next{	width: 18px; height: 34px;	position: absolute; top: 35%; z-index:300; text-indent: -9999px;}
 .pd_prev {	background: url('../img/buttons/Arrow-L.png') no-repeat left top; left: 1px;}
 .pd_next {	background: url('../img/buttons/Arrow-R.png') no-repeat right top; right: 1px;}
-.pd_next
+
+$font-size: 1.0em;
+$line-height: 1.4;
+$lines-to-show: 2;
+
+
 .each-slide {
 	text-decoration: none;
 	display: inline;
@@ -182,7 +187,17 @@ img {
     white-space: normal;
     padding: 3px 0px;
 }
-
+.each-slide p {
+	display: block;
+	display: -webkit-box;
+	max-height: 50px;
+	font-size:1.0em;
+	height: 1.0em*1.4*2; 
+	-webkit-line-clamp: 2;
+  	-webkit-box-orient: vertical;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
 .readmore {
 	margin: 0px;
 	color: #2a83c7;
