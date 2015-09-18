@@ -160,15 +160,13 @@
             </ul>
           
           </div>
-         
-          <a href="#" class="slide-next" id="next_banner">Next </a>
           <div id="slider-source" class="cycle-slideshow" data-cycle-fx="scrollVert"  data-cycle-pause-on-hover="true" data-cycle-speed="600" data-cycle-prev="#prev_banner" data-cycle-next="#next_banner"  data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div">
             {{#promotion}}
              <div><a href="{{url}}"><img src="{{img_url}}"/></a>
               <span class="descrip"> <center>{{breaklines description}}</center></span>
               <span class="promo-code">{{promo_des}}</span>
               <span class="promo-button">{{button}}</span>
-               <span class="customer-review"><img src="{{customer_review}}"/></span>
+              <span class="customer-review"><img src="{{customer_review}}"/></span>
              </div> 
             {{/promotion}}
           </div>
@@ -177,6 +175,8 @@
             <span><img src="img/Themes/banner/Trust-Informations-Banner.png"></span>
           </div> 
         </div> <!-- pager on slide -->
+          <div class="pager-box" id="next_banner">
+       </div>
       </div>
   </script>
 
