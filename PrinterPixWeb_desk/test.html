@@ -101,6 +101,9 @@
              <span class="phone-number">
              Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]
             </span>
+            <div class="print-basket">
+              <a href="#" id="basket">Basket</a>
+            </div>
             <div class="print-cart"> <!-- login, register, subscribe, help, TrackOrder, Basket -->
               <ul>
                 <li>
@@ -117,9 +120,6 @@
                 </li>
                 <li>
                   <a href="#" id="track_order">Track Order</a>
-                </li>
-                <li>
-                  <a href="#" id="basket">Basket</a>
                 </li>
               </ul>
             </div>
@@ -165,13 +165,17 @@
           <div id="slider-source" class="cycle-slideshow" data-cycle-fx="scrollVert"  data-cycle-pause-on-hover="true" data-cycle-speed="600" data-cycle-prev="#prev_banner" data-cycle-next="#next_banner"  data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div">
             {{#promotion}}
              <div><a href="{{url}}"><img src="{{img_url}}"/></a>
-              <span class="redHead"><center>{{title}}</center></span>
               <span class="descrip"> <center>{{breaklines description}}</center></span>
               <span class="promo-code">{{promo_des}}</span>
               <span class="promo-button">{{button}}</span>
+               <span class="customer-review"><img src="{{customer_review}}"/></span>
              </div> 
             {{/promotion}}
           </div>
+
+            <div class="promo-vert">
+            <span><img src="img/Themes/banner/Trust-Informations-Banner.png"></span>
+          </div> 
         </div> <!-- pager on slide -->
       </div>
   </script>
