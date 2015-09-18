@@ -107,7 +107,7 @@ var data = {
           app_description: "Redirect to mobile application download page" ,
 
           getFree_url: "http://www.printerpix.co.uk/e40fp/",  
-          getFree_img_url:"./img/Themes/banner/40-Free-Photos-Promotion.jpg", 
+          getFree_img_url:"./img/Themes/banner/40-Prints-Banner.jpg", 
           getFree_titile: "Free Photos",
           getFree_description: "To get 40 Free Photos"
       }

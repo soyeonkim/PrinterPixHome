@@ -33,16 +33,16 @@ $(document).ready(function () {
 
 	function initCycle () {
 		var iw = window.innerWidth;
-		var numberSlide=3;
+		var numberSlide=4;
 
 		if(iw <768){
-			numberSlide=1;
+			numberSlide=2;
 		}
 		else if(iw <960){
-			numberSlide = 2;
+			numberSlide = 3;
 		}
 		else {
-			numberSlide = 3;
+			numberSlide = 4;
 		}
 
 		$('#slider-source').cycle({
