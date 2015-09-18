@@ -1,89 +1,12 @@
-/*
-var data = { 
-	promotion: [
-    	{ 
-    		url: "http://www.printerpix.co.uk/photo-books/PhotoHardCover", 
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg",
-    		description: "Hello!" },
-    	{ 
-    		url: "http://www.printerpix.co.uk/photo-calendar", 
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg", 
-    		description: "Hello!" },
-    	{ 
-    		url: "http://www.printerpix.co.uk/photo-canvas", 
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg",
-    		description: "Hello!" },
-    	{ 
-    		url: "http://www.printerpix.co.uk/iphone-cases", 
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg",
-    		description: "Hello!" },
-    	{ 
-    		url: "http://www.printerpix.co.uk/photo-instagram-prints", 
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg",
-    		description: "World!" }
-  ],
-  bestSeller:[
-  		{ 
-  			url: "/photo-books/PhotoHardCover", 
-  		  	img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg", 
-  		  	title:"Instagram Calendars", 
-  		  	description: "Relieve the moments of your holidays every day with our new calendars!" },
-  		{ 	
-  			url: "/photo-books/leather-cover", 
-  			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-  			title:"Instagram Poster", 
-  			description: "Perfect ornaments for the wall, really nice gift every occasion!" },
-  		{ 
-  			url: "/photo-books/SoftCover/", 
-  			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-  			title:"Instagram Photo Books", 
-  			description: "The perfect gift for a birthday, wedding, birth of a child or other occasion" },
-  		{ 
-  			url: "/photo-canvas/", 
-  			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-  			title:"Instagram Calendars", 
-  			description: "Relieve the moments of your holidays every day with out new calendars!" },
 
-  		{ 
-  			url: "/shape-collage/", 
-  			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-  			title:"Instagram Poster", 
-  			description: "Perfect ornaments for the wall, really nice gift every occasion" }
-  ],
-  instagram: [
-  		{ 
-  			url: "/photo-books/PhotoHardCover", 
-  		  	img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg", 
-  		  	title:"Instagram Calendars", 
-  		  	description: "Relieve the moments of your holidays every day with our new calendars!" },
-  		{ 	
-  			url: "/photo-books/leather-cover", 
-  			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-  			title:"Instagram Poster", 
-  			description: "Perfect ornaments for the wall, really nice gift every occasion!" },
-  		{ 
-  			url: "/photo-books/SoftCover/", 
-  			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-  			title:"Instagram Photo Books", 
-  			description: "The perfect gift for a birthday, wedding, birth of a child or other occasion" },
-  		{ 
-  			url: "/photo-canvas/", 
-  			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-  			title:"Instagram Calendars", 
-  			description: "Relieve the moments of your holidays every day with out new calendars!" },
-
-  		{ 
-  			url: "/shape-collage/", 
-  			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-  			title:"Instagram Poster", 
-  			description: "Perfect ornaments for the wall, really nice gift every occasion" }
-  ]
-
-};
-*/
 
 $(document).ready(function () {
 	var template;
+	Handlebars.registerHelper('breaklines', function(text) {
+    text = Handlebars.Utils.escapeExpression(text);
+    text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
+    return new Handlebars.SafeString(text);
+});
 	template = Handlebars.compile($('#titleTemplate').html()); 
 	$('#top-memu-bar').append(template);
 
@@ -100,11 +23,28 @@ $(document).ready(function () {
 	template = Handlebars.compile($('#instagramSellerTemplate').html()); 
 	$('#instagram-seller').append(template(data));
 
+
+   template = Handlebars.compile($('#promotionSellerTemplate').html()); 
+   $('#promo-seller').append(template(data));
+
 	template = Handlebars.compile($('#footerTemplate').html()); 
 	$('#footer-main').append(template(footer));
 
 
 	function initCycle () {
+		var iw = window.innerWidth;
+		var numberSlide=3;
+
+		if(iw <768){
+			numberSlide=1;
+		}
+		else if(iw <960){
+			numberSlide = 2;
+		}
+		else {
+			numberSlide = 3;
+		}
+
 		$('#slider-source').cycle({
 			fx: 'scrollVert',
 			speed: 600,
@@ -114,14 +54,13 @@ $(document).ready(function () {
 			pager: '#page-pager',
 
 		});
-       // data-cycle-prev="#prev_PhotoBookPage" data-cycle-next="#next_PhotoBookPage" data-cycle-slides="div">
-		$('#best-slider').cycle({
+ 		$('#best-slider').cycle({
 			fx: 'carousel',
 			timeout: 0,
 			sildes: 'div',
 			next :'#prev_PhotoBookPage',
 			prev :'#next_PhotoBookPage',
-			carouselVisible:3
+			carouselVisible:numberSlide
 		});
 		$('#instagram-slider').cycle({
 			fx: 'carousel',
@@ -129,7 +68,7 @@ $(document).ready(function () {
 			sildes: 'div',
 			next :'#prev_InstagramPage',
 			prev :'#nex_InstagramPage',
-			carouselVisible:3
+			carouselVisible:numberSlide
 		});
 
 

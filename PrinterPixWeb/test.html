@@ -16,6 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
 
   </head>
   <body>
@@ -64,8 +65,6 @@
     </footer>
     <!--- end footer-->
     <script src="js/data.js"></script>
-    <script src="js/menu.js"></script>
-
     <script src="js/main.js"></script>
 
   <!--       *******************Template include ********************      -->
@@ -76,8 +75,8 @@
               <ul class ="flag-drop-down">
                 <li>
                   <a href="#">
-                    <img src="img/flag/UK-24x24.png"/>
-                    <img src="img/buttons/White-Arrow.png"/>
+                     <span class="gb-flag"><img src="img/flag/UK-24x24.png"/></span>
+                     <span><img src="img/buttons/White-Arrow_15x15.png"/></span>
                   </a>
                   
                   <ul class="top-bar-flags-dd">
@@ -99,6 +98,9 @@
                 </li>
               </ul>
             </div>
+             <span class="phone-number">
+             Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]
+            </span>
             <div class="print-cart"> <!-- login, register, subscribe, help, TrackOrder, Basket -->
               <ul>
                 <li>
@@ -162,7 +164,12 @@
           <a href="#" class="slide-next" id="next_banner">Next </a>
           <div id="slider-source" class="cycle-slideshow" data-cycle-fx="scrollVert"  data-cycle-pause-on-hover="true" data-cycle-speed="600" data-cycle-prev="#prev_banner" data-cycle-next="#next_banner"  data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div">
             {{#promotion}}
-             <div><a href="{{url}}"><img src="{{img_url}}"/></a></div> 
+             <div><a href="{{url}}"><img src="{{img_url}}"/></a>
+              <span class="redHead"><center>{{title}}</center></span>
+              <span class="descrip"> <center>{{breaklines description}}</center></span>
+              <span class="promo-code">{{promo_des}}</span>
+              <span class="promo-button">{{button}}</span>
+             </div> 
             {{/promotion}}
           </div>
         </div> <!-- pager on slide -->
@@ -221,8 +228,10 @@
 
   <script id="promotionSellerTemplate" type="text/x-handlebars-template">
     <div class="promo-row-box">
-    <div class="col-w-app"><img src="img/Themes/banner/App-Banner.jpg" /></div>
-    <div class="col-w-pro"><a href="http://www.printerpix.co.uk/e40fp/"><img src="img/Themes/banner/40-Free-Photos-Promotion.jpg" /></a> </div>
+    {{#advertise}}
+    <div class="col-w-app"><img src="{{app_img_url}}" /></div>
+    <div class="col-w-pro"><a href="{{getFree_url}}"><img src="{{getFree_img_url}}" /></a> </div>
+    {{/advertise}}
    </div>
   </script>
   

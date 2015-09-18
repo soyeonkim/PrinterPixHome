@@ -15,6 +15,7 @@
     <script src="lib/handlebars-v4.0.2.js"></script>
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
 
   </head>
   <body>
@@ -27,8 +28,8 @@
               <ul class ="flag-drop-down">
                 <li>
                   <a href="#">
-                    <img src="img/flag/UK-24x24.png"/>
-                    <img src="img/buttons/White-Arrow.png"/>
+                    <span class="gb-flag"><img src="img/flag/UK-24x24.png"/></span>
+                    <span><img src="img/buttons/White-Arrow_15x15.png"/></span>
                   </a>
                   
                   <ul class="top-bar-flags-dd">
@@ -50,6 +51,9 @@
                 </li>
               </ul>
             </div>
+            <span class="phone-number">
+             Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]
+            </span>
             <div class="print-cart"> <!-- login, register, subscribe, help, TrackOrder, Basket -->
               <ul>
                 <li>
@@ -115,21 +119,27 @@
       <div class="slider-container">  <!-- slider container -->
         <div class="slide-showcase banner-slide">
           <div class="slide-page-pg">
-            <ul class ="cycle-pager external pager-vert" id="page-pager">
+            <ul class ="cycle-pager external" id="page-pager">
               <li class="cd-dot"><a herf="#"></a></li>
               <li class="cd-dot"><a herf="#"></a></li>
               <li class="cd-dot"><a herf="#"></a></li>
               <li class="cd-dot"><a herf="#"></a></li>
               <li class="cd-dot"><a herf="#"></a></li>           
             </ul>
-          
-          </div>
-         
-        <a href="#" class="slide-next" id="next_banner">Next </a>
-          <div class="cycle-slideshow" data-cycle-fx="scrollVert"  data-cycle-pause-on-hover="true" data-cycle-speed="600" data-cycle-prev="#prev_banner" data-cycle-next="#next_banner"  data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div">
+          </div> 
 
-            <div><a href="http://www.google.com"><img src="img/Themes/headBanner/Head-Banner.jpg" /> </a></div>
-             <div><img src="img/Themes/headBanner/Head-Banner.jpg" /> </div>
+        <a href="#" class="slide-next" id="next_banner">Next </a>
+          <div class="cycle-slideshow" data-cycle-fx="scrollVert"  data-cycle-pause-on-hover="true" data-cycle-speed="600" data-cycle-prev="#prev_banner" data-cycle-next="#next_banner"  data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div" data-cycle-timeout=0>
+
+            <div>
+              <a href="#"><img src="img/Themes/headBanner/Head-Banner.jpg" /> </a>
+              <span class="redHead"><center> 00 </center></span>
+              <span class="descrip"> <center>Print Your memories<br/> on an Elegant Photo Books</center></span>
+              <span class="promo-code">now with 00% off</span>
+              <span class="promo-button">click here ></span>
+            </div>
+             <div><img src="img/Themes/headBanner/Head-Banner.jpg" />
+              </div>
              <div><img src="img/Themes/headBanner/Head-Banner.jpg" /> </div>
              <div><img src="img/Themes/headBanner/Head-Banner.jpg" /> </div>
              <div><img src="img/Themes/headBanner/Head-Banner.jpg" /> </div>
@@ -265,8 +275,8 @@
           <!--promotion -->
           <div class="promo-product">
             <div class="promo-row-box">
-              <div class="col-w-app"><img src="img/Themes/banner/App-Banner.jpg" /></div>
-              <div class="col-w-pro"><a href="http://www.printerpix.co.uk/e40fp/"><img src="img/Themes/banner/40-Free-Photos-Promotion.jpg" /></a> </div>
+              <div class="col-w-app center"><img src="img/Themes/banner/App-Banner.jpg" /></div>
+              <div class="col-w-pro center"><a href="http://www.printerpix.co.uk/e40fp/"><img src="img/Themes/banner/40-Free-Photos-Promotion.jpg" /></a> </div>
             </div>
           </div>
           <!-- end promotion -->
