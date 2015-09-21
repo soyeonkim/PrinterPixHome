@@ -2,47 +2,52 @@ var data = {
 
   // --- top banners that vertical slider shows...
 	promotion: [
-    	{ 
-    		url: "http://www.printerpix.co.uk/photo-books/PhotoHardCover",   // link to go
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg",               // images location
-        title:"50",
-        description:"Print Your Memories \r\n on an Elegant Photo Books", //promotion description
-        promo_des:"now with 50% off",                                     //promotion title -bolc
-    		button: "Personalise Now" ,                                       //pink button message
-        customer_review:"./img/Themes/headBanner/Reviews.png"},           //customer review image location
-    	{ 
-    		url: "http://www.printerpix.co.uk/photo-calendar", 
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg", 
+    	 { 
+        id:"promo1",
+        url: "http://www.printerpix.co.uk/photo-books/PhotoHardCover",  // link to go
+        img_url: "./img/Themes/headBanner/PhotoBook-with-Promotion.jpg", 
         title:"40",
-    	  description:"Print Your Memories \r\n on an Elegant Photo Books",
-        promo_des:"now with 00% off",
-        button:"Personalise Now" ,       
-        customer_review:"./img/Themes/headBanner/Reviews.png" },
+        description:"Print Your Memories\r\n on an Elegant Cutomizable \r\n Photo Book",//promotion description
+        promo_des:"",
+        button: "Customize Now" ,       
+        customer_review:"" },     
+    	 { 
+        id:"promo2",
+        url: "http://www.printerpix.co.uk/photo-canvas", 
+        img_url: "./img/Themes/headBanner/Canvas-with-Promotion.jpg",
+        title:"40",
+        description:"",
+        promo_des:"",
+        button: "" ,       
+        customer_review:"" },     
     	{ 
+        id:"promo3",
     		url: "http://www.printerpix.co.uk/photo-canvas", 
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg",
+    		img_url: "./img/Themes/headBanner/Metal-Print.jpg",
         title:"40",
-        description:"Print Your Memories \r\n on an Elegant Photo Books",
-        promo_des:"now with 00% off",
-        button: "Personalise Now" ,       
-        customer_review:"./img/Themes/headBanner/Reviews.png" },    	
+        description:"",
+        promo_des:"",
+        button: "" ,       
+        customer_review:"" },    	
       { 
+        id:"promo4",
     		url: "http://www.printerpix.co.uk/iphone-cases", 
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg",
+    		img_url: "./img/Themes/headBanner/Greeting-Cards-with-Promotion.jpg",
         title:"30",
-        description:"Print Your Memories \r\n on an Elegant Photo Books",
-        promo_des:"now with 50% off",
-        button: "click here >",
-        customer_review:"./img/Themes/headBanner/Reviews.png" },
+        description:"",
+        promo_des:"",
+        button: "",
+        customer_review:"" },
     	{ 
+        id:"promo5",
     		url: "http://www.printerpix.co.uk/photo-instagram-prints", 
-    		img_url: "./img/Themes/headBanner/Head-Banner.jpg",
-        title:"10",
-        description:"Print Your Memories \r\n on an Elegant Photo Books",
-        promo_des:"now with 50% off",
-        button: "click here >",
-        customer_review:"./img/Themes/headBanner/Reviews.png" }
-    ],
+    		img_url: "./img/Themes/headBanner/Instagram-Prints-with-Pormotion.jpg",
+        title:"30",
+        description:"",
+        promo_des:"",
+        button: "",
+        customer_review:"" },
+        ],
   bestSeller:[
   		{ 
   			url: "/photo-books/PhotoHardCover", 

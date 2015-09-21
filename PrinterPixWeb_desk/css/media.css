@@ -1,55 +1,57 @@
 @media(max-width: :1680px){
 	.descrip, .promo-code {
-		width: 25%;
+	/*	width: 32%; */
 	}
 }
 @media (min-width: 1400px) and (max-width: 1680px) {
 	.descrip, .promo-code {
-		width: 25%;
+		/*width: 28%;*/
 	}
 	.descrip {
-	    top: 27%;
+	  /*  top: 27%;
 	    font-size: 1.5em;
-	   /* margin-right: 230px; */
+	    margin-right: 230px; */
 	}
 	.promo-code {
-	    top: 49%;
+	  /*  top: 49%;
 	    font-size: 2.6em;
 	    font-weight: bold;
-	  /*  margin-right: 230px; */
+	    margin-right: 230px; */
 	}
 	.promo-button{
- 		width: 15%;
+ 	 /*	width: 15%;
  		font-size: 1.5em;
- 		margin-right: 308px;
+ 		margin-right: 308px; */
 	}
 
 	.slide-page-pg {
-		margin-right: 260px;
+		/*margin-right: 260px; */
 	}
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
 	.descrip, .promo-code {
-		width: 25%;
-		margin-right: 205px;
+	/*	width: 25%;
+		margin-right: 205px; */
 	}
 	.descrip {
-	    top: 27%;
-	    font-size: 1.5em;
+	/*    top: 27%;
+	    font-size: 1.5em; */
 
 	}
 	.promo-code {
-	    top: 49%;
+	 /*   top: 49%;
 	    font-size: 2.4em;
-	    font-weight: bold;
+	    font-weight: bold; */
+
 	}
 	.promo-button{
- 		width: 15%;
- 		font-size: 1.4em;
- 		margin-right: 277px;
+ 	/*	width: 15%;*/
+ 		font-size: 1.7em;
+ 		margin-right: 91px; 
+
 	}
 		.slide-page-pg {
-		margin-right: 240px;
+	/*	margin-right: 240px; */
 	}
 
 }

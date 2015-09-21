@@ -17,6 +17,18 @@ $(document).ready(function () {
 	template = Handlebars.compile($('#promoSliderTemplate').html()); 
 	$('#promotion-slider-bar').append(template(data));
 
+
+
+ 	for(var i =0; i< data.promotion.length ; i++) {
+ 		if(data.promotion[i].button.length<1) {
+ 			console.log(data.promotion[i].button.length);
+ 			console.log(data.promotion[i].id);
+ 		//	$('#'+data.promotion[i].id).addClass('hidden');
+ 		} 
+ 		
+ 		console.log(data.promotion[i].img_url);
+ 	}
+
 	template = Handlebars.compile($('#bestSellerTemplate').html()); 
 	$('#best-seller').append(template(data));
 
@@ -47,7 +59,7 @@ $(document).ready(function () {
 
 		$('#slider-source').cycle({
 			fx: 'scrollVert',
-			speed: 600,
+			speed: 0,
 			sildes: 'div',
 			next :'#next_banner',
 			prev :'#prev_banner',
