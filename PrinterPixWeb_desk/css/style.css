@@ -5,8 +5,7 @@
 
 -----------------------------------------------------------------------------*/
 @font-face {
-  	font-family: 'MyriadProRegular';
-	src:  url('../fonts/MyriadProRegular.ttf');
+  	font-family: 'MyriadProRegular';	src:  url('../fonts/MyriadProRegular.ttf');
 }
 @font-face {
     font-family: 'MyriadProSemibold';
@@ -36,6 +35,7 @@ section {
 .center { margin: 0 auto; }
 .middle-div { position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 .text-center { text-align: center;}
+.clear {clear:both;  line-height: 1px; height: 1px;}
 .header-box,.pd-containder, .pd-contents,.slider-box,.silder-holder, .promo-row-box{width: 100%; }
 .top-bar-up { height: 38px;	background: #000; }
 .top-bar-center{ width: 1236px; height: 100%; }
@@ -177,6 +177,8 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 
 
 .each-slide { text-decoration: none; display: inline; }
+.each-slide h2 {border-color: #cf207e;  }
+.each-slide h1 { }
 .each-slide h1,.each-slide p { margin: 0px;	color: #414141;  white-space: normal; padding: 3px 0px;}
 .each-slide p { display: block; display: -webkit-box; max-height: 50px; font-size:1.0em; height: 1.0em*1.4*2; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; }
 .readmore { margin: 0px; color: #2a83c7; }
@@ -186,13 +188,19 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
  /*{ width: auto; height: 294px; margin: 0px auto;} */
 .col-w-pro {width: 33.3%}
 .col-w-half{width: 48%; margin: 0px 10px;}
-.footer-menu-box {width: 100%;  height: 50px;}
-.footer-menu { width: 100%; font-size: 1.3em;}
-.footer-menu ul { list-style: none; margin: 12px 0px; padding-left: 2px;}
-.footer-menu li { display: inline; width: 20%; float: left; padding-top: 12px;}
-.hoz-line { display: block; background: url('../img/outline/Line-Horizontal.jpg'); width: 100%; height: 1px;}
+.customer-star img {
+    height: 20px;
+    width: 40%;
+}
+.footer-left-box {width: 81%; float: left; margin: 5px 0px; border: solid 1px; border-color: #8d8d8d;}
+.footer-right-box {width:18%; float: right; margin-top: 5px; text-align: right;}
+.footer-menu-box {width: 100%;  height: 50px; padding: 0px 5px;}
+.footer-menu { width: 100%; font-size: 1.2em;}
+.footer-menu ul { list-style: none; margin: 5px 0px; padding-left: 2px;}
+.footer-menu li { display: inline; width: 19.8%; float: left; padding-top: 12px;}
+.hoz-line { margin: 0px 5px; display: block; background: url('../img/outline/Line-Horizontal.jpg'); height: 1px;}
 .footer-catagory {width:100%; font-size: 1.0em; line-height: 130%;}
-.footer-catagory ul { list-style: none; margin: 12px 0px; padding-left: 2px;}
+.footer-catagory ul { list-style: none; margin: 8px 0px; padding-left: 2px;}
 .footer-catagory li { display: inline; float: left; width: 20%;}
 .products li {  display: list-item; float: none; width: 100%; margin: 2px 0px;}
 .products li a { color: #414141;}
@@ -201,9 +209,10 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 .social-link a { margin: auto 5px;}
 .flag-box { width: 100%; 	height: 70px; }
 .flag-link {margin: 0px 5px;}
-.footer-catagory-box{width: auto; height: 172px;}
+.footer-catagory-box{ margin:0px 5px;width: auto; height: 154px;}
 .promo-box {
     height: 107px;
+    margin-top: 10px;
 }
 
 .dropit { list-style: none; padding: 0; margin: 0; }
@@ -236,5 +245,6 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 .top-bar-flags-dd li a {color:#414141; }
 .top-bar-flags-dd li:hover a { color: #000; text-decoration:none;}
 .top-bar-flags-dd li:hover { background-color:#cdcdcd; box-shadow: rgba(0, 0, 0, 0.13) 4px 0px 4px; }
+
 
 

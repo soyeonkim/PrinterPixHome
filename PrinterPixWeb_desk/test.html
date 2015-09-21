@@ -196,6 +196,7 @@
             <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
               <img src="{{img_url}}" />
               <h1>{{title}}</h1>
+              <span class="customer-star"><img src="{{customerStar}}"></span>
               <p>{{description}}</p>
               <h4 class="readmore" href="#">Read more...</h4>
             </a>
@@ -219,7 +220,7 @@
        <div class="pd-img">
          <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
             <img src="{{img_url}}" />
-            <h1>{{title}}</h1>
+            <h1><span style="color:#cf207e">NEW </span> {{title}}</h1>
             <p>{{description}}</p>
             <h4 class="readmore" href="#">Read more...</h4>
          </a>
@@ -241,6 +242,8 @@
   
   <script id="footerTemplate" type="text/x-handlebars-template">
       <div class="footer-box center">  
+       <div class="footer-combine-box">
+      <div class="footer-left-box">
         <div class="footer-menu-box"> <!-- footer menu -->
           <div class="footer-menu">
             <ul>
@@ -296,18 +299,18 @@
           </ul>
         </div>
         </div>
-        <div class="hoz-line"> <!-- horizontal line-->
         </div>
-        <div class="social-box center"> <!-- social link -->
-          <div class="social-link middle-div">
-            {{#SocialLink}}
-            <a target="_blank" href="{{url}}"><img alt="" src="{{img_url}}"></a>
- 
-            {{/SocialLink}}
+        <div class="footer-right-box">
+        <div class="social-box-img"> <!-- social link -->
+          <div class="social-link">
+            <img alt="" src="img/social/SocialNetworks-Footer.png">
           </div>
         </div>
-        <!--<div class="hoz-line"> <!-- horizontal line-->
-        <!--</div> -->
+        </div>
+      </div>
+        <div class="clear"></div>
+        <div> <!-- horizontal line-->
+        </div>
         <div class="promo-box"> <!-- promotion image -->
           <div class="info-promo">
               <img alt="" src="img/Themes/banner/Trust-Footer.png">

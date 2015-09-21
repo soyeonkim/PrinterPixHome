@@ -46,22 +46,26 @@ var data = {
   bestSeller:[
   		{ 
   			url: "/photo-books/PhotoHardCover", 
-  		  	img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg", 
-  		  	title:"Instagram Calendars", 
-  		  	description: "Relieve the moments of your holidays every day with our new calendars!" },
+  		  img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg", 
+        customerStar:"./img/Themes/bestSeller/start4.png",
+  		  title:"Instagram Calendars", 
+  		  description: "Relieve the moments of your holidays every day with our new calendars!" },
   		{ 	
   			url: "/photo-books/leather-cover", 
   			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
+        customerStar:"./img/Themes/bestSeller/start4.png",
   			title:"Instagram Poster", 
   			description: "Perfect ornaments for the wall, really nice gift every occasion!" },
   		{ 
   			url: "/photo-books/SoftCover/", 
   			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
+        customerStar:"./img/Themes/bestSeller/start4.png",
   			title:"Instagram Photo Books", 
   			description: "The perfect gift for a birthday, wedding, birth of a child or other occasion" },
   		{ 
   			url: "/photo-canvas/", 
   			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
+        customerStar:"./img/Themes/bestSeller/start4.png",
   			title:"Instagram Calendars", 
   			description: "Relieve the moments of your holidays every day with out new calendars!" },
 
@@ -74,9 +78,9 @@ var data = {
   instagram: [
   		{ 
   			url: "/photo-books/PhotoHardCover", 
-  		  	img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg", 
-  		  	title:"Instagram Calendars", 
-  		  	description: "Relieve the moments of your holidays every day with our new calendars!" },
+  		  img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg", 
+  		  title:"Instagram Calendars", 
+  		  description: "Relieve the moments of your holidays every day with our new calendars!" },
   		{ 	
   			url: "/photo-books/leather-cover", 
   			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
