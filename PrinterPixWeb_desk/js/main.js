@@ -13,6 +13,8 @@ $(document).ready(function () {
 	template = Handlebars.compile($('#promoSliderTemplate').html()); 
 	$('#promotion-slider-bar').append(template(data));
 
+	$('.banner-img').width(window.innerWidth);
+
 
 
  	for(var i =0; i< data.promotion.length ; i++) {
@@ -24,6 +26,8 @@ $(document).ready(function () {
  		
  		console.log(data.promotion[i].img_url);
  	}
+
+ 	//
 
 	template = Handlebars.compile($('#bestSellerTemplate').html()); 
 	$('#best-seller').append(template(data));
@@ -37,6 +41,8 @@ $(document).ready(function () {
 
 	template = Handlebars.compile($('#footerTemplate').html()); 
 	$('#footer-main').append(template(footer));
+
+
 
 
 	function initCycle () {
@@ -55,10 +61,8 @@ $(document).ready(function () {
 
 		$('#slider-source').cycle({
 			fx: 'scrollVert',
-			speed: 600,
+			timeout: 1000,
 			sildes: 'div',
-			next :'#next_banner',
-			prev :'#prev_banner',
 			pager: '#page-pager',
 
 		});
@@ -84,4 +88,8 @@ $(document).ready(function () {
 	initCycle();
 
     $('.flag-drop-down').dropit();
+    $('.pager-box').click(function () {
+    	$("body").animate({ scrollTop: $('.main-manu-box').height()+$('.top-bar-up').height()+$('#promotion-slider-bar').height()}, "slow");
+    	return false;
+    })
 });

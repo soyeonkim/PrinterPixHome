@@ -4,7 +4,7 @@ var data = {
 	promotion: [
     	 { 
         id:"promo1",
-        url: "http://www.printerpix.co.uk/photo-books/PhotoHardCover",  // link to go
+        url: "#"/*"http://www.printerpix.co.uk/photo-books/PhotoHardCover" */,  // link to go
         img_url: "./img/Themes/headBanner/Photo-Book.jpg", 
         title:"",
         description:"Print Your Memories<br> on an Elegant Cutomizable<br>Photo Book", //promotion description
@@ -31,7 +31,7 @@ var data = {
         title:"",
         description:"Print Your Memories<br> on an Elegant, Cutomizable<br>Metal Print", //promotion description
         text_color:"#414141",
-        promo_des:"Now with 00% off",
+        promo_des:"",
         button: "Customize Now" ,  
         button_color:"#cf207e",        
         customer_review:"" },    	
@@ -59,58 +59,62 @@ var data = {
         customer_review:"" },
         ],
   bestSeller:[
-  		{ 
-  			url: "/photo-books/PhotoHardCover", 
-  		  img_url: "./img/Themes/bestSeller/Slate.jpg", 
+  	   
+     { 
+        url: "/photo-books/leather-cover", 
+        img_url: "./img/Themes/bestSeller/Valentina.jpg",
         customerStar:"./img/Themes/bestSeller/start4.png",
-  		  title:"Photo Stone Slate", 
-  		  description: "Relieve the moments of your holidays every day with our Stone Slate" },
-  		{ 	
-  			url: "/photo-canvas", 
-  			img_url: "./img/Themes/bestSeller/MontageCanvas02.jpg",
+        title:"Valentina Photo book", 
+        description: "Perfect for weddings, birthdays and other celebrations, this Valentina Photobook is the perfect way to"},
+    { 
+        url: "/iphone-cases", 
+        img_url: "./img/Themes/bestSeller/iPhone6_transparent2.jpg",
         customerStar:"./img/Themes/bestSeller/start4.png",
-  			title:"Photo Canvas", 
-  			description: "Perfect ornaments for the wall, really nice gift every occasion!" },
-  		{ 
-  			url: "/photo-books/PhotoHardCover", 
-  			img_url: "./img/Themes/bestSeller/Valentina.jpg",
+        title:"iPhone Case", 
+        description: "Protect your phone with this personalized case.Select a model, then upload a photo or choose an image from" },
+      {   
+        url: "/montage-canvass", 
+        img_url: "./img/Themes/bestSeller/MontageCanvas02.jpg",
         customerStar:"./img/Themes/bestSeller/start4.png",
-  			title:"Photo Book", 
-  			description: "The perfect gift for a Valentine's day or other occasion" },
-  		{ 
-  			url: "/photo-canvas/", 
-  			img_url: "./img/Themes/bestSeller/iPhone6_transparent2.jpg",
+        title:"Collage Canvas", 
+        description: "Record your memories in style with this fully customisable canvas. " },
+     { 
+        url: "/photo-canvas/", 
+        img_url: "./img/Themes/instagram/Insta_canvas01.jpg", 
         customerStar:"./img/Themes/bestSeller/start4.png",
-  			title:"iPhone Case", 
-  			description: "The perfect gift for every occasions. Choose colours and different kind of covers" },
-  ],
-  instagram: [
-  		{ 
-  			url: "/photo-books/PhotoHardCover", 
-  		  img_url: "./img/Themes/instagram/Best-Sellers-Image.jpg", 
-  		  title:"Instagram Calendars", 
-  		  description: "Relieve the moments of your holidays every day with our new calendars!" },
-  		{ 	
-  			url: "/photo-books/leather-cover", 
-  			img_url: "./img/Themes/instagram/Insta_canvas01.jpg",
-  			title:"Instagram Poster", 
-  			description: "Perfect ornaments for the wall, really nice gift every occasion!" },
-  		{ 
-  			url: "/photo-books/SoftCover/", 
-  			img_url: "./img/Themes/instagram/Best-Sellers-Image.jpg",
-  			title:"Instagram Photo Books", 
-  			description: "The perfect gift for a birthday, wedding, birth of a child or other occasion" },
-  		{ 
-  			url: "/photo-canvas/", 
-  			img_url: "./img/Themes/instagram/Best-Sellers-Image.jpg",
-  			title:"Instagram Calendars", 
-  			description: "Relieve the moments of your holidays every day with out new calendars!" },
+        title:"Instagram Canvas", 
+        description: "Perfect for publishing your favourite Instagram photos, this sturdy square canvas is a great way to decorate your home or office." },
+    
 
+   		  ],
+  instagram: [
+  			{ 	
+  			url: "/Crystal-Photo-Frame", 
+  			img_url: "./img/Themes/bestSeller/Crystal_Frame.jpg",
+        isNew:"",
+  			title:"Crystal Frame", 
+  			description: "Sleek and sophisticated, print your favourite photos on this high quality crystal block." },
   		{ 
-  			url: "/shape-collage/", 
-  			img_url: "./img/Themes/bestSeller/Best-Sellers-Image.jpg",
-  			title:"Instagram Poster", 
-  			description: "Perfect ornaments for the wall, really nice gift every occasion" }
+  			url: "/photo-magic-mug/", 
+  			img_url: "./img/Themes/bestSeller/MagicLatteMug_01.jpg",
+        isNew:"",
+  			title:"Magic Mug", 
+  			description: "Using the latest heat-to-reveal technology, simply pour a hot drink to see your favourite photo magically appear." },
+  		{ 
+  			url: "/photo-canvas/", 
+  			img_url: "./img/Themes/bestSeller/Blanchet.jpg",
+        isNew:"NEW",
+  			title:"Blanket",         
+  			description: "Brighten your home with a beautiful personalized blanket. We guarantee highest quality and maximum comfort" },
+
+      { 
+        url: "/photo-books/stone-slates", 
+        img_url: "./img/Themes/bestSeller/Slate.jpg", 
+        customerStar:"./img/Themes/bestSeller/start4.png",
+        isNew:"",
+        title:"Photo Stone Slate", 
+        description: "Relieve the moments of your holidays every day with our Stone Slate" },
+
   ],
    advertise: [
       { 
@@ -171,7 +175,7 @@ var menu = {
         url: "http://www.printerpix.co.uk/b2s", 
         img_url: "",
         title:"Occasions", 
-        description: "" }
+        description: "" } 
 
   ],
   nav_flag: [

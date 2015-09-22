@@ -1,6 +1,10 @@
-@media(max-width: :1680px){
+@media(min-width: :1680px){
 	.descrip, .promo-code {
 	/*	width: 32%; */
+
+	}
+	.promo-code {
+		font-size: 60pt;
 	}
 }
 @media (min-width: 1400px) and (max-width: 1680px) {
@@ -10,6 +14,7 @@
 	.descrip {
 	  /*  top: 27%;
 	    font-size: 1.5em;*/
+	    font-size: 3.5em;
 	    margin-right: 65px; 
 	}
 	.promo-code {
