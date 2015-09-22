@@ -9,8 +9,8 @@
 	}
 	.descrip {
 	  /*  top: 27%;
-	    font-size: 1.5em;
-	    margin-right: 230px; */
+	    font-size: 1.5em;*/
+	    margin-right: 65px; 
 	}
 	.promo-code {
 	  /*  top: 49%;
@@ -19,9 +19,9 @@
 	    margin-right: 230px; */
 	}
 	.promo-button{
- 	 /*	width: 15%;
- 		font-size: 1.5em;
- 		margin-right: 308px; */
+ 	 /*	width: 15%;*/
+ 		font-size: 2.0em;
+ 		margin-right: 100px; 
 	}
 
 	.slide-page-pg {
@@ -30,13 +30,13 @@
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
 	.descrip, .promo-code {
-	/*	width: 25%;
-		margin-right: 205px; */
+ 		font-size: 1.6em;
+ 		
 	}
 	.descrip {
 	/*    top: 27%;
 	    font-size: 1.5em; */
-
+		margin-right: 54px; 
 	}
 	.promo-code {
 	 /*   top: 49%;
@@ -46,8 +46,7 @@
 	}
 	.promo-button{
  	/*	width: 15%;*/
- 		font-size: 1.7em;
- 		margin-right: 91px; 
+		margin-right: 80px; 
 
 	}
 		.slide-page-pg {

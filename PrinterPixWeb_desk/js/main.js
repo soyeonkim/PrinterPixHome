@@ -2,11 +2,7 @@
 
 $(document).ready(function () {
 	var template;
-	Handlebars.registerHelper('breaklines', function(text) {
-    text = Handlebars.Utils.escapeExpression(text);
-    text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
-    return new Handlebars.SafeString(text);
-});
+ 
 	template = Handlebars.compile($('#titleTemplate').html()); 
 	$('#top-memu-bar').append(template);
 
@@ -59,7 +55,7 @@ $(document).ready(function () {
 
 		$('#slider-source').cycle({
 			fx: 'scrollVert',
-			speed: 0,
+			speed: 600,
 			sildes: 'div',
 			next :'#next_banner',
 			prev :'#prev_banner',
