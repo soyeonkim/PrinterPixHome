@@ -1,0 +1,141 @@
+@media(min-width: :1680px){
+	.descrip, .promo-code {
+	/*	width: 32%; */
+
+	}
+	.promo-code {
+		font-size: 60pt;
+	}
+}
+@media (min-width: 1400px) and (max-width: 1680px) {
+	.descrip, .promo-code {
+		/*width: 28%;*/
+	}
+	.descrip {
+	  /*  top: 27%;
+	    font-size: 1.5em;*/
+	    font-size: 3.5em;
+	    margin-right: 65px; 
+	}
+	.promo-code {
+	  /*  top: 49%;
+	    font-size: 2.6em;
+	    font-weight: bold;
+	    margin-right: 230px; */
+	}
+	.promo-button{
+ 	 /*	width: 15%;*/
+ 		font-size: 2.0em;
+ 		margin-right: 100px; 
+	}
+
+	.slide-page-pg {
+		/*margin-right: 260px; */
+	}
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+	.descrip, .promo-code {
+ 		font-size: 1.6em;
+ 		
+	}
+	.descrip {
+	/*    top: 27%;
+	    font-size: 1.5em; */
+		margin-right: 54px; 
+	}
+	.promo-code {
+	 /*   top: 49%;
+	    font-size: 2.4em;
+	    font-weight: bold; */
+
+	}
+	.promo-button{
+ 	/*	width: 15%;*/
+		margin-right: 80px; 
+
+	}
+		.slide-page-pg {
+	/*	margin-right: 240px; */
+	}
+
+}
+/*
+@media (min-width: 1200px) and (max-width: 1536px) {
+
+	.descrip {
+	    top: 27%;
+	    font-size: 1.5em;
+	    margin-right: 180px;
+	}
+	.promo-code {
+	    top: 49%;
+	    font-size: 2.4em;
+	    font-weight: bold;
+	    margin-right: 180px;
+	}
+	.promo-button{
+		top: 61.5%;
+	    right: 50%;
+	    width: 17%;
+	    line-height: 2.3em;
+	    border: solid 2px;
+	    font-size: 1.3em;
+	    border-color: #cf207e;
+	    margin-right: 340px;
+	}
+}
+*/
+@media (min-width:960px )and ( max-width: 1024px) {
+	.pd-containder {
+		width: 940px;
+	}
+	.product-box,.promo-product  { width: 880px;}
+	.pd-img, .pd-img img ,.col-w-pro img{ width: 275px; }
+	.pd-img img, .promo-row-box,.col-w-app img , .col-w-pro img { height: 275px;}
+
+	.descrip. .promo-code {
+	    right: 50%;
+	    width: 30%;
+	    line-height: 1.4em;
+	}
+	.descrip {
+	    top: 27%;
+	    font-size: 2.0em;
+	    margin-right: 230px;
+	}
+	.promo-code {
+	    top: 49%;
+	    font-size: 2.8em;
+	    font-weight: bold;
+	    margin-right: 230px;
+	}
+	.promo-button{
+		top: 61.5%;
+	    right: 50%;
+	    width: 17%;
+	    line-height: 2.3em;
+	    border: solid 2px;
+	    font-size: 1.7em;
+	    border-color: #cf207e;
+	    margin-right: 340px;
+	}
+}
+@media (min-width: 768px) and ( max-width: 960px) {
+	.top-bar-center{
+		width: 748px;
+	}
+	.pd-containder {
+		width: 748px;
+	}
+	.print-cart {
+		font-size: 0.9em;
+	}
+	.pp_navigation li{
+		font-size: 1.0em;
+	}
+}
+@-moz-document url-prefix() {  
+  .banner-slide img{   
+    width: 100%;  
+  }
+}

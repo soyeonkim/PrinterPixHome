@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Printerpix</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="lib/jquery.cycle2.js"></script>
+    <script src="lib/jquery.cycle2.scrollVert.js"></script>
+    <script src="lib/jquery.cycle2.carousel.js"></script>
+    <script src="lib/dropit.js"></script>
+    <script src="lib/handlebars-v4.0.2.js"></script>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <!--- header menu       -->
+    <header>
+      <div class="header-box"> <!-- total menu box -->
+        <div class="top-bar-up"><!-- black background-->
+          <div class="top-bar-center center"> <!--flag, login menu box -->
+            <div class="select-country"> <!--- flag dropbox -->
+              <ul class ="flag-drop-down">
+                <li>
+                  <a href="#">
+                    <span class="gb-flag"><img src="img/flag/UK-24x24.png"/></span>
+                    <span><img src="img/buttons/White-Arrow_15x15.png"/></span>
+                  </a>
+                  
+                  <ul class="top-bar-flags-dd">
+                    <li><a href="http://www.printerpix.co.uk"><span class="gb"></span>United Kingdom</a></li>
+                    <li><a href="http://www.printerpix.com"><span class="us"></span>United States</a></li>
+                    <li><a href="http://www.printerpix.de"><span class="de"></span>Germany</a></li> 
+                    <li><a href="http://www.printerpix.fr"><span class="fr"></span>France</a></li>
+                    <li><a href="http://www.printerpix.es"><span class="es"></span>Spain</a></li>
+                    <li><a href="http://www.printerpix.it"><span class="it"></span>Italy</a></li>
+                    <li><a href="http://www.printerpix.co.uk"><span class="dk"></span>Denmark</a></li>
+                    <li><a href="http://www.printerpix.com"><span class="cd"></span>Canada</a></li>
+                    <li><a href="http://www.printerpix.co.uk"><span class="fl"></span>Finland</a></li>
+                    <li><a href="http://www.printerpix.co.uk"><span class="no"></span>Norway</a></li>
+                    <li><a href="http://www.printerpix.com.mx"><span class="mx"></span>Mexico</a></li>
+                    <li><a href="http://www.printerpix.co.uk"><span class="gr"></span>Greece</a></li>
+                    <li><a href="http://www.printerpix.nl"><span class="nl"></span>Holland</a></li>
+                    <li><a href="http://www.printerpix.com.br"><span class="br"></span>Brazil</a></li>
+                  </ul>               
+                </li>
+              </ul>
+            </div>
+            <span class="phone-number">
+             Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]
+            </span>
+            <div class="print-cart"> <!-- login, register, subscribe, help, TrackOrder, Basket -->
+              <ul>
+                <li>
+                  <a href="/ProjectListing" id="login">Login</a>
+                </li>
+                <li>
+                  <a href="#" id="register">Register</a>
+                </li>
+                <li>
+                  <a href="#" id="subscribe">Subscribe</a>
+                </li>
+                <li>
+                  <a href="#" id="Help">Help</a>
+                </li>
+                <li>
+                  <a href="#" id="track_order">Track Order</a>
+                </li>
+                <li>
+                  <a href="#" id="basket">Basket</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+    </header>
+    <nav>
+        <div class="top-bar-center center"> <!-- white background-->
+          <div class="main-manu-box"> <!--main menu box -->
+            <div class="logo-box">
+              <div class="logo"> <!-- logo-->
+                <a href ="/" title="Printerpix">
+                  <img src="img/Themes/logo/logo.png" />
+                  <!--<img src="/Themes/images/logo.png?v31122013" alt="Printerpix" /> -->
+                </a>
+              </div>
+             </div>
+            <div class="pp_header-right manu-navbar"> <!-- main manu -->
+              <div class="pp_navigation">
+              <!-- @Html.Raw(ViewBag._TopMenuWebContent) -->
+               <ul>
+                <li><a href="http://www.printerpix.co.uk/photo-books/PhotoHardCover/" >Photo Books</a></li>
+                <li><a href="http://www.printerpix.co.uk/photo-calendar/ ">Calendar</a></li>
+                <li><a href="http://www.printerpix.co.uk/posters/#">Wall Decor</a></li>
+                <li><a href="http://www.printerpix.co.uk/gift?preselectedid=fefb800a-3235-4ed2-8e2b-871ac3d018e7">Gifts</a></li>
+                <li><a href="http://www.printerpix.co.uk/iphone-cases/">Cases</a></li>
+                <li><a href="http://www.printerpix.co.uk/photo-instagram-prints/">Prints</a></li>
+                <li><a href="http://www.printerpix.co.uk/b2s/">Occasions</a></li>
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!--- end header menu   -->
+
+
+    <!--  main container -->
+    <section>
+      <!--  promotion slider show -->
+      <div class="slider-container">  <!-- slider container -->
+        <div class="slide-showcase banner-slide">
+          <div class="slide-page-pg">
+            <ul class ="cycle-pager external" id="page-pager">
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>           
+            </ul>
+          </div> 
+
+        <a href="#" class="slide-next" id="next_banner">Next </a>
+          <div class="cycle-slideshow" data-cycle-fx="scrollVert"  data-cycle-pause-on-hover="true" data-cycle-speed="600" data-cycle-prev="#prev_banner" data-cycle-next="#next_banner"  data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div" data-cycle-timeout=0>
+
+            <div>
+              <a href="#"><img src="img/Themes/headBanner/Head-Banner.jpg" /> </a>
+              <span class="redHead"><center> 00 </center></span>
+              <span class="descrip"> <center>Print Your memories<br/> on an Elegant Photo Books</center></span>
+              <span class="promo-code">now with 00% off</span>
+              <span class="promo-button">click here ></span>
+            </div>
+             <div><img src="img/Themes/headBanner/Head-Banner.jpg" />
+              </div>
+             <div><img src="img/Themes/headBanner/Head-Banner.jpg" /> </div>
+             <div><img src="img/Themes/headBanner/Head-Banner.jpg" /> </div>
+             <div><img src="img/Themes/headBanner/Head-Banner.jpg" /> </div>
+          </div>
+        </div> <!-- pager on slide -->
+      </div>
+      <!--  end promotion slider show -->
+
+
+      <!-- productions -->
+      <div class="pd-containder center">     <!-- production container -->
+        <div class="pd-contents ">
+          <!--- best production -->
+          <div class="best-product">
+            <div class="text-center pd-title">
+              <p>our <strong>best seller</strong> products ready to print for you </p>
+            </div>
+              <!-- arrow previous /next -->
+            <div class="slider-box">
+              <a href="#" title="Previous"  class="pd_prev" id="prev_PhotoBookPage">Previous</a>
+              <a href="#" title="Next"      class="pd_next" id="next_PhotoBookPage">Next </a>
+            
+              <div class="slide-showcase product-box">
+                 <div class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=3 data-cycle-prev="#prev_PhotoBookPage" data-cycle-next="#next_PhotoBookPage" data-cycle-slides="div">
+                  <div class="pd-img">
+                    <a class="each-slide" href="http://www.printerpix.co.uk/photo-books/PhotoHardCover/">
+                      <img src="img/Themes/bestSeller/Best-Sellers-Image.jpg" />
+                      <h1> Instagram Calendars</h1>
+                      <p>Relieve the moments of your holidays every day with our new calendars</p>
+                      <h4><a class="readmore" href="#">Read more... </a></h4>
+                    </a>
+                  </div>
+                  <div class="pd-img">
+                    <a class="each-slide">
+                      <img src="img/Themes/bestSeller/Best-Sellers-Image.jpg" />
+                      <h1>Instagram Poster</h1>
+                      <p>Perfect ornaments for the wall, really nice gift every occasion</p>
+                      <h4><a class="readmore" href="#">Read more... </a></h4>
+                    </a>
+                  </div>
+                  <div class="pd-img">
+                    <a class="each-slide">
+                      <img src="img/Themes/bestSeller/Best-Sellers-Image.jpg" />
+                     <h1>Instagram Photo Books</h1>
+                      <p>The perfect gift for a birthday, wedding, birth of a child or other occasions. Just try to create your own style of pictures</p>
+                      <h4><a class="readmore" href="#">Read more... </a></h4>
+                     </a>
+                  </div>
+                  <div class="pd-img">
+                    <a class="each-slide">
+                      <img src="img/Themes/bestSeller/Best-Sellers-Image.jpg" />
+                      <h1>Instagram Calendars</h1>
+                      <p>Relieve the moments of your holidays every day with out new calendars</p>
+                      <h4><a class="readmore" href="#">Read more... </a></h4>
+                    </a>
+                  </div>
+                  <div class="pd-img">
+                    <a class="each-slide">
+                      <img src="img/Themes/bestSeller/Best-Sellers-Image.jpg" />
+                    <h1>Instagram Poster</h1>
+                      <p>Perfect ornaments for the wall, really nice gift every occasion</p>
+                      <h4><a class="readmore" href="#">Read more... </a></h4>
+                     </a>
+                  </div>                             
+                 <!-- data-cycle-carousel-fluid=true> -->              
+                </div>
+
+               </div>
+             </div> 
+           <!--  <div class="best-arrow-box">
+              <a href="#" title="Previous"  class="pd_prev" id="prev_PhotoBookPage">Previous</a>
+              <a href="#" title="Next"      class="pd_next" id="next_PhotoBookPage">Next </a>
+             </div>  -->
+            </div>
+            
+          <!--- end best production-->
+          <!--- instagram production -->
+          <div class="inst-product">
+            <div class="text-center pd-title ">
+              <p>our <strong>new Instagram</strong> products are coming soon </p>
+            </div>
+            <div class="slider-box">
+              <a href="#" title="Previous"  class="pd_prev" id="prev_InstagramPage">Previous</a>
+              <a href="#" title="Next"      class="pd_next" id="nex_InstagramPage">Next </a>
+              <div class="slide-showcase product-box">
+              <div class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=3 data-cycle-prev="#prev_InstagramPage" data-cycle-next="#nex_InstagramPage" data-cycle-slides="div">
+                <div class="pd-img">
+                  <a class="each-slide">
+                    <img src="img/Themes/instagram/Best-Sellers-Image.jpg" />
+                   <h1> Instagram Calendars</h1>
+                    <p>Relieve the moments of your holidays every day with our new calendars</p>
+                    <h4><a class="readmore" href="#">Read more... </a></h4>
+                  </a>
+                </div>
+                <div class="pd-img">
+                  <a class="each-slide">
+                    <img src="img/Themes/instagram/Best-Sellers-Image.jpg" />
+                    <h1>Instagram Poster</h1>
+                    <p>Perfect ornaments for the wall, really nice gift every occasion</p>
+                    <h4><a class="readmore" href="#">Read more... </a></h4>
+                   </a>
+                </div>
+                <div class="pd-img">
+                  <a class="each-slide">
+                    <img src="img/Themes/instagram/Best-Sellers-Image.jpg" />
+                   <h1>Instagram Photo Books</h1>
+                    <p>The perfect gift for a birthday, wedding, birth of a child or other occasion…</p>
+                    <h4><a class="readmore" href="#">Read more... </a></h4>
+                    </a>
+                </div>
+                <div class="pd-img">
+                  <a class="each-slide">
+                    <img src="img/Themes/instagram/Best-Sellers-Image.jpg" />
+                    <h1>Instagram Calendars</h1>
+                    <p>Relieve the moments of your holidays every day with out new calendars</p>
+                    <h4><a class="readmore" href="#">Read more... </a></h4>
+                  </a>
+                </div>
+                <div class="pd-img">
+                  <a class="each-slide">
+                    <img src="img/Themes/instagram/Best-Sellers-Image.jpg" />
+                    <h1>Instagram Poster</h1>
+                    <p>Perfect ornaments for the wall, really nice gift every occasion</p>
+                    <h4><a class="readmore" href="#">Read more... </a></h4>
+                  </a>
+                </div>   
+                <!-- data-cycle-carousel-fluid=true> -->              
+              </div>
+              </div>
+            </div>
+          </div>
+          <!--- end instagram production-->
+          <!--promotion -->
+          <div class="promo-product">
+            <div class="promo-row-box">
+              <div class="col-w-app center"><img src="img/Themes/banner/App-Banner.jpg" /></div>
+              <div class="col-w-pro center"><a href="http://www.printerpix.co.uk/e40fp/"><img src="img/Themes/banner/40-Free-Photos-Promotion.jpg" /></a> </div>
+            </div>
+          </div>
+          <!-- end promotion -->
+        </div>
+      </div> 
+      <!-- end productions -->
+    </section>
+    <!-- end main container -->
+
+    <!--- footer -->
+    <footer>
+      <div class="footer-box center">  
+        <div class="footer-menu-box"> <!-- footer menu -->
+          <div class="footer-menu">
+            <ul>
+              <li><a class="footer-text">Products</a></li>
+              <li><a class="footer-text">Pricing</a></li>
+              <li><a class="footer-text">Photo tips</a></li>
+              <li><a class="footer-text">About us</a></li>
+              <li><a class="footer-text">Customer care</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hoz-line">  <!-- horizontal line-->
+        </div>
+        <div class="footer-catagory-box">
+        <div class="footer-catagory"> <!-- footer catagories -->
+          <ul>
+              <li>
+                <ul class="products">
+                  <li><a href="#">Photo Bools</a></li>
+                  <li>Photo Calendars</li>
+                  <li>Photo Canvases</li>
+                  <li>Stock Photography</li>
+                  <li>Fine Art</li>
+                </ul>
+              </li>
+              <li> 
+                 <ul class="products">
+                  <li>Prices</li>
+                  <li>Payment Methods</li>
+                  <li>Delivery</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="products">
+                  <li>Photo Quality</li>
+                  <li>Image Resolution</li>
+                </ul>
+              </li>
+              <li>
+                <ul class="products">
+                  <li>Why Printpix?</li>
+                  <li>About us</li>
+                  <li>Testimoials</li>
+                  <li>Terms and Conditions</li>
+                  <li>Partners</li>
+                </ul>
+              </li>
+              <li>  
+                <ul class="products">
+                  <li>Contact us</li>
+                  <li>Privacy Policy</li>
+                  <li>Return Policy</li>
+                  <li>Complaints Procedure</li>
+                  <li>Requently Questions</li>
+                </ul>
+              </li>
+          </ul>
+        </div>
+        </div>
+        <div class="hoz-line"> <!-- horizontal line-->
+        </div>
+        <div class="social-box center"> <!-- social link -->
+          <div class="social-link middle-div">
+            <a target="_blank" href="https://www.facebook.com/PrinterPixUK"><img alt="" src="img/social/Social-Facebook.png"></a>
+            <a target="_blank" href="http://printerpix.tumblr.com"><img alt=""src="img/social/Social-Pinterest.png"></a>
+            <a target="_blank" href="https://instagram.com/printerpixuk/"><img alt="" src="img/social/Social-Instagram.png"></a>
+            <a target="_blank" href="https://twitter.com/printerpix"><img alt="" src="img/social/Social-Twitter.png"></a>
+            <a target="_blank" href="https://www.youtube.com/user/printerpix"><img alt="" src="img/social/Social-Youtube.png"></a>
+          </div>
+        </div>
+        <!--<div class="hoz-line"> <!-- horizontal line-->
+        <!--</div> -->
+        <div class="promo-box"> <!-- promotion image -->
+          <div class="info-promo">
+              <img alt="" src="img/Themes/banner/Informations-for-Trust.png">
+          </div>
+        </div>
+        <div> <!-- horizontal line-->
+        </div>
+        <div class="flag-box"> <!-- flags-->
+          <div class="flag-link middle-div">
+            <a><img alt="" src="img/flag/Flags.png"></a>
+          </div>
+        </div>
+        <div class="hoz-line"> <!-- horizontal line-->
+        </div>
+        <div class="copyright-box"> <!-- copy right -->
+          <div class="text-center copyright-text">
+            <p><strong>Printerpix</strong> © 2015- Unit 5 Stonefield Way, Ruislip, Middlesex, London HA4 0JS, UK</p>
+          </div>
+        </div>
+        <div class="hoz-line"> <!-- horizontal line--> 
+        </div>
+      </div>
+
+    </footer>
+    <!--- end footer-->
+  
+  <script src="js/index.js"></script>
+  </body>
+</html>
