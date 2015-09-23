@@ -47,8 +47,9 @@ $(document).ready(function () {
 		}
 
 		$('#slider-source').cycle({
-			fx: 'scrollVert',
-			timeout: 1000,
+			fx: 'fadeout',
+			timeout: 3000,
+			speed:1500,
 			sildes: 'div',
 			pager: '#page-pager',
 

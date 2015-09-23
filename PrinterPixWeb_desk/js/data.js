@@ -19,29 +19,29 @@ var data = {
         url: "http://www.printerpix.co.uk/photo-mugs/", 
         img_url: "./img/Themes/headBanner/UK/03-Mug-without-promotion.jpg",
         title:"",
-        description:"<strong>Have a great start<br> of the day</stong>",
+        description:"<strong>Have a great start<br> of the day</strong>",
         text_color:"#414141",
         promo_des:"With a Personalised Photo Mug",
         button: "Personalised Now" ,     
         button_color:"#cf207e", 
         customer_review:"" },     
- /*   	{ 
+    	{ 
         id:"promo3",
     		url: "http://www.printerpix.co.uk/photo-canvas/", 
-    		img_url: "./img/Themes/headBanner/UK/04-Canvas-without-promotion.jpg",
+    		img_url: "./img/Themes/headBanner/UK/05-Canvas-without-promotion.jpg",
         title:"",
         description:"<strong>Never forget<br>your special days</strong>",
-        text_color:"#fff",
+        text_color:"#4141",
         promo_des:"with our personalised <br>Luxury Canvas",
         button: "Personalised Now" ,  
         button_color:"#cf207e",        
         customer_review:"" },    	
- /*     { 
+       { 
         id:"promo4",
     		url: "http://www.printerpix.co.uk/iphone-cases/", 
     		img_url: "./img/Themes/headBanner/UK/07-Cases-without-promotion.jpg",
         title:"",
-        description:"<strong> Your Happy Moments</strong>",
+        description:"<strong>Your Happy Moments</strong>",
         text_color:"#414141",
         promo_des:"On a Special, Personalised,<br> Photo Phone Cover",
         button: "Personalised Now",
@@ -58,7 +58,7 @@ var data = {
         button: "Personalised Now",
         button_color:"#cf207e",   
         customer_review:"" },
-  */      ],
+        ],
   bestSeller:[
   	   
      { 

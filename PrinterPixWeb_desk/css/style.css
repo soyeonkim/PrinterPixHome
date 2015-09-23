@@ -174,8 +174,10 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 .promo-button-lg 
 {top:55%;line-height: 2.5em; border: solid 5px; font-size: 1.8vw;border-color: #cf207e;}
 .customer-review { bottom: 1%;  left: 50%; width: 15%; line-height: 1.4em; font-size: 2.3em; margin-left: 350px;}
-.descrip-left{ right: 50%;margin-right: 88px; }
-.promo-code-left {  right: 50%;margin-right: 76px;}
+/*.descrip-left{ right: 50%;margin-right: 88px; }*/
+.descrip-left{ left: 0%;margin-left: 12%; }
+/*.promo-code-left {  right: 50%;margin-right: 88px;}*/
+.promo-code-left {left:0%;margin-left: 12%}
 /*.promo-button-left {  right: 50%;margin-right:11.7%;}*/
 .promo-button-left {  right: 50%;margin-right:7.7%;}
 .promo-button-sm-left  {  right: 50%;margin-right:13%;}
