@@ -125,7 +125,9 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 .slide-next { width: 72px; height: 72px; background: url('../img/buttons/Arrow_56x56.png') no-repeat; 
 position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999; }
 
-.slide-page-pg { width: 15.5%; position: absolute; bottom:3%; right: 50%; z-index: 999; margin-right: 154px; }
+.slide-page-pg { width: 7%; position: absolute; bottom:3%;  z-index: 999; min-width: 105px;}
+.slide-page-pg-left{left: 0%; margin-left: 24.5%; }
+.slide-page-pg-right{right: 0%; margin-right: 20%; }
 .slide-page-pg ul {	list-style: none; display: inline-block; padding:0px; margin:0px auto;cursor: default;float: left;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -139,8 +141,14 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 
 .pp_next { background: url(/Themes/images/sprite_arrow.png) no-repeat left top; width: 34px; height: 33px; display: block; text-indent: -9999px; position: absolute; top: 201px; z-index:300; }
 .promo-slide{}
-.redHead,.descrip, .promo-code, .promo-button, .customer-review{ position: absolute; text-align: center;}
-
+.redHead,
+.descrip,
+.promo-code,
+.promo-code-up, 
+.promo-button,
+.promo-button-lg,
+.promo-button-sm, 
+.customer-review{ position: absolute; text-align: center;}
 .redHead{
     top: 26%;
     left: 22%;
@@ -150,46 +158,31 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
     font-size: 1.8em;
     border-color: red;
 }
-.descrip, .promo-code {
-    right: 50%;
+.descrip, .promo-code,.promo-code-up { 
     width: 33%;
     line-height: 1.2em;
     font-family: MyriadProLight;
 }
-.descrip {
-    top: 25%;
-    /*font-size: 4em;*/
-    font-size: 2.7vw;
-    margin-right: 88px;
-}
-.promo-code {
-    top: 49%;
-    font-size: 2.8em;
-    font-weight: bold;
-    margin-right: 76px;
-}
-.promo-button{
-	top: 65%;
-    right: 50%;
-    width: 18%;
-    /*font-family: MyriadProLight; */
-    line-height: 2em;
-    border: solid 3px;
- 
-    font-size: 1.6vw;
-    border-color: #cf207e;
- 
-    margin-right:11.7%;
-    max-width: 426px;
-}
-.customer-review {
-    bottom: 1%;
-    left: 50%;
-    width: 15%;
-    line-height: 1.4em;
-    font-size: 2.3em;
-    margin-left: 350px;
-}
+.descrip { top: 25%; font-size: 2.7vw; }
+.promo-code { top: 46%; font-size: 1.6vw;}
+.promo-code-up {top: 43%; font-size: 1.6vw;}
+.promo-button-sm{width: 18%; max-width: 426px;}  /* small button box*/
+.promo-button,.promo-button-lg{ width:26%;} 
+.promo-button,
+.promo-button-sm
+{top:65%; line-height: 2em; border: solid 3px; font-size: 1.6vw;border-color: #cf207e;}
+.promo-button-lg 
+{top:55%;line-height: 2.5em; border: solid 5px; font-size: 1.8vw;border-color: #cf207e;}
+.customer-review { bottom: 1%;  left: 50%; width: 15%; line-height: 1.4em; font-size: 2.3em; margin-left: 350px;}
+.descrip-left{ right: 50%;margin-right: 88px; }
+.promo-code-left {  right: 50%;margin-right: 76px;}
+.promo-button-left {  right: 50%;margin-right:11.7%;}
+.promo-button-sm-left  {  right: 50%;margin-right:13%;}
+
+.descrip-right{ right: 0%;margin-right: 8%; }
+.promo-code-right {right: 0%;margin-right: 8%}
+.promo-button-sm-right { right: 0%;margin-right:14.5%;} /* small button box*/
+.promo-button-right { right:0%; margin-right:11.5%;}
 .pager-box {
     width: 72px;
     height: 72px;
@@ -316,21 +309,16 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 }
 @media (min-width: 1400px) and (max-width: 1680px) {
 
-    .promo-button{
-        margin-right:13%;
-    }
+    .promo-button-left{margin-right:13%; }
     .pp_navigation li a {
         padding: 0px 10px;
     }
 }
 
 @media(min-width: 768px) and (max-width: 1400px){
-    .descrip {
-        margin-right: 70px;
-    }
-     .promo-button{
-        margin-right:13%;
-    }
+    .descrip-left   { margin-right: 70px;}
+    .promo-button-left{ margin-right:13%;}
+
     .slide-page-pg{
         margin-right: 11%;
     }
@@ -343,12 +331,8 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
     }
 }
 @media (max-width: 1200px){
-    .top-bar-center,.nav-bar-center,.footer-box{ 
-        width: 1024px;
-    }
-    .promo-box{ 
-         width: 1037px;
-    }
+    .top-bar-center,.nav-bar-center,.footer-box{ width: 1024px; }
+    .promo-box{ width: 1037px;   }
     .pd-containder, .promo-product {
         width: 628px;
     }
@@ -358,9 +342,8 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
     .col-w-half{
         width:95%;
     }
-     .promo-button{
-        margin-right:14%;
-    }
+    .promo-button-left{ margin-right:14%; }
+   /* .promo-button-right{ margin-left:14%; } */
     .slide-page-pg{
         margin-right: 12.5%;
     }

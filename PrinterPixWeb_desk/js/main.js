@@ -22,7 +22,8 @@ $(document).ready(function () {
 
 	template = Handlebars.compile($('#instagramSellerTemplate').html()); 
 	$('#instagram-seller').append(template(data));
-
+	template = Handlebars.compile($('#instagramSellerTemplate2').html()); 
+	$('#instagram-seller2').append(template(data));
 
    template = Handlebars.compile($('#promotionSellerTemplate').html()); 
    $('#promo-seller').append(template(data));
@@ -77,6 +78,16 @@ $(document).ready(function () {
 			sildes: 'div',
 			next :'#prev_InstagramPage',
 			prev :'#nex_InstagramPage',
+			startingSlide: 0,
+			carouselVisible:numberSlide
+		});
+		$('#instagram-slider2').cycle({
+			fx: 'carousel',
+			timeout: 0,
+			sildes: 'div',
+			next :'#prev_InstagramPage',
+			prev :'#nex_InstagramPage',
+			startingSlide: 2,
 			carouselVisible:numberSlide
 		});
 
@@ -88,6 +99,7 @@ $(document).ready(function () {
 	function dependSize(windowSize) {
 		if(windowSize >1200){
 	 		$('#best-seller2').addClass('hidden');
+	 		$('#instagram-seller2').addClass('hidden');
 	 		console.log("add");
 	 		$('#horz-social-link').addClass('hidden');
 	  		$('.social-box-img').removeClass('hidden');
@@ -95,6 +107,7 @@ $(document).ready(function () {
 	    } 
 	    else {
 	  		 $('#best-seller2').removeClass('hidden');
+	  		 $('#instagram-seller2').removeClass('hidden');
 	  		 console.log("remove");
 	  		 $('#horz-social-link').removeClass('hidden');
 	  		 $('.social-box-img').addClass('hidden');
@@ -114,9 +127,9 @@ $(document).ready(function () {
 	    	//$('#top-memu-bar').window(windowSize);
 	    	$('.slider-container').width(windowSize+"px");
 	    	console.log(windowSize);
+	    	initCycle();    	
 	 		dependSize(windowSize);
-		    initCycle();    	
-
+		    
     });
 	dependSize(windowSize);
     
