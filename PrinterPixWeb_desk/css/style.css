@@ -73,7 +73,6 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 .print-cart li { display: inline;}
 .print-cart li a { color: #fff;	text-decoration: none; 	padding: 0px 10px; font-size: 0.9em; }
 
-
 .main-manu-box { height: 66px; width: 100%; }
 .logo-box { width: 15%;  height: 46px; padding-left:15px; float: left;}
 
@@ -90,6 +89,15 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 .pd_nav ul {list-style: none;  float: right;}
 .pd_nav li { display: inline-block;}
 .pd_nav li a { text-decoration: none; 
+
+.logo-box { width: 14%;  height: 46px; padding: 10px 15px; float: left; }
+
+.pp_navigation { float: right; margin: 0px 15px; }
+.pp_navigation ul { list-style: none; }
+.pp_navigation li {	display: inline; font-size: 1.3vw; margin: 0px 15px; }
+.pp_navigation li a { color: #414141; text-decoration: none; padding: 0px 5px; }
+.pp_header-right { width: 69%; float: right;  margin-top: 2px; }
+>>>>>>> origin/desktop
 
 }
 /* -------------------------------------------------------------------------------------*/
