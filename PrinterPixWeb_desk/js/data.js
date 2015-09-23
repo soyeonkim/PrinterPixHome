@@ -3,18 +3,18 @@ var data = {
 
   // --- top banners that vertical slider shows...
 	promotion: [
-   /* 	 { 
+     	 { 
         id:"promo1",
-        url: "http://www.printerpix.co.uk/photo-books/PhotoHardCover/" // link to go
-        img_url: "./img/Themes/headBanner/UK/02-Photobook-without-promotion.jpg", 
+        url: "http://www.printerpix.co.uk/photo-books/PhotoHardCover/", // link to go
+        img_url: "./img/Themes/headBanner/UK/01-Photobook-without-promotion.jpg", 
         title:"",
-        description:"Luxury<br>Leather Cover Photo Book", //promotion description
-        text_color:"#fff",
+        description:"Print Your Memories<br>on Photo Book", //promotion description
+        text_color:"#4141",
         promo_des:"Elegance and Simplicity<br> to make your memories unique",
         button: "Personalised Now" , 
         button_color:"#cf207e",       
         customer_review:"" },     
-   */ 	 { 
+     	 { 
         id:"promo2",
         url: "http://www.printerpix.co.uk/photo-mugs/", 
         img_url: "./img/Themes/headBanner/UK/03-Mug-without-promotion.jpg",

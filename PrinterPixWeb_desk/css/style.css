@@ -176,7 +176,8 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 .customer-review { bottom: 1%;  left: 50%; width: 15%; line-height: 1.4em; font-size: 2.3em; margin-left: 350px;}
 .descrip-left{ right: 50%;margin-right: 88px; }
 .promo-code-left {  right: 50%;margin-right: 76px;}
-.promo-button-left {  right: 50%;margin-right:11.7%;}
+/*.promo-button-left {  right: 50%;margin-right:11.7%;}*/
+.promo-button-left {  right: 50%;margin-right:7.7%;}
 .promo-button-sm-left  {  right: 50%;margin-right:13%;}
 
 .descrip-right{ right: 0%;margin-right: 8%; }
