@@ -16,7 +16,7 @@
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/media.css" rel="stylesheet">
+    <!--<link href="css/media.css" rel="stylesheet">-->
 
   </head>
   <body>
@@ -26,6 +26,7 @@
       </div> 
     </header>
     <nav>
+      <div class="clear"></div>
       <div id="nav-memu-bar"class="nav-box"> <!-- white background-->
       </div>
     </nav>
@@ -37,18 +38,19 @@
       <div id="promotion-slider-bar">
       </div>
       <!--  end promotion slider show -->
-
-
       <!-- productions -->
       <div class="pd-containder center">     <!-- production container -->
         <div class="pd-contents ">
           <!--- best production -->
           <div id="best-seller" class="best-product">
           </div>
+          <div id="best-seller2" class="best-product">
+          </div>
           <!--- end best production-->
           <!--- instagram production -->
           <div id="instagram-seller"class="inst-product">
           </div>
+
           <!--- end instagram production-->
           <!--promotion -->
           <div id="promo-seller"class="promo-product">
@@ -70,8 +72,11 @@
   <!--       *******************Template include ********************      -->
   <script id="titleTemplate" type="text/x-handlebars-template">
      <div class="top-bar-up"><!-- black background-->
+
           <div class="top-bar-center center"> <!--flag, login menu box -->
+
             <div class="select-country"> <!--- flag dropbox -->
+
               <ul class ="flag-drop-down">
                 <li>
                   <a href="#">
@@ -97,13 +102,14 @@
                   </ul>               
                 </li>
               </ul>
-            </div>
-             <span class="phone-number middle-div">
-             Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]
-            </span>
-            <div class="print-basket">
+
+            </div>   <!--- end flag dropbox -->
+             <div class="phone-number ">
+              <a class="middle-div">Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]</a>
+             </div>
+            <div class="print-basket"> <!---print-basket -->
               <a href="#" id="basket">Basket</a>
-            </div>
+            </div>                     <!--- end print-basket -->
             <div class="print-cart"> <!-- login, register, subscribe, help, TrackOrder, Basket -->
               <ul>
                 <li>
@@ -122,13 +128,16 @@
                   <a href="#" id="track_order">Track Order</a>
                 </li>
               </ul>
-            </div>
+            </div> <!-- end login, register, subscribe, help, TrackOrder, Basket -->
+
           </div>
         </div>
   </script>
   <script id="navTemplate" type="text/x-handlebars-template">
+
     <div class="main-manu-box"> <!--main menu box -->
-    <div class="top-bar-center center">
+
+    <div class="nav-bar-center center">
       <div class="logo-box middle-div">
         <div class="logo"> <!-- logo-->
           <a href ="/" title="Printerpix">
@@ -136,7 +145,7 @@
           </a>
         </div>
       </div>
-      <div class="pp_header-right"> <!-- main manu -->
+      <div class="pp_header-right middle-div"> <!-- main manu -->
         <div class="pp_navigation"> 
            <ul>
            {{#nav}}
@@ -204,8 +213,29 @@
               <h4 class="readmore" href="#">Read more...</h4>
             </a>
           </div>
-          {{/bestSeller}}
-  
+          {{/bestSeller}}  
+      </div>
+     </div> 
+  </script>
+   <script id="bestSellerTemplate2" type="text/x-handlebars-template">
+ 
+    <div class="slider-box">
+      <a href="#" title="Previous"  class="pd_prev" id="prev_PhotoBookPage">Previous</a>
+      <a href="#" title="Next"      class="pd_next" id="next_PhotoBookPage">Next </a>
+    
+      <div class="slide-showcase product-box">
+         <div id="best-slider2"class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=4 data-cycle-prev="#prev_PhotoBookPage" data-cycle-next="#next_PhotoBookPage" data-cycle-slides="div">
+         {{#bestSeller}}
+          <div class="pd-img">
+            <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
+              <img src="{{img_url}}" />
+              <h1>{{title}}</h1>
+              <span class="customer-star"><img src="{{customerStar}}"></span>
+              <p>{{description}}</p>
+              <h4 class="readmore" href="#">Read more...</h4>
+            </a>
+          </div>
+          {{/bestSeller}}  
       </div>
      </div> 
   </script>
@@ -250,7 +280,7 @@
         <div class="footer-menu-box"> <!-- footer menu -->
           <div class="footer-menu">
             <ul>
-              <li><a class="footer-text">Products</a></li>
+              <li><a class="footer-text">PRO</a></li>
               <li><a class="footer-text">Pricing</a></li>
               <li><a class="footer-text">Photo tips</a></li>
               <li><a class="footer-text">About us</a></li>
@@ -304,7 +334,7 @@
         </div>
         </div>
         <div class="footer-right-box">
-        <div class="social-box-img"> <!-- social link -->
+        <div class="social-box-img hidden"> <!-- social link -->
           <div class="social-link">
             <img alt="" src="img/social/SocialNetworks-Footer.png">
           </div>
@@ -313,6 +343,17 @@
       </div>
         <div class="clear"></div>
         <div> <!-- horizontal line-->
+        </div>
+        <div id="horz-social-link" class="social-out-box">
+        <div class="social-box center ">
+        <div class="social-link middle-div">
+         <a target="_blank" href="https://www.facebook.com/PrinterPixUK"><img alt="" src="img/social/Social-Facebook.png"></a>
+            <a target="_blank" href="http://printerpix.tumblr.com"><img alt=""src="img/social/Social-Pinterest.png"></a>
+            <a target="_blank" href="https://instagram.com/printerpixuk/"><img alt="" src="img/social/Social-Instagram.png"></a>
+            <a target="_blank" href="https://twitter.com/printerpix"><img alt="" src="img/social/Social-Twitter.png"></a>
+            <a target="_blank" href="https://www.youtube.com/user/printerpix"><img alt="" src="img/social/Social-Youtube.png"></a>
+        </div>
+        </div>
         </div>
         <div class="promo-box"> <!-- promotion image -->
           <div class="info-promo">

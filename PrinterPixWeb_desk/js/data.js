@@ -73,7 +73,7 @@ var data = {
         title:"iPhone Case", 
         description: "Protect your phone with this personalized case.Select a model, then upload a photo or choose an image from" },
       {   
-        url: "/montage-canvass", 
+        url: "/montage-canvas", 
         img_url: "./img/Themes/bestSeller/MontageCanvas02.jpg",
         customerStar:"./img/Themes/bestSeller/start4.png",
         title:"Collage Canvas", 
