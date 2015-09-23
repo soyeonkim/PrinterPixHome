@@ -172,7 +172,7 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 .promo-button-sm
 {top:65%; line-height: 2em; border: solid 3px; font-size: 1.6vw;border-color: #cf207e;}
 .promo-button-lg 
-{top:55%;line-height: 2.5em; border: solid 5px; font-size: 1.8vw;border-color: #cf207e;}
+{top:55%;line-height: 2.5em; border: solid 3px; font-size: 1.8vw;border-color: #cf207e;}
 .customer-review { bottom: 1%;  left: 50%; width: 15%; line-height: 1.4em; font-size: 2.3em; margin-left: 350px;}
 /*.descrip-left{ right: 50%;margin-right: 88px; }*/
 .descrip-left{ left: 0%;margin-left: 12%; }
@@ -312,15 +312,15 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 }
 @media (min-width: 1400px) and (max-width: 1680px) {
 
-    .promo-button-left{margin-right:13%; }
+    .promo-button-left{margin-left:13%; }
     .pp_navigation li a {
         padding: 0px 10px;
     }
 }
 
 @media(min-width: 768px) and (max-width: 1400px){
-    .descrip-left   { margin-right: 70px;}
-    .promo-button-left{ margin-right:13%;}
+    /*.descrip-left   { margin-left: 70px;}*/
+    .promo-button-left{ margin-left:13%;}
 
     .slide-page-pg{
         margin-right: 11%;
@@ -345,7 +345,7 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
     .col-w-half{
         width:95%;
     }
-    .promo-button-left{ margin-right:14%; }
+    .promo-button-left{ margin-left:14%; }
    /* .promo-button-right{ margin-left:14%; } */
     .slide-page-pg{
         margin-right: 12.5%;
