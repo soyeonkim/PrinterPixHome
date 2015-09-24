@@ -3,6 +3,7 @@
 $(document).ready(function () {
 	var template;
 	var windowSize=window.innerWidth;
+	console.log("TEST:",windowSize);
 
 	template = Handlebars.compile($('#titleTemplate').html()); 
 	$('#top-memu-bar').append(template);

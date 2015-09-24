@@ -184,7 +184,7 @@ var menu = {
  
   ],
   phone_number:[ {
-      phone_message:"Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]",
+      phone_message:"1-888-322-6733 From Mon-Fri 9am-5:30pm EST [USA]",
     }
   ]
 
