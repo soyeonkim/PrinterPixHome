@@ -17,7 +17,7 @@ var data = {
      	 { 
         id:"promo2",
         url: "http://www.printerpix.co.uk/photo-mugs/", 
-        img_url: "./img/Themes/headBanner/UK/03-Mug-without-promotion.jpg",
+        img_url: "./img/Themes/headBanner/UK/03-Mug-03-without-promotion.jpg",
         title:"",
         description:"<strong>Have a great start<br> of the day</strong>",
         text_color:"#414141",
@@ -64,27 +64,27 @@ var data = {
       {   
         url:  "/photo-books/leather-cover", 
         img_url: "./img/Themes/bestSeller/UK/Photo-Book-Valentina.jpg",
-        customerStar:"./img/Themes/bestSeller/start4.png",
+        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         title:"Valentina Photo book", 
         description: "Perfect for weddings, birthdays and other celebrations, this Valentina Photobook is the perfect way to"},
      { 
         url: "/montage-canvas", 
         img_url: "./img/Themes/bestSeller/UK/Montage-Canvas.jpg",
-        customerStar:"./img/Themes/bestSeller/start4.png",
+        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         title:"Collage Canvas",  
         description: "Record your memories in style with this fully customisable canvas. " },
  
      { 
        url: "/photo-canvas/", 
         img_url: "./img/Themes/bestSeller/UK/Instagram_Canvas.jpg",
-        customerStar:"./img/Themes/bestSeller/start4.png",
+        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         title:"Instagram Canvas",  
         description: "Perfect for publishing your favourite Instagram photos, this sturdy square canvas is a great way to decorate your home or office." },
         
        { 
         url: "/metal-prints/", 
         img_url: "./img/Themes/bestSeller/UK/Metal-Print.jpg", 
-        customerStar:"./img/Themes/bestSeller/start4.png",
+        customerStar:"./img/Themes/bestSeller/stars/no_star.png",
         title:"Metal Prints", 
         description: "Upload a photo or select an image from our huge online library to print on this sturdy aluminium sheet" },
 
@@ -93,25 +93,28 @@ var data = {
       { 
         url: "/photo-magic-mug/",
         img_url: "./img/Themes/bestSeller/UK/Magic-Mug.jpg", 
-        customerStar:"./img/Themes/bestSeller/start4.png",
+        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         isNew:"",
         title:"Magic Mug",  
         description:"Using the latest heat-to-reveal technology, simply pour a hot drink to see your favourite photo magically appear." },
       { 
         url: "/Jigsaws-Wooden/", 
         img_url: "./img/Themes/bestSeller/UK/Wood-Jigsaw.jpg",
+        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         isNew:"",
         title:"Wooden Jigsaw",         
         description: "Great fun for the whole family, upload a photo or choose an image from our huge library to print on this full-colour jigsaw." },
       { 
         url: "/photo-cushion-gifts/", 
         img_url: "./img/Themes/bestSeller/UK/Cushion-Cover.jpg",
+        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         isNew:"",
         title:"Cushion Cover", 
         description: "Decorate your home with this personalised Cushion Cover." },
   		{ 	
   			url: "/Crystal-Photo-Frame", 
   			img_url: "./img/Themes/bestSeller/UK/Crystal-Frame.jpg",
+        customerStar:"./img/Themes/bestSeller/stars/no_star.png",
         isNew:"",
   			title:"Crystal Frame", 
   			description: "Sleek and sophisticated, print your favourite photos on this high quality crystal block." },

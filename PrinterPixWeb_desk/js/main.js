@@ -49,7 +49,8 @@ $(document).ready(function () {
 		$('#slider-source').cycle({
 			fx: 'fadeout',
 			timeout: 3000,
-			speed:1500,
+			speed:800,
+			manualSpeed:300,
 			sildes: 'div',
 			pager: '#page-pager',
 
@@ -101,18 +102,20 @@ $(document).ready(function () {
 		if(windowSize >1200){
 	 		$('#best-seller2').addClass('hidden');
 	 		$('#instagram-seller2').addClass('hidden');
-	 		console.log("add");
 	 		$('#horz-social-link').addClass('hidden');
 	  		$('.social-box-img').removeClass('hidden');
+	  		$('.phone-number a').text("Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]");
 	 		
 	    } 
 	    else {
 	  		 $('#best-seller2').removeClass('hidden');
 	  		 $('#instagram-seller2').removeClass('hidden');
-	  		 console.log("remove");
 	  		 $('#horz-social-link').removeClass('hidden');
 	  		 $('.social-box-img').addClass('hidden');
-	    }
+	  		// $('.phone-number a').text("Call:0844 567 8228 Mon-Fri 9am-5pm[UK]");
+	  		$('.phone-number a').text("0844 567 8228 Mon-Fri 9am-5pm");	  		  
+	    }	    
+	    $('.promo-vert').css("top",(Math.abs($('#slider-source').height()-$('.promo-vert').height()))/2+"px");
 
 	}
 
@@ -127,7 +130,6 @@ $(document).ready(function () {
     		windowSize=window.innerWidth;
 	    	//$('#top-memu-bar').window(windowSize);
 	    	$('.slider-container').width(windowSize+"px");
-	    	console.log(windowSize);
 	    	initCycle();    	
 	 		dependSize(windowSize);
 		    
@@ -136,7 +138,5 @@ $(document).ready(function () {
     
    // $('#top-memu-bar').width(windowSize);
     $('.slider-container').width(windowSize+"px");
-    //	$('.top-bar-center').width(windowSize);
-	console.log(windowSize);
-   // $('.slider-container').width(window.innerWidth);
+
 });
