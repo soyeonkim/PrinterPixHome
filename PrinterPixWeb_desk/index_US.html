@@ -151,7 +151,13 @@
         <div class="pp_navigation"> 
            <ul>
            {{#nav}}
-            <li><a href="{{url}}">{{title}}</a></li>
+            <li><a href="{{url}}">{{title}}</a>
+                <ul>{{#Occasions}}
+                <li><a href="{{sub_url}}">{{sub_title}}</a></li>
+                {{/Occasions}}</ul>
+            </li>
+        
+
            {{/nav}}
           </ul>         
         </div>

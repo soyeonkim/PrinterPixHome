@@ -89,6 +89,7 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 .pp_navigation ul { list-style: none; padding: 0px; float: right;}
 .pp_navigation li {	display: inline; font-size: 1.3em; margin: 0px; margin-left: 15px; }
 .pp_navigation li a { color: #414141; text-decoration: none; padding: 0px 15px; }
+.
 
 .pd_last{float: right;  text-align:right;}
 .pd_nav{
@@ -96,7 +97,7 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 }
 .pd_nav ul {list-style: none;  float: right;}
 .pd_nav li { display: inline-block;}
-.pd_nav li a { text-decoration: none; 
+.pd_nav li a { text-decoration: none; }
 
 .logo-box { width: 14%;  height: 46px; padding: 10px 15px; float: left; }
 
@@ -105,8 +106,32 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 .pp_navigation li {	display: inline; font-size: 1.3vw; margin: 0px 15px; }
 .pp_navigation li a { color: #414141; text-decoration: none; padding: 0px 5px; }
 .pp_header-right { width: 69%; float: right;  margin-top: 2px; }
->>>>>>> origin/desktop
 
+.pp_navigation ul ul {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 9px;
+    color: #322c29;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10000;
+    box-shadow: rgba(0,0,0,.13) 2px -1px 2px;
+    z-index: 9;
+}
+.pp_navigation ul ul li {
+        background: none;
+    border: none;
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+        border-top: 3px solid transparent;
+        z-index: 999;
 }
 /* -------------------------------------------------------------------------------------*/
 
