@@ -91,11 +91,11 @@ var data = {
    		  ],
   instagram: [
       { 
-        url: "/photo-magic-latte-mug/",
+        url: "/photo-magic-mug/",
         img_url: "./img/Themes/bestSeller/UK/Magic-Mug.jpg", 
         customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         isNew:"",
-        title:"Magic Latte Mug",  
+        title:"Magic Mug",  
         description:"Using the latest heat-to-reveal technology, simply pour a hot drink to see your favourite photo magically appear." },
       { 
         url: "/Jigsaws-Wooden/", 
