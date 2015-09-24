@@ -62,7 +62,7 @@ var data = {
   bestSeller:[
   	   
       {   
-        url:  "/photo-books/leather-cover", 
+        url:  "/photo-books/ValentinoWhite", 
         img_url: "./img/Themes/bestSeller/UK/Photo-Book-Valentina.jpg",
         customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         title:"Valentina Photo book", 
@@ -75,7 +75,7 @@ var data = {
         description: "Record your memories in style with this fully customisable canvas. " },
  
      { 
-       url: "/photo-canvas/", 
+       url: "/instagram-canvas/", 
         img_url: "./img/Themes/bestSeller/UK/Instagram_Canvas.jpg",
         customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         title:"Instagram Canvas",  
@@ -91,11 +91,11 @@ var data = {
    		  ],
   instagram: [
       { 
-        url: "/photo-magic-mug/",
+        url: "/photo-magic-latte-mug/",
         img_url: "./img/Themes/bestSeller/UK/Magic-Mug.jpg", 
         customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         isNew:"",
-        title:"Magic Mug",  
+        title:"Magic Latte Mug",  
         description:"Using the latest heat-to-reveal technology, simply pour a hot drink to see your favourite photo magically appear." },
       { 
         url: "/Jigsaws-Wooden/", 

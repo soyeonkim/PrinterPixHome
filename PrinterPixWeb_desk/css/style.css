@@ -364,7 +364,7 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
     .promo-button-left{ margin-left:14%; }
    /* .promo-button-right{ margin-left:14%; } */
     .slide-page-pg{
-        margin-right: 12.5%;
+        margin-left: 23.5%;
     }
     .footer-left-box {
         width: 100%;
@@ -374,11 +374,12 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
     }
 }
 @media(max-width: 1024px){
-   .top-bar-center,.nav-bar-center ,.footer-box ,.promo-box{ 
+   .top-bar-center,.nav-bar-center ,.footer-box{ 
         width: 960px;
     }
+    .promo-box{width: 962px;}
     .slide-page-pg{
-        margin-right: 12.5%;
+        margin-left: 21.5%;
     }
     .select-country{
         width: 70px;
@@ -399,9 +400,10 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
    .top-bar-center,.nav-bar-center{ 
         width: 768px;
     }
-    .footer-box,.promo-box { 
+    .footer-box { 
         width: 768px;
     }
+    .promo-box{width: 770px;}
     .footer-left-box,.social-out-box,.info-promo,.promo-box{
         margin: 0px;
     }

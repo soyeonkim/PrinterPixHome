@@ -119,7 +119,7 @@ $(document).ready(function () {
 	  		// $('.phone-number a').text("Call:0844 567 8228 Mon-Fri 9am-5pm[UK]");
 	  		$('.phone-number a').text("1-888-322-6733 Mon-Fri 9am-5.30pm EST");	  		  
 	    }	    
-	    $('.promo-vert').css("top",(Math.abs($('#slider-source').height()-$('.promo-vert').height()))/2+"px");
+	  //  $('.promo-vert').css("top",(Math.abs($('#slider-source').height()-$('.promo-vert').height()))/2+"px");
 
 	}
 

@@ -11,7 +11,6 @@ $(document).ready(function () {
 	template = Handlebars.compile($('#navTemplate').html()); 
 	$('#nav-memu-bar').append(template(menu));
 
-
 	template = Handlebars.compile($('#promoSliderTemplate').html()); 
 	$('#promotion-slider-bar').append(template(data));
 
@@ -117,7 +116,7 @@ $(document).ready(function () {
 	  		// $('.phone-number a').text("Call:0844 567 8228 Mon-Fri 9am-5pm[UK]");
 	  		$('.phone-number a').text("0844 567 8228 Mon-Fri 9am-5pm");	  		  
 	    }	    
-	    $('.promo-vert').css("top",(Math.abs($('#slider-source').height()-$('.promo-vert').height()))/2+"px");
+	   // $('.promo-vert').css("top",(Math.abs($('#slider-source').height()-$('.promo-vert').height()))/2+"px");
 
 	}
 
