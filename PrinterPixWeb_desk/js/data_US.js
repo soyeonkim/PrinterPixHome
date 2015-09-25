@@ -174,12 +174,35 @@ var menu = {
         description: "" },
 
       { 
-        url: "http://www.printerpix.com/b2s", 
+        url: "#", 
         img_url: "",
         title:"Occasions", 
-        description: "" } 
+        description: "",
+        Occasions:[ 
+                {
+                  sub_url:"www.printerpix.com",
+                  sub_title:"Graduation"},
+               {
+                  sub_url:"",
+                  sub_title:"Wedding"},
+              {
+                  sub_url:"/happy-halloween14/",
+                  sub_title:"Halloweens"},
+                ],
+      } 
 
   ],
+  Occasions:[ 
+              {
+                  sub_url:"",
+                  sub_title: "Graduation"},
+               {
+                  sub_url:"",
+                  sub_title:"Wedding"},
+              {
+                  sub_url:"/happy-halloween14/",
+                  sub_title:"Halloweens"},
+                ],
   nav_flag: [
  
   ],

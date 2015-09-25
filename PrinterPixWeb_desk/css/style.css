@@ -87,8 +87,14 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 
 .pp_navigation { float: right; margin: 0px; }
 .pp_navigation ul { list-style: none; padding: 0px; float: right;}
+<<<<<<< HEAD
 .pp_navigation li {	display: inline;margin: 0px; margin-left: 15px; }
 .pp_navigation li a { color: #414141;  font-size: 1.1vw; text-decoration: none; padding: 0px 15px; }
+=======
+.pp_navigation li {	display: inline; font-size: 1.3em; margin: 0px; margin-left: 15px; }
+.pp_navigation li a { color: #414141; text-decoration: none; padding: 0px 15px; }
+.
+>>>>>>> origin/desktop
 
 .pd_last{float: right;  text-align:right;}
 .pd_nav{
@@ -102,10 +108,43 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 
 .pp_navigation { float: right; margin: 0px 15px; }
 .pp_navigation ul { list-style: none; }
+<<<<<<< HEAD
 .pp_navigation li {	display: inline; margin: 0px 15px; }
 .pp_navigation li a { color: #414141; font-size: 1.2vw; text-decoration: none; padding: 0px 5px; }
 .pp_header-right { width: 80%; float: right;  /*margin-top: 2px; */}
  
+=======
+.pp_navigation li {	display: inline; font-size: 1.3vw; margin: 0px 15px; }
+.pp_navigation li a { color: #414141; text-decoration: none; padding: 0px 5px; }
+.pp_header-right { width: 69%; float: right;  margin-top: 2px; }
+
+.pp_navigation ul ul {
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 5px 0;
+    font-size: 9px;
+    color: #322c29;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10000;
+    box-shadow: rgba(0,0,0,.13) 2px -1px 2px;
+    z-index: 9;
+}
+.pp_navigation ul ul li {
+        background: none;
+    border: none;
+    display: block;
+    float: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+        border-top: 3px solid transparent;
+        z-index: 999;
+}
+>>>>>>> origin/desktop
 /* -------------------------------------------------------------------------------------*/
 
 .slider-container{}
