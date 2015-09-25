@@ -106,7 +106,7 @@ $(document).ready(function () {
 	 		$('#horz-social-link').addClass('hidden');
 	  		$('.social-box-img').removeClass('hidden');
 	  		$('.phone-number a').css("font-size","0.9em");
-	  		$('.phone-number a').text("1-888-322-6733 Mon-Fri 9am-5:30pm EST [USA]");
+	  		$('.phone-number a').text("Call:1-888-322-6733 Mon-Fri 9am-5:30pm EST [USA]");
 
 	 		
 	    } 

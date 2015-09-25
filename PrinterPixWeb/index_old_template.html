@@ -86,40 +86,14 @@
     </header>
     <nav>
       <div class="clear"></div>
-        <div class="top-bar-center center"> <!-- white background-->
-          <div class="main-manu-box"> <!--main menu box -->
-            <div class="logo-box">
-              <div class="logo"> <!-- logo-->
-                <a href ="/" title="Printerpix">
-                  <img src="img/Themes/logo/logo.png" />
-                  <!--<img src="/Themes/images/logo.png?v31122013" alt="Printerpix" /> -->
-                </a>
-              </div>
-             </div>
-            <div class="pp_header-right manu-navbar"> <!-- main manu -->
-              <div class="pp_navigation">
-              <!-- @Html.Raw(ViewBag._TopMenuWebContent) -->
-               <ul>
-                <li><a href="http://www.printerpix.co.uk/photo-books/PhotoHardCover/" >Photo Books</a></li>
-                <li><a href="http://www.printerpix.co.uk/photo-calendar/ ">Calendar</a></li>
-                <li><a href="http://www.printerpix.co.uk/posters/#">Wall Decor</a></li>
-                <li><a href="http://www.printerpix.co.uk/gift?preselectedid=fefb800a-3235-4ed2-8e2b-871ac3d018e7">Gifts</a></li>
-                <li><a href="http://www.printerpix.co.uk/iphone-cases/">Cases</a></li>
-                <li><a href="http://www.printerpix.co.uk/photo-instagram-prints/">Prints</a></li>
-                <li>
-                  <a href="http://www.printerpix.co.uk/b2s/">Occasions</a>
-                  <ul>
-                    <li>Rugby</li>
-                    <li>Graduation</li>
-                    <li>Back to school</li>
-                  </ul>
+       <div id="nav-memu-bar"class="nav-box"> <!-- white background-->
+        
 
-                </li>
-              </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+
+
+
+      </div>
+      <div class="clear"></div>
     </nav>
 
     <!--- end header menu   -->
@@ -127,48 +101,10 @@
 
     <!--  main container -->
     <section>
-      <!--  promotion slider show -->
-      <div class="slider-container">  <!-- slider container -->
 
-        <div class="slide-showcase banner-slide">
-
-          <div class="slide-page-pg">
-            <ul class ="cycle-pager external" id="page-pager">
-              <li class="cd-dot"><a herf="#"></a></li>
-              <li class="cd-dot"><a herf="#"></a></li>
-              <li class="cd-dot"><a herf="#"></a></li>
-              <li class="cd-dot"><a herf="#"></a></li>
-              <li class="cd-dot"><a herf="#"></a></li>           
-            </ul>
-          </div> 
-
-        <!--<a href="#" class="slide-next" id="next_banner">Next </a> -->
-          <div class="cycle-slideshow" data-cycle-fx="scrollVert"  data-cycle-pause-on-hover="true" data-cycle-speed="600" data-cycle-prev="#prev_banner" data-cycle-next="#next_banner"  data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div" data-cycle-timeout=0>
-
-            <div>
-              <a href="#"><img src="design/Head-Banner.jpg" /> </a>             
-              <span class="descrip"> <center>Print Your Memories<br/>on an Elegant Personalisable <br />Photo Book</center></span>
-              <span class="promo-code">Now With 20% off</span>
-              <span class="promo-button"> <center>  Personalise Now</center>   </span>
-              <span class="customer-review"><img src="img/Themes/headBanner/Reviews.png"/></span>
-            </div>
-             <div><img src="design/Head-Banner.jpg" /></div>
-             <div><img src="design/Head-Banner.jpg" /> </div>
-             <div><img src="design/Head-Banner.jpg" /> </div>
-             <div><img src="design/Head-Banner.jpg" /> </div>
-          </div>
-
-          <div class="promo-vert">
-            <span><img src="img/Themes/banner/Trust-Informations-Banner.png"></span>
-          </div> 
-          <!--<a href="#" class="slide-next" id="next_banner">Next </a> -->
-        </div> <!-- pager on slide -->
-        <div class="pager-box" id="next_banner">
-       </div>
+      <div id="promotion-slider-bar">
       </div>
 
-
-      <!--  end promotion slider show -->
 
 
       <!-- productions -->
@@ -412,7 +348,88 @@
 
     </footer>
     <!--- end footer-->
+ <script id="promoSliderTemplate" type="text/x-handlebars-template">
+
+       <!--  promotion slider show -->
+      <div class="slider-container center">  <!-- slider container -->
+
+        <div class="slide-showcase banner-slide">
+
+          <div class="slide-page-pg slide-page-pg-left">
+            <ul class ="cycle-pager external" id="page-pager">
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>           
+            </ul>
+          </div> 
+
+
+          <div id="slider-source" class="cycle-slideshow" data-cycle-fx=scrollVert data-cycle-pause-on-hover="true" data-cycle-speed="1000" data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div">  
+
+            {{#promotion}}
+             <div class="promo-slide">
+              <a href="{{url}}"><img src="{{img_url}}"/></a>
+              <span class="descrip descrip-left" style="color:{{text_color}}"> <center>{{{description}}}</center></span>
+              <span class="promo-code promo-code-left">{{{promo_des}}}</span>
+              <a href="{{url}}"><span class="promo-button-sm promo-button-sm-left" id="{{id}}" style="color:{{text_color}}; border-color:{{button_color}}">{{button}}</span></a>
+              <span class="customer-review"><img src="{{customer_review}}"/></span>
+             </div> 
+            {{/promotion}}
+          </div>
+
+            <div class="promo-vert">
+            <a href="http://www.printerpix.uk/AboutUs.html">
+              <span>
+                <img src="img/Themes/banner/Trust-Informations-Banner.png">
+              </span>
+            </a>
+            </div> 
+           
+        </div> <!-- pager on slide -->
+        <div class="pager-box" id="next_banner">
+       </div>
+      </div>
+
+
+      <!--  end promotion slider show -->
+ </script>
+ <script id="navTemplate" type="text/x-handlebars-template">
+        
+          <div class="main-manu-box"> <!--main menu box -->
+          <div class="nav-bar-center center"> <!-- white background-->
+            <div class="logo-box">
+              <div class="logo"> <!-- logo-->
+                <a href ="/" title="Printerpix">
+                  <img src="img/Themes/logo/logo.png" />
+                </a>
+              </div>
+             </div>
+            <div class="pp_header-right manu-navbar"> <!-- main manu -->
+              <div class="pp_navigation">
+               <ul>
+      
+                {{#nav}}
+            <li><a href="{{url}}">{{title}}</a>
+                          <ul>
+                    <li>Rugby</li>
+                    <li>Graduation</li>
+                    <li>Back to school</li>
+                  </ul>
+
+            </li>
+           {{/nav}}
+              </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+ </script>
   
+   <script src="js/data_UK.js"></script>
   <script src="js/index.js"></script>
   </body>
 </html>

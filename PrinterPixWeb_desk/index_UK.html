@@ -11,6 +11,7 @@
     <script src="lib/jquery.cycle2_.js"></script>
     <!--<script src="lib/jquery.cycle2.scrollVert.js"></script> -->
     <script src="lib/jquery.cycle2.carousel.js"></script>
+    <script src="lib/jquery.cycle2.center.js"></script>
     <script src="lib/dropit.js"></script>
     <script src="lib/handlebars-v4.0.2.js"></script>
 
@@ -147,18 +148,23 @@
     <div class="main-manu-box"> <!--main menu box -->
 
     <div class="nav-bar-center center">
-      <div class="logo-box middle-div">
+      <div class="logo-box">
         <div class="logo"> <!-- logo-->
           <a href ="/" title="Printerpix">
             <img src="img/Themes/logo/logo.png" />
           </a>
         </div>
       </div>
-      <div class="pp_header-right middle-div"> <!-- main manu -->
+      <div class="pp_header-right"> <!-- main manu -->
         <div class="pp_navigation"> 
            <ul>
            {{#nav}}
             <li><a href="{{url}}">{{title}}</a>
+              <ul>
+              {{#Occasions}}
+                <li><a href="{{sub_url}}">{{sub_title}}</a></li>
+              {{/Occasions}}
+              </ul>
             </li>
            {{/nav}}
           </ul>         
@@ -181,7 +187,8 @@
             </ul>
           
           </div>
-           <div id="slider-source" class="cycle-slideshow" data-cycle-fx=scrollVert data-cycle-pause-on-hover="true" data-cycle-speed="1000" data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div">  
+           <div id="slider-source" class="cycle-slideshow" data-cycle-fx=scrollVert data-cycle-pause-on-hover="true" data-cycle-speed="1000" data-cycle-pager='#page-pager' data-cycle-pager-template=""  data-cycle-center-horz=true
+    data-cycle-center-vert=true data-cycle-slides="div">  
 
             {{#promotion}}
              <div class="promo-slide">

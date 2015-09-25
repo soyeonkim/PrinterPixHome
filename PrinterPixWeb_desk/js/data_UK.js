@@ -11,7 +11,7 @@ var data = {
         description:"Print Your Memories<br>on Photo Book", //promotion description
         text_color:"#414141",
         promo_des:"Elegance and Simplicity<br> to make your memories unique",
-        button: "Personalised Now" , 
+        button: "Personalise Now" , 
         button_color:"#cf207e",       
         customer_review:"" },     
      	 { 
@@ -22,7 +22,7 @@ var data = {
         description:"<strong>Have a great start<br> of the day</strong>",
         text_color:"#414141",
         promo_des:"With a Personalised Photo Mug",
-        button: "Personalised Now" ,     
+        button: "Personalise Now" ,     
         button_color:"#cf207e", 
         customer_review:"" },     
     	{ 
@@ -33,7 +33,7 @@ var data = {
         description:"<strong>Never forget<br>your special days</strong>",
         text_color:"#414141",
         promo_des:"with our personalised <br>Luxury Canvas",
-        button: "Personalised Now" ,  
+        button: "Personalise Now" ,  
         button_color:"#cf207e",        
         customer_review:"" },    	
        { 
@@ -44,7 +44,7 @@ var data = {
         description:"<strong>Your Happy Moments</strong>",
         text_color: "#414141",
         promo_des: "On a Special, Personalised,<br> Photo Phone Cover",
-        button: "Personalised Now",
+        button: "Personalise Now",
         button_color:"#cf207e",   
         customer_review:"" },
     	{ 
@@ -55,7 +55,7 @@ var data = {
         description:"<strong> Your Happy Days</strong>",
         text_color: "#414141",
         promo_des: "On Our Personalised<br> Photo Calendar",
-        button:  "Personalised Now",
+        button:  "Personalise Now",
         button_color: "#cf207e",   
         customer_review: "" },
         ],
@@ -183,14 +183,30 @@ var menu = {
         Occasions:[ 
           { 
             sub_title: "Rugby Champion 2015",
-            sub_url:"#"
+            sub_url:"http://www.printerpix.co.uk/rwc2015/"
 
           },
          { 
-            sub_title: "Graduation",
-            sub_url:"#"
+            sub_title: "Halloween",
+            sub_url:"http://www.printerpix.co.uk/happy-halloween14/"
 
           },
+        { 
+            sub_title: "Back To School",
+            sub_url:"http://www.printerpix.co.uk/b2s/"
+
+          },
+        { 
+            sub_title: "Graduation",
+            sub_url:"http://www.printerpix.co.uk/PixGraduateUK/"
+
+          },
+       { 
+            sub_title: "Wedding",
+            sub_url:"http://www.printerpix.co.uk/wedding-shop//"
+
+          },
+
         ],
 
       } 
