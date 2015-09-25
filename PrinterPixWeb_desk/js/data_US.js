@@ -40,8 +40,8 @@ var data = {
     		url: "http://www.printerpix.com/greeting-card/", 
     		img_url: "./img/Themes/headBanner/US/Greeting-Cards.jpg",
         title:"",
-        description:"<stong>Make Unique<br> Your Gift </stong><br> with our Customizable<br> Geeting Cards",
-        text_color:"#fff",
+        description:"<stong>Make Unique<br> Your Gift </stong><br> with our Customizable<br> Greeting Cards",
+        text_color:"#414141",
         promo_des:"",
         button: "Customize Now",
         button_color:"#cf207e",   
@@ -54,68 +54,69 @@ var data = {
         description:"Print Your <stong>Instagram</stong><br> Memories on <br><stong>Instagram</stong> Prints",
         text_color:"#414141",
         promo_des:"",
-        button: "Print Now",
+        button: "Customize Now",
         button_color:"#cf207e",   
         customer_review:"" },
         ],
   bestSeller:[
-       
-     { 
-        url: "/photo-canvas/", 
-        img_url: "./img/Themes/bestSeller/US/Instagram-Canvas.jpg",
-        customerStar:"./img/Themes/bestSeller/start4.png",
-        title:"Instagram Canvas",  
-        description: "Perfect for publishing your favourite Instagram photos, this sturdy square canvas is a great way to decorate your home or office." },
-        
-     { 
-        url:"/montage-canvas", 
-        img_url: "./img/Themes/bestSeller/US/Montage-Canvas.jpg",
-        customerStar:"./img/Themes/bestSeller/start4.png",
-        title:"Collage Canvas",  
-        description: "Record your memories in style with this fully customisable canvas. " },
-      {   
-        url: "/photo-books/leather-cover", 
+     {   
+        url: "/photo-books/ValentinoWhite/", 
         img_url: "./img/Themes/bestSeller/US/Photo-Book-Valentina.jpg",
-        customerStar:"./img/Themes/bestSeller/start4.png",
+        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         title:"Valentina Photo book", 
         description: "Perfect for weddings, birthdays and other celebrations, this Valentina Photobook is the perfect way to"},
      { 
-        url: "/photo-books/stone-slates", 
-        img_url: "./img/Themes/bestSeller/US/Stone-Slate.jpg", 
-        customerStar:"./img/Themes/bestSeller/start4.png",
-        title:"Photo Stone Slate", 
-        description: "Relieve the moments of your holidays every day with our Stone Slate" },
- 
+        url: "/iphone-cases", 
+        img_url: "./img/Themes/bestSeller/US/iPhone-6.jpg",
+        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
+        title:"iPhone Case",        
+        description: "Protect your phone with this personalized case.Select a model, then upload a photo or choose an image from" },
+     { 
+        url:"/montage-canvas", 
+        img_url: "./img/Themes/bestSeller/US/Montage-Canvas.jpg",
+        customerStar:"./img/Themes/bestSeller/stars/star_5_0.png",
+        title:"Collage Canvas",  
+        description: "Record your memories in style with this fully customisable canvas. " },
+    { 
+        url: "/instagram-canvas/", 
+        img_url: "./img/Themes/bestSeller/US/Instagram_Canvas.jpg",
+        customerStar:"./img/Themes/bestSeller/stars/star_5_0.png",
+        title:"Instagram Canvas",  
+        description: "Perfect for publishing your favourite Instagram photos, this sturdy square canvas is a great way to decorate your home or office." },
+   
 
         ],
     instagram: [
-        {   
+      {   
         url: "/Crystal-Photo-Frame", 
         img_url: "./img/Themes/bestSeller/US/Crystal-Frame.jpg",
+        customerStar:"./img/Themes/bestSeller/stars/no_star.png",
         isNew:"",
         title:"Crystal Frame", 
         description: "Sleek and sophisticated, print your favourite photos on this high quality crystal block." },
-     { 
-        url: "/Beach-Towels/", 
-        img_url: "./img/Themes/bestSeller/US/Blanchet.jpg",
+      { 
+        url: "/photo-magic-latte-mug/",  
+        img_url: "./img/Themes/bestSeller/US/Magic-Latte-Mug.jpg", 
+        customerStar:"./img/Themes/bestSeller/stars/star_5_0.png",
+        isNew:"",
+        title:"Magic Latte Mug", 
+        description: "Using the latest heat-to-reveal technology, simply pour a hot drink to see your favourite photo magically appear." },
+    { 
+        url: "/Mink-Touch-Blanket/", 
+        img_url: "./img/Themes/bestSeller/US/US-Blanchet.jpg",
+        customerStar:"./img/Themes/bestSeller/stars/no_star.png",
         isNew:"NEW",
         title:"Blanket",    
         description: "Brighten your home with a beautiful personalized blanket. We guarantee highest quality and maximum comfort" },
      { 
-        url: "/iphone-cases", 
-        img_url: "./img/Themes/bestSeller/US/iPhone-6.jpg",
+        url: "/photo-books/stone-slates", 
+        img_url: "./img/Themes/bestSeller/US/Stone-Slate.jpg", 
+        customerStar:"./img/Themes/bestSeller/stars/star_5_0.png",
         isNew:"",
-        title:"iPhone Case",        
-        description: "Protect your phone with this personalized case.Select a model, then upload a photo or choose an image from" },
-
-      { 
-        url: "/photo-magic-mug/",  
-        img_url: "./img/Themes/bestSeller/US/Magic-Latte-Mug.jpg", 
-        customerStar:"./img/Themes/bestSeller/start4.png",
-        isNew:"",
-        title:"Magic Mug", 
-        description: "Using the latest heat-to-reveal technology, simply pour a hot drink to see your favourite photo magically appear." },
-
+        title:"Photo Stone Slate", 
+        description: "Relieve the moments of your holidays every day with our Stone Slate" },
+ 
+    
   ],
    advertise: [
       { 
@@ -206,7 +207,7 @@ var menu = {
  
   ],
   phone_number:[ {
-      phone_message:"Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]",
+      phone_message:"1-888-322-6733 From Mon-Fri 9am-5:30pm EST [USA]",
     }
   ]
 

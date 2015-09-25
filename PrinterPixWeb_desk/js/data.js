@@ -9,7 +9,7 @@ var data = {
         img_url: "./img/Themes/headBanner/UK/01-Photobook-without-promotion.jpg", 
         title:"",
         description:"Print Your Memories<br>on Photo Book", //promotion description
-        text_color:"#4141",
+        text_color:"#414141",
         promo_des:"Elegance and Simplicity<br> to make your memories unique",
         button: "Personalised Now" , 
         button_color:"#cf207e",       
@@ -31,7 +31,7 @@ var data = {
     		img_url: "./img/Themes/headBanner/UK/05-Canvas-without-promotion.jpg",
         title:"",
         description:"<strong>Never forget<br>your special days</strong>",
-        text_color:"#4141",
+        text_color:"#414141",
         promo_des:"with our personalised <br>Luxury Canvas",
         button: "Personalised Now" ,  
         button_color:"#cf207e",        

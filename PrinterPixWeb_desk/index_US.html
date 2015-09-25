@@ -69,7 +69,7 @@
     </footer>
     <!--- end footer-->
     <script src="js/data_US.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
 
   <!--       *******************Template include ********************      -->
   <script id="titleTemplate" type="text/x-handlebars-template">
@@ -110,7 +110,7 @@
               <a class="middle-div">Call:1-888-322-6733 From Mon-Fri 9am-5:30pm EST [USA]</a>
              </div>
             <div class="print-basket"> <!---print-basket -->
-              <a href="#" id="basket">Basket</a>
+              <a href="#" id="basket">Cart</a>
             </div>                     <!--- end print-basket -->
             <div class="print-cart"> <!-- login, register, subscribe, help, TrackOrder, Basket -->
               <ul>
@@ -186,7 +186,7 @@
               <a href="{{url}}"><img src="{{img_url}}"/></a>
               <span class="descrip descrip-left" style="color:{{text_color}}"> <center>{{{description}}}</center></span>
               <span class="promo-code promo-code-left">{{promo_des}}</span>
-              <span class="promo-button-sm promo-button-sm-left" id="{{id}}" style="color:{{text_color}}; border-color:{{button_color}}">{{button}}</span>
+              <a href="{{url}}"><span class="promo-button-sm promo-button-sm-left" id="{{id}}" style="color:{{text_color}}; border-color:{{button_color}}">{{button}}</span></a>
               <span class="customer-review"><img src="{{customer_review}}"/></span>
              </div> 
             {{/promotion}}
@@ -235,7 +235,7 @@
          <div id="best-slider2"class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=4 data-cycle-prev="#prev_PhotoBookPage" data-cycle-next="#next_PhotoBookPage" data-cycle-slides="div">
          {{#bestSeller}}
           <div class="pd-img">
-            <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
+            <a class="each-slide" href="http://www.printerpix.com{{url}}">
               <img src="{{img_url}}" />
               <h1>{{title}}</h1>
               <span class="customer-star"><img src="{{customerStar}}"></span>
@@ -258,9 +258,10 @@
      <div id="instagram-slider" class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=3 data-cycle-prev="#prev_InstagramPage" data-cycle-next="#nex_InstagramPage" data-cycle-slides="div">
       {{#instagram}}
        <div class="pd-img">
-         <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
+         <a class="each-slide" href="http://www.printerpix.com{{url}}">
             <img src="{{img_url}}" />
             <h1><span style="color:#cf207e">{{isNew}} </span> {{title}}</h1>
+            <span class="customer-star"><img src="{{customerStar}}"></span>
             <p>{{description}}</p>
             <h4 class="readmore" href="#">Read more...</h4>
          </a>
@@ -278,9 +279,10 @@
      <div id="instagram-slider2" class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=3 data-cycle-prev="#prev_InstagramPage" data-cycle-next="#nex_InstagramPage" data-cycle-slides="div">
       {{#instagram}}
        <div class="pd-img">
-         <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
+         <a class="each-slide" href="http://www.printerpix.com{{url}}">
             <img src="{{img_url}}" />
             <h1><span style="color:#cf207e">{{isNew}} </span> {{title}}</h1>
+            <span class="customer-star"><img src="{{customerStar}}"></span>
             <p>{{description}}</p>
             <h4 class="readmore" href="#">Read more...</h4>
          </a>
@@ -325,35 +327,35 @@
               <li>
                 <ul class="products">
                   {{#Products}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  <li><a href="http://www.printerpix.com{{url}}">{{title}}</a></li>
                   {{/Products}}
                 </ul>
               </li>
               <li> 
                  <ul class="products">
                  {{#Pricing}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  <li><a href="http://www.printerpix.com{{url}}">{{title}}</a></li>
                   {{/Pricing}}
                 </ul>
               </li>
               <li>
                 <ul class="products">
                 {{#PhotoTips}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  <li><a href="http://www.printerpix.com{{url}}">{{title}}</a></li>
                   {{/PhotoTips}}
                 </ul>
               </li>
               <li>
                 <ul class="products">
                 {{#AboutUs}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  <li><a href="http://www.printerpix.com{{url}}">{{title}}</a></li>
                   {{/AboutUs}}
                 </ul>
               </li>
               <li>  
                 <ul class="products">
                 {{#CustomerCare}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  <li><a href="http://www.printerpix.com{{url}}">{{title}}</a></li>
                   {{/CustomerCare}}
                 </ul>
               </li>
@@ -375,9 +377,9 @@
         <div id="horz-social-link" class="social-out-box">
         <div class="social-box center ">
         <div class="social-link middle-div">
-         <a target="_blank" href="https://www.facebook.com/PrinterPixUK"><img alt="" src="img/social/Social-Facebook.png"></a>
+         <a target="_blank" href="https://www.facebook.com/PrinterPixUS"><img alt="" src="img/social/Social-Facebook.png"></a>
             <a target="_blank" href="http://printerpix.tumblr.com"><img alt=""src="img/social/Social-Pinterest.png"></a>
-            <a target="_blank" href="https://instagram.com/printerpixuk/"><img alt="" src="img/social/Social-Instagram.png"></a>
+            <a target="_blank" href="https://instagram.com/printerpixus/"><img alt="" src="img/social/Social-Instagram.png"></a>
             <a target="_blank" href="https://twitter.com/printerpix"><img alt="" src="img/social/Social-Twitter.png"></a>
             <a target="_blank" href="https://www.youtube.com/user/printerpix"><img alt="" src="img/social/Social-Youtube.png"></a>
         </div>

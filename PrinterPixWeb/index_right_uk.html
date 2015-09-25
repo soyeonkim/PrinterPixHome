@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Printerpix</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="lib/jquery.cycle2_.js"></script>
+    <!--<script src="lib/jquery.cycle2.scrollVert.js"></script> -->
+    <script src="lib/jquery.cycle2.carousel.js"></script>
+    <script src="lib/dropit.js"></script>
+    <script src="lib/handlebars-v4.0.2.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/media.css" rel="stylesheet">-->
+
+  </head>
+  <body>
+    <!--- header menu       -->
+    <header>
+      <div id="top-memu-bar" class="header-box"> <!-- total menu box -->
+      </div> 
+    </header>
+    <nav>
+      <div class="clear"></div>
+      <div id="nav-memu-bar"class="nav-box"> <!-- white background-->
+      </div>
+    </nav>
+    <!--- end header menu   -->
+
+    <!--  main container -->
+    <section>
+      <!--  promotion slider show -->
+      <div id="promotion-slider-bar">
+      </div>
+      <!--  end promotion slider show -->
+      <!-- productions -->
+      <div class="pd-containder center">     <!-- production container -->
+        <div class="pd-contents ">
+          <!--- best production -->
+          <div id="best-seller" class="best-product">
+          </div>
+          <div id="best-seller2" class="best-product">
+          </div>
+          <!--- end best production-->
+          <!--- instagram production -->
+          <div id="instagram-seller"class="inst-product">
+          </div>
+          <div id="instagram-seller2"class="inst-product">
+          </div>
+
+          <!--- end instagram production-->
+          <!--promotion -->
+          <div id="promo-seller"class="promo-product">
+          </div>
+          <!-- end promotion -->
+        </div>
+      </div> 
+      <!-- end productions -->
+    </section>
+    <!-- end main container -->
+
+    <!--- footer -->
+    <footer id="footer-main">
+    </footer>
+    <!--- end footer-->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+
+  <!--       *******************Template include ********************      -->
+  <script id="titleTemplate" type="text/x-handlebars-template">
+     <div class="top-bar-up"><!-- black background-->
+
+          <div class="top-bar-center center"> <!--flag, login menu box -->
+
+            <div class="select-country"> <!--- flag dropbox -->
+
+              <ul class ="flag-drop-down">
+                <li>
+                  <a href="#">
+                     <span class="gb-flag"><img src="img/flag/UK-24x24.png"/></span>
+                     <span><img src="img/buttons/White-Arrow_15x15.png"/></span>
+                  </a>
+                  
+                  <ul class="top-bar-flags-dd">
+                    <li><a href="http://www.printerpix.co.uk"><span class="gb"></span>United Kingdom</a></li>
+                    <li><a href="http://www.printerpix.com"><span class="us"></span>United States</a></li>
+                    <li><a href="http://www.printerpix.de"><span class="de"></span>Germany</a></li> 
+                    <li><a href="http://www.printerpix.fr"><span class="fr"></span>France</a></li>
+                    <li><a href="http://www.printerpix.es"><span class="es"></span>Spain</a></li>
+                    <li><a href="http://www.printerpix.it"><span class="it"></span>Italy</a></li>
+                    <li><a href="http://www.printerpix.co.uk"><span class="dk"></span>Denmark</a></li>
+                    <li><a href="http://www.printerpix.com"><span class="cd"></span>Canada</a></li>
+                    <li><a href="http://www.printerpix.co.uk"><span class="fl"></span>Finland</a></li>
+                    <li><a href="http://www.printerpix.co.uk"><span class="no"></span>Norway</a></li>
+                    <li><a href="http://www.printerpix.com.mx"><span class="mx"></span>Mexico</a></li>
+                    <li><a href="http://www.printerpix.co.uk"><span class="gr"></span>Greece</a></li>
+                    <li><a href="http://www.printerpix.nl"><span class="nl"></span>Holland</a></li>
+                    <li><a href="http://www.printerpix.com.br"><span class="br"></span>Brazil</a></li>
+                  </ul>               
+                </li>
+              </ul>
+
+            </div>   <!--- end flag dropbox -->
+             <div class="phone-number ">
+              <a class="middle-div">Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]</a>
+             </div>
+            <div class="print-basket"> <!---print-basket -->
+              <a href="#" id="basket">Basket</a>
+            </div>                     <!--- end print-basket -->
+            <div class="print-cart"> <!-- login, register, subscribe, help, TrackOrder, Basket -->
+              <ul>
+                <li>
+                  <a href="/ProjectListing" id="login">Login</a>
+                </li>
+                <li>
+                  <a href="#" id="register">Register</a>
+                </li>
+                <li>
+                  <a href="#" id="subscribe">Subscribe</a>
+                </li>
+                <li>
+                  <a href="#" id="Help">Help</a>
+                </li>
+                <li>
+                  <a href="#" id="track_order">Track Order</a>
+                </li>
+              </ul>
+            </div> <!-- end login, register, subscribe, help, TrackOrder, Basket -->
+
+          </div>
+        </div>
+  </script>
+  <script id="navTemplate" type="text/x-handlebars-template">
+
+    <div class="main-manu-box"> <!--main menu box -->
+
+    <div class="nav-bar-center center">
+      <div class="logo-box middle-div">
+        <div class="logo"> <!-- logo-->
+          <a href ="/" title="Printerpix">
+            <img src="img/Themes/logo/logo.png" />
+          </a>
+        </div>
+      </div>
+      <div class="pp_header-right middle-div"> <!-- main manu -->
+        <div class="pp_navigation"> 
+           <ul>
+           {{#nav}}
+            <li><a href="{{url}}">{{title}}</a></li>
+           {{/nav}}
+          </ul>         
+        </div>
+      </div>
+      </div>
+    </div>
+  </script>
+
+  <script id="promoSliderTemplate" type="text/x-handlebars-template">
+    <div class="slider-container center">  <!-- slider container -->
+        <div class="slide-showcase banner-slide">
+          <div class="slide-page-pg slide-page-pg-right">
+            <ul class ="cycle-pager external pager-vert" id="page-pager">
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>
+              <li class="cd-dot"><a herf="#"></a></li>           
+            </ul>
+          
+          </div>
+           <div id="slider-source" class="cycle-slideshow" data-cycle-fx=scrollVert data-cycle-pause-on-hover="true" data-cycle-speed="1000" data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div">  
+
+            {{#promotion}}
+             <div class="promo-slide">
+              <a href="{{url}}"><img src="{{img_url}}"/></a>
+              <span class="text-box-onSlide">
+              <span class="descrip descrip-right" style="color:{{text_color}}"> <center>{{{description}}}</center></span>
+              <span class="promo-code-up promo-code-right" style="color:{{text_color}}">{{{promo_des}}}</span>
+              <span class="promo-button-lg promo-button-right" id="{{id}}" style="color:{{text_color}}; border-color:{{button_color}}">{{button}}</span>
+              <span class="customer-review"><img src="{{customer_review}}"/></span>
+              </span>
+             </div> 
+            {{/promotion}}
+          </div>
+
+            <div class="promo-vert">
+            <span><img src="img/Themes/banner/Trust-Informations-Banner.png"></span>
+            </div> 
+          </div> <!-- pager on slide -->
+          <div class="pager-box" id="next_banner"></div>
+      </div>
+  </script>
+
+  <script id="bestSellerTemplate" type="text/x-handlebars-template">
+    <div class="text-center pd-title">
+          <p>our <strong>best seller</strong> products ready to print for you </p>
+    </div>
+      <!-- arrow previous /next -->
+    <div class="slider-box">
+      <a href="#" title="Previous"  class="pd_prev" id="prev_PhotoBookPage">Previous</a>
+      <a href="#" title="Next"      class="pd_next" id="next_PhotoBookPage">Next </a>
+    
+      <div class="slide-showcase product-box">
+         <div id="best-slider"class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=4 data-cycle-prev="#prev_PhotoBookPage" data-cycle-next="#next_PhotoBookPage" data-cycle-slides="div">
+         {{#bestSeller}}
+          <div class="pd-img">
+            <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
+              <img src="{{img_url}}" />
+              <h1>{{title}}</h1>
+              <span class="customer-star"><img src="{{customerStar}}"></span>
+              <p>{{description}}</p>
+              <h4 class="readmore" href="#">Read more...</h4>
+            </a>
+          </div>
+          {{/bestSeller}}  
+      </div>
+     </div> 
+  </script>
+   <script id="bestSellerTemplate2" type="text/x-handlebars-template">
+ 
+    <div class="slider-box">
+      <a href="#" title="Previous"  class="pd_prev" id="prev_PhotoBookPage">Previous</a>
+      <a href="#" title="Next"      class="pd_next" id="next_PhotoBookPage">Next </a>
+    
+      <div class="slide-showcase product-box">
+         <div id="best-slider2"class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=4 data-cycle-prev="#prev_PhotoBookPage" data-cycle-next="#next_PhotoBookPage" data-cycle-slides="div">
+         {{#bestSeller}}
+          <div class="pd-img">
+            <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
+              <img src="{{img_url}}" />
+              <h1>{{title}}</h1>
+              <span class="customer-star"><img src="{{customerStar}}"></span>
+              <p>{{description}}</p>
+              <h4 class="readmore" href="#">Read more...</h4>
+            </a>
+          </div>
+          {{/bestSeller}}  
+      </div>
+     </div> 
+  </script>
+  <script id="instagramSellerTemplate" type="text/x-handlebars-template">
+   <div class="text-center pd-title ">
+     <p>  </p>
+   </div>
+   <div class="slider-box">
+     <a href="#" title="Previous"  class="pd_prev" id="prev_InstagramPage">Previous</a>
+     <a href="#" title="Next"      class="pd_next" id="nex_InstagramPage">Next </a>
+     <div class="slide-showcase product-box">
+     <div id="instagram-slider" class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=3 data-cycle-prev="#prev_InstagramPage" data-cycle-next="#nex_InstagramPage" data-cycle-slides="div">
+      {{#instagram}}
+       <div class="pd-img">
+         <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
+            <img src="{{img_url}}" />
+            <h1><span style="color:#cf207e">{{isNew}} </span> {{title}}</h1>
+            <p>{{description}}</p>
+            <h4 class="readmore" href="#">Read more...</h4>
+         </a>
+       </div>
+       {{/instagram}}
+     </div>
+     </div>
+   </div>  
+  </script>
+  <script id="instagramSellerTemplate2" type="text/x-handlebars-template">
+   <div class="slider-box">
+     <a href="#" title="Previous"  class="pd_prev" id="prev_InstagramPage">Previous</a>
+     <a href="#" title="Next"      class="pd_next" id="nex_InstagramPage">Next </a>
+     <div class="slide-showcase product-box">
+     <div id="instagram-slider2" class="silder-holder cycle-slideshow" data-cycle-fx=carousel data-cycle-timeout=0 data-cycle-carousel-visible=3 data-cycle-prev="#prev_InstagramPage" data-cycle-next="#nex_InstagramPage" data-cycle-slides="div">
+      {{#instagram}}
+       <div class="pd-img">
+         <a class="each-slide" href="http://www.printerpix.co.uk{{url}}">
+            <img src="{{img_url}}" />
+            <h1><span style="color:#cf207e">{{isNew}} </span> {{title}}</h1>
+            <p>{{description}}</p>
+            <h4 class="readmore" href="#">Read more...</h4>
+         </a>
+       </div>
+       {{/instagram}}
+     </div>
+     </div>
+   </div>  
+  </script>
+
+
+  <script id="promotionSellerTemplate" type="text/x-handlebars-template">
+    <div class="promo-row-box">
+    {{#advertise}}
+    <div class="col-w-half"><img src="{{app_img_url}}" /></div>
+    <div class="col-w-half"><a href="{{getFree_url}}"><img src="{{getFree_img_url}}" /></a> </div>
+    {{/advertise}}
+   </div>
+  </script>
+  
+  <script id="footerTemplate" type="text/x-handlebars-template">
+      <div class="footer-box center">  
+       <div class="footer-combine-box">
+      <div class="footer-left-box">
+        <div class="footer-menu-box"> <!-- footer menu -->
+          <div class="footer-menu">
+            <ul>
+              <li><a class="footer-text">PRODUCTS</a></li>
+              <li><a class="footer-text">Pricing</a></li>
+              <li><a class="footer-text">Photo tips</a></li>
+              <li><a class="footer-text">About us</a></li>
+              <li><a class="footer-text">Customer care</a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <div class="hoz-line">  <!-- horizontal line-->
+        </div>
+        <div class="footer-catagory-box">
+        <div class="footer-catagory"> <!-- footer catagories -->
+          <ul>
+              <li>
+                <ul class="products">
+                  {{#Products}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/Products}}
+                </ul>
+              </li>
+              <li> 
+                 <ul class="products">
+                 {{#Pricing}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/Pricing}}
+                </ul>
+              </li>
+              <li>
+                <ul class="products">
+                {{#PhotoTips}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/PhotoTips}}
+                </ul>
+              </li>
+              <li>
+                <ul class="products">
+                {{#AboutUs}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/AboutUs}}
+                </ul>
+              </li>
+              <li>  
+                <ul class="products">
+                {{#CustomerCare}}
+                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                  {{/CustomerCare}}
+                </ul>
+              </li>
+          </ul>
+        </div>
+        </div>
+        </div>
+        <div class="footer-right-box">
+        <div class="social-box-img hidden"> <!-- social link -->
+          <div class="social-link">
+            <img alt="" src="img/social/SocialNetworks-Footer.png">
+          </div>
+        </div>
+        </div>
+      </div>
+        <div class="clear"></div>
+        <div> <!-- horizontal line-->
+        </div>
+        <div id="horz-social-link" class="social-out-box">
+        <div class="social-box center ">
+        <div class="social-link middle-div">
+         <a target="_blank" href="https://www.facebook.com/PrinterPixUK"><img alt="" src="img/social/Social-Facebook.png"></a>
+            <a target="_blank" href="http://printerpix.tumblr.com"><img alt=""src="img/social/Social-Pinterest.png"></a>
+            <a target="_blank" href="https://instagram.com/printerpixuk/"><img alt="" src="img/social/Social-Instagram.png"></a>
+            <a target="_blank" href="https://twitter.com/printerpix"><img alt="" src="img/social/Social-Twitter.png"></a>
+            <a target="_blank" href="https://www.youtube.com/user/printerpix"><img alt="" src="img/social/Social-Youtube.png"></a>
+        </div>
+        </div>
+        </div>
+        <div class="promo-box"> <!-- promotion image -->
+          <div class="info-promo">
+              <img alt="" src="img/Themes/banner/Trust-Footer.png">
+          </div>
+        </div>
+        <div> <!-- horizontal line-->
+        </div>
+        <div class="flag-box"> <!-- flags-->
+          <div class="flag-link middle-div">
+             <center><img alt="" src="img/flag/Flags.png"></center>
+          </div>
+        </div>
+        <div class="hoz-line"> <!-- horizontal line-->
+        </div>
+        <div class="copyright-box"> <!-- copy right -->
+          <div class="text-center copyright-text">
+            <p><strong>Printerpix</strong> © 2015- Unit 5 Stonefield Way, Ruislip, Middlesex, London HA4 0JS, UK</p>
+          </div>
+        </div>
+        <div class="hoz-line"> <!-- horizontal line--> 
+        </div>
+      </div>
+  </script>
+  </body>
+</html>

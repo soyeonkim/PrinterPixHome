@@ -2,13 +2,14 @@
 
 $(document).ready(function () {
 	var template;
- 
+	var windowSize=window.innerWidth;
+	console.log("TEST:",windowSize);
+
 	template = Handlebars.compile($('#titleTemplate').html()); 
 	$('#top-memu-bar').append(template);
 
 	template = Handlebars.compile($('#navTemplate').html()); 
 	$('#nav-memu-bar').append(template(menu));
-
 
 	template = Handlebars.compile($('#promoSliderTemplate').html()); 
 	$('#promotion-slider-bar').append(template(data));
@@ -34,11 +35,11 @@ $(document).ready(function () {
 
 
 
-	function initCycle () {
-		var iw = window.innerWidth;
+	function initCycle (windowSize) {
+		 
 		var numberSlide=4;
 
-		if(iw <1200){
+		if(windowSize <1200){
 			numberSlide=2;
 		}
 		 
@@ -49,7 +50,8 @@ $(document).ready(function () {
 		$('#slider-source').cycle({
 			fx: 'fadeout',
 			timeout: 3000,
-			speed:1500,
+			speed:800,
+			manualSpeed:300,
 			sildes: 'div',
 			pager: '#page-pager',
 
@@ -95,24 +97,26 @@ $(document).ready(function () {
 
 	}
 
-	initCycle();
+	initCycle(windowSize);
 
 	function dependSize(windowSize) {
 		if(windowSize >1200){
 	 		$('#best-seller2').addClass('hidden');
 	 		$('#instagram-seller2').addClass('hidden');
-	 		console.log("add");
 	 		$('#horz-social-link').addClass('hidden');
 	  		$('.social-box-img').removeClass('hidden');
+	  		$('.phone-number a').text("Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]");
 	 		
 	    } 
 	    else {
 	  		 $('#best-seller2').removeClass('hidden');
 	  		 $('#instagram-seller2').removeClass('hidden');
-	  		 console.log("remove");
 	  		 $('#horz-social-link').removeClass('hidden');
 	  		 $('.social-box-img').addClass('hidden');
-	    }
+	  		// $('.phone-number a').text("Call:0844 567 8228 Mon-Fri 9am-5pm[UK]");
+	  		$('.phone-number a').text("0844 567 8228 Mon-Fri 9am-5pm");	  		  
+	    }	    
+	   // $('.promo-vert').css("top",(Math.abs($('#slider-source').height()-$('.promo-vert').height()))/2+"px");
 
 	}
 
@@ -121,14 +125,14 @@ $(document).ready(function () {
     	$("body").animate({ scrollTop: $('.main-manu-box').height()+$('.top-bar-up').height()+$('#promotion-slider-bar').height()}, "slow");
     	return false;
     });
-    var windowSize=window.innerWidth;
+   
     $(window).resize(function () {
     	// body...
     		windowSize=window.innerWidth;
+    		initCycle(windowSize);    	
 	    	//$('#top-memu-bar').window(windowSize);
 	    	$('.slider-container').width(windowSize+"px");
-	    	console.log(windowSize);
-	    	initCycle();    	
+	    	
 	 		dependSize(windowSize);
 		    
     });
@@ -136,7 +140,5 @@ $(document).ready(function () {
     
    // $('#top-memu-bar').width(windowSize);
     $('.slider-container').width(windowSize+"px");
-    //	$('.top-bar-center').width(windowSize);
-	console.log(windowSize);
-   // $('.slider-container').width(window.innerWidth);
+
 });
