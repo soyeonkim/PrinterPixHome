@@ -25,6 +25,7 @@
       <div id="top-memu-bar" class="header-box"> <!-- total menu box -->
       </div> 
     </header>
+
     <nav>
       <div class="clear"></div>
       <div id="nav-memu-bar"class="nav-box"> <!-- white background-->
@@ -34,6 +35,7 @@
 
     <!--  main container -->
     <section>
+      <div class="clear"></div>
       <!--  promotion slider show -->
       <div id="promotion-slider-bar">
       </div>
@@ -63,6 +65,11 @@
       <!-- end productions -->
     </section>
     <!-- end main container -->
+
+
+
+
+
 
     <!--- footer -->
     <footer id="footer-main">
@@ -110,24 +117,24 @@
               <a class="middle-div">Call:0844 567 8228 Mon-Fri 9:00am to 5:00pm [UK]</a>
              </div>
             <div class="print-basket"> <!---print-basket -->
-              <a href="#" id="basket">Basket</a>
+              <a href="http://www.printerpix.co.uk/CheckOut/Cart/" id="basket">Basket</a>
             </div>                     <!--- end print-basket -->
             <div class="print-cart"> <!-- login, register, subscribe, help, TrackOrder, Basket -->
               <ul>
                 <li>
-                  <a href="/ProjectListing" id="login">Login</a>
+                  <a href="http://www.printerpix.co.uk/ProjectListing" id="login">Login</a>
                 </li>
                 <li>
-                  <a href="#" id="register">Register</a>
+                  <a href="http://www.printerpix.co.uk/Account?displayMode=2" id="register">Register</a>
                 </li>
                 <li>
-                  <a href="#" id="subscribe">Subscribe</a>
+                  <a href="http://www.printerpix.co.uk/Account/Subscribe" id="subscribe">Subscribe</a>
                 </li>
                 <li>
-                  <a href="#" id="Help">Help</a>
+                  <a href="javascript:popUpSupportCentre('http://server.iad.liveperson.net/hc/s-7999812/cmd/kbresource/kb-1966735866789070888/front_page!PAGETYPE')" id="Help">Help</a>
                 </li>
                 <li>
-                  <a href="#" id="track_order">Track Order</a>
+                  <a href="http://www.printerpix.co.uk/OrderTracking" id="track_order">Track Order</a>
                 </li>
               </ul>
             </div> <!-- end login, register, subscribe, help, TrackOrder, Basket -->
@@ -151,7 +158,8 @@
         <div class="pp_navigation"> 
            <ul>
            {{#nav}}
-            <li><a href="{{url}}">{{title}}</a></li>
+            <li><a href="{{url}}">{{title}}</a>
+            </li>
            {{/nav}}
           </ul>         
         </div>
@@ -173,23 +181,25 @@
             </ul>
           
           </div>
-           <div id="slider-source" class="cycle-slideshow" data-cycle-fx=fadeout data-cycle-pause-on-hover="true" data-cycle-speed="800" data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div">  
+           <div id="slider-source" class="cycle-slideshow" data-cycle-fx=scrollVert data-cycle-pause-on-hover="true" data-cycle-speed="1000" data-cycle-pager='#page-pager' data-cycle-pager-template="" data-cycle-slides="div">  
 
             {{#promotion}}
              <div class="promo-slide">
               <a href="{{url}}"><img src="{{img_url}}"/></a>
-              <span class="text-box-onSlide">
               <span class="descrip descrip-left" style="color:{{text_color}}"> <center>{{{description}}}</center></span>
-              <span class="promo-code-up promo-code-left" style="color:{{text_color}}">{{{promo_des}}}</span>
-              <a href="{{url}}"><span class="promo-button-lg promo-button-left" id="{{id}}" style="color:{{text_color}}; border-color:{{button_color}}">{{button}}</span></a>
+              <span class="promo-code promo-code-left">{{{promo_des}}}</span>
+              <a href="{{url}}"><span class="promo-button-sm promo-button-sm-left" id="{{id}}" style="color:{{text_color}}; border-color:{{button_color}}">{{button}}</span></a>
               <span class="customer-review"><img src="{{customer_review}}"/></span>
-              </span>
              </div> 
             {{/promotion}}
           </div>
 
             <div class="promo-vert">
-            <span><img src="img/Themes/banner/Trust-Informations-Banner.png"></span>
+            <a href="http://www.printerpix.uk/AboutUs.html">
+              <span>
+                <img src="img/Themes/banner/Trust-Informations-Banner.png">
+              </span>
+            </a>
             </div> 
           </div> <!-- pager on slide -->
           <div class="pager-box" id="next_banner"></div>
@@ -258,7 +268,7 @@
             <img src="{{img_url}}" />
             <h1><span style="color:#cf207e">{{isNew}} </span> {{title}}</h1>
             <span class="customer-star "><img src="{{customerStar}}"></span>
-            <p>{{description}}</p>
+            <p>{{{description}}}</p>
             <h4 class="readmore" href="#">Read more...</h4>
          </a>
        </div>
@@ -293,7 +303,14 @@
   <script id="promotionSellerTemplate" type="text/x-handlebars-template">
     <div class="promo-row-box">
     {{#advertise}}
-    <div class="col-w-half"><img src="{{app_img_url}}" /></div>
+    <div class="col-w-half">
+
+      <div class="appStore"> 
+      <img src="{{app_img_url}}"/>
+        <a target="_blank" href="https://itunes.apple.com/gb/app/printerpix/id908350585?mt=8"><span class="apple">&nbsp</span></a>
+        <a target="_blank" href="https://play.google.com/store/apps/developer?id=Printerpix"><span class="android">&nbsp</span></a>
+       </div>  
+    </div>
     <div class="col-w-half"><a href="{{getFree_url}}"><img src="{{getFree_img_url}}" /></a> </div>
     {{/advertise}}
    </div>
@@ -301,108 +318,136 @@
   
   <script id="footerTemplate" type="text/x-handlebars-template">
       <div class="footer-box center">  
-       <div class="footer-combine-box">
-      <div class="footer-left-box">
-        <div class="footer-menu-box"> <!-- footer menu -->
-          <div class="footer-menu">
-            <ul>
-              <li><a class="footer-text">PRODUCTS</a></li>
-              <li><a class="footer-text">Pricing</a></li>
-              <li><a class="footer-text">Photo tips</a></li>
-              <li><a class="footer-text">About us</a></li>
-              <li><a class="footer-text">Customer care</a></li>
-              
-            </ul>
+        <div class="footer-combine-box">
+          <div class="footer-left-box">
+            <div class="footer-menu-box"> <!-- footer menu -->
+              <div class="footer-menu">
+                <ul>
+                  <li><a class="footer-text">PRODUCTS</a></li>
+                  <li><a class="footer-text">Pricing</a></li>
+                  <li><a class="footer-text">Photo tips</a></li>
+                  <li><a class="footer-text">About us</a></li>
+                  <li><a class="footer-text">Customer care</a></li>
+                  
+                </ul>
+              </div> <!-- footer-menu -->
+            </div> <!-- footer-menu-box -->
+            <div class="hoz-line">  <!-- horizontal line-->
+            </div>
+            <div class="footer-catagory-box">
+              <div class="footer-catagory"> <!-- footer catagories -->
+              <ul>
+                  <li>
+                    <ul class="products">
+                      {{#Products}}
+                      <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                      {{/Products}}
+                    </ul>
+                  </li>
+                  <li> 
+                     <ul class="products">
+                     {{#Pricing}}
+                      <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                      {{/Pricing}}
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="products">
+                    {{#PhotoTips}}
+                      <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                      {{/PhotoTips}}
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="products">
+                    {{#AboutUs}}
+                      <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                      {{/AboutUs}}
+                    </ul>
+                  </li>
+                  <li>  
+                    <ul class="products">
+                    {{#CustomerCare}}
+                      <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
+                      {{/CustomerCare}}
+                    </ul>
+                  </li>
+              </ul>
+              </div>
+            </div> <!-- footer-catagory-box -->
+          </div><!-- footer-left-box -->
+
+          <div class="footer-right-box">
+            <div class="social-title-box">
+              <h3 class="middle-div">YOU MAY ALSO FIND US, ON:</h3>
+            </div>
+            <div class="hoz-line">  <!-- horizontal line-->
+            </div>
+            <div class="social-right-box center">
+              <div class="social-right-link middle-div">
+                <a target="_blank" href="https://twitter.com/printerpix">
+                  <img alt="" src="img/social/Social-Twitter.png"></a>
+                <a target="_blank" href="https://www.facebook.com/PrinterPixUK">
+                  <img alt="" src="img/social/Social-Facebook.png"></a>
+                <a target="_blank" href="https://www.youtube.com/user/printerpix">
+                  <img alt="" src="img/social/Social-Youtube.png"></a>
+                <a target="_blank" href="https://uk.pinterest.com/printerpixuk/">
+                  <img alt=""src="img/social/Social-Pinterest.png"></a>
+                <a target="_blank" href="https://instagram.com/printerpixuk/">
+                  <img alt="" src="img/social/Social-Instagram.png"></a>   
+                <a target="_blank" href="http://printerpix.tumblr.com">
+                  <img alt=""src="img/social/Social-Tumbler.png"></a>
+
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="hoz-line">  <!-- horizontal line-->
-        </div>
-        <div class="footer-catagory-box">
-        <div class="footer-catagory"> <!-- footer catagories -->
-          <ul>
-              <li>
-                <ul class="products">
-                  {{#Products}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
-                  {{/Products}}
-                </ul>
-              </li>
-              <li> 
-                 <ul class="products">
-                 {{#Pricing}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
-                  {{/Pricing}}
-                </ul>
-              </li>
-              <li>
-                <ul class="products">
-                {{#PhotoTips}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
-                  {{/PhotoTips}}
-                </ul>
-              </li>
-              <li>
-                <ul class="products">
-                {{#AboutUs}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
-                  {{/AboutUs}}
-                </ul>
-              </li>
-              <li>  
-                <ul class="products">
-                {{#CustomerCare}}
-                  <li><a href="http://www.printerpix.co.uk{{url}}">{{title}}</a></li>
-                  {{/CustomerCare}}
-                </ul>
-              </li>
-          </ul>
-        </div>
-        </div>
-        </div>
-        <div class="footer-right-box">
-        <div class="social-box-img hidden"> <!-- social link -->
-          <div class="social-link">
-            <img alt="" src="img/social/SocialNetworks-Footer.png">
-          </div>
-        </div>
-        </div>
-      </div>
+
+        </div> <!-- footer-combine-box -->
         <div class="clear"></div>
         <div> <!-- horizontal line-->
-        </div>
-        <div id="horz-social-link" class="social-out-box">
+      </div>
+      <div id="horz-social-link" class="social-out-box">
         <div class="social-box center ">
-        <div class="social-link middle-div">
-         <a target="_blank" href="https://www.facebook.com/PrinterPixUK"><img alt="" src="img/social/Social-Facebook.png"></a>
-            <a target="_blank" href="http://printerpix.tumblr.com"><img alt=""src="img/social/Social-Pinterest.png"></a>
-            <a target="_blank" href="https://instagram.com/printerpixuk/"><img alt="" src="img/social/Social-Instagram.png"></a>
-            <a target="_blank" href="https://twitter.com/printerpix"><img alt="" src="img/social/Social-Twitter.png"></a>
-            <a target="_blank" href="https://www.youtube.com/user/printerpix"><img alt="" src="img/social/Social-Youtube.png"></a>
-        </div>
-        </div>
-        </div>
-        <div class="promo-box"> <!-- promotion image -->
-          <div class="info-promo">
-              <img alt="" src="img/Themes/banner/Trust-Footer.png">
+          <div class="social-link middle-div">
+            <a target="_blank" href="https://twitter.com/printerpix">
+              <img alt="" src="img/social/Social-Twitter.png"></a>
+            <a target="_blank" href="https://www.facebook.com/PrinterPixUK">
+              <img alt="" src="img/social/Social-Facebook.png"></a>
+            <a target="_blank" href="https://www.youtube.com/user/printerpix">
+              <img alt="" src="img/social/Social-Youtube.png"></a>
+            <a target="_blank" href="https://uk.pinterest.com/printerpixuk/">
+              <img alt=""src="img/social/Social-Pinterest.png"></a>
+            <a target="_blank" href="https://instagram.com/printerpixuk/">
+              <img alt="" src="img/social/Social-Instagram.png"></a>   
+            <a target="_blank" href="http://printerpix.tumblr.com">
+              <img alt=""src="img/social/Social-Tumbler.png"></a>
           </div>
-        </div>
-        <div> <!-- horizontal line-->
-        </div>
-        <div class="flag-box"> <!-- flags-->
-          <div class="flag-link middle-div">
-             <center><img alt="" src="img/flag/Flags.png"></center>
-          </div>
-        </div>
-        <div class="hoz-line"> <!-- horizontal line-->
-        </div>
-        <div class="copyright-box"> <!-- copy right -->
-          <div class="text-center copyright-text">
-            <p><strong>Printerpix</strong> © 2015- Unit 5 Stonefield Way, Ruislip, Middlesex, London HA4 0JS, UK</p>
-          </div>
-        </div>
-        <div class="hoz-line"> <!-- horizontal line--> 
         </div>
       </div>
+      <div class="promo-box"> <!-- promotion image -->
+        <div class="info-promo">
+          <a href="http://www.printerpix.co.uk/AboutUs.html">
+          <img alt="" src="img/Themes/banner/Trust-Footer.png">
+          </a>
+        </div>
+      </div>
+      <div> <!-- horizontal line-->
+      </div>
+      <div class="flag-box"> <!-- flags-->
+        <div class="flag-link middle-div">
+          <center><img alt="" src="img/flag/Flags.png"></center>
+        </div>
+      </div>
+      <div class="hoz-line"> <!-- horizontal line-->
+      </div>
+      <div class="copyright-box"> <!-- copy right -->
+        <div class="text-center copyright-text">
+          <p><strong>Printerpix</strong> © 2015- Unit 5 Stonefield Way, Ruislip, Middlesex, London HA4 0JS, UK</p>
+        </div>
+      </div>
+      <div class="hoz-line"> <!-- horizontal line--> 
+      </div>
+    </div>
   </script>
   </body>
 </html>

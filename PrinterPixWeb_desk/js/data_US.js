@@ -174,7 +174,7 @@ var menu = {
         description: "" },
 
       { 
-        url: "#", 
+        url: "http://www.printerpix.com/wedding-shop/", 
         img_url: "",
         title:"Occasions", 
         description: "",
@@ -225,10 +225,7 @@ var footer = {
         url: "/CanvasLandingPage.aspx", 
         title:"Photo Canvases" },
       { 
-        url: "/posters",         
-        title:"Posters" },
-      { 
-        url: "/posters",      // need to define
+        url: "/gallery/",      // need to define
         title:"Stock Photography" },
       { 
         url: "/fineArts",     
@@ -236,7 +233,7 @@ var footer = {
   ],
   Pricing:[
       { 
-        url: "/pricing",   
+        url: "/Pricelist",   
         title:"Prices" },
       { 
         url: "/Payment-Methods.html", 
@@ -250,12 +247,12 @@ var footer = {
         url: "/photoquality",  
         title:"Photo Quality" },
       { 
-        url: "/Delivery.html", 
+        url: "/image-resolution", 
         title:"Image Resolution" }
   ],
   AboutUs: [
       { 
-        url: "/printerpixsuppliers", 
+        url: "/Why-Choose-PrinterPix.html", 
         title:"Why Printpix?" },
       { 
         url: "/AboutUs.html", 
@@ -264,7 +261,7 @@ var footer = {
         url: "/testimonials.html", 
         title:"Testimoials" },
       { 
-        url: "/terms-and-conditions.html",    
+        url: "/AboutUs/AboutUs.aspx?contentId=960f9bf4-dd99-4009-9c87-c54cbfe89a2c",    
         title:"Terms and Conditions" },
       { 
         url: "/affiliates/",    
@@ -285,7 +282,7 @@ var footer = {
         url: "/complaints-procedure-policy.html",    
         title:"Complaints Procedure" },
       { 
-        url: "/",     // need to define
+        url: "/faq",     // need to define
         title:"Frequently Questions" }
 
   ],

@@ -152,11 +152,7 @@
            <ul>
            {{#nav}}
             <li><a href="{{url}}">{{title}}</a>
-                <ul>{{#Occasions}}
-                <li><a href="{{sub_url}}">{{sub_title}}</a></li>
-                {{/Occasions}}</ul>
             </li>
-        
 
            {{/nav}}
           </ul>         
@@ -193,7 +189,11 @@
           </div>
 
             <div class="promo-vert">
-            <span><img src="img/Themes/banner/Trust-Informations-Banner.png"></span>
+            <a href="http://www.printerpix.com/AboutUs.html">
+              <span>
+                <img src="img/Themes/banner/Trust-Informations-Banner.png">
+              </span>
+            </a>
             </div> 
           </div> <!-- pager on slide -->
           <div class="pager-box" id="next_banner"></div>
@@ -297,7 +297,13 @@
   <script id="promotionSellerTemplate" type="text/x-handlebars-template">
     <div class="promo-row-box">
     {{#advertise}}
-    <div class="col-w-half"><img src="{{app_img_url}}" /></div>
+    <div class="col-w-half">
+      <div class="appStore"> 
+      <img src="{{app_img_url}}"/>
+        <a target="_blank" href="https://itunes.apple.com/us/app/printerpix/id908350585?mt=8"><span class="apple">&nbsp</span></a>
+        <a target="_blank" href="https://play.google.com/store/apps/developer?id=Printerpix"><span class="android">&nbsp</span></a>
+       </div>  
+    </div>
     <div class="col-w-half"><a href="{{getFree_url}}"><img src="{{getFree_img_url}}" /></a> </div>
     {{/advertise}}
    </div>
@@ -363,31 +369,60 @@
         </div>
         </div>
         </div>
+
         <div class="footer-right-box">
-        <div class="social-box-img hidden"> <!-- social link -->
-          <div class="social-link">
-            <img alt="" src="img/social/SocialNetworks-Footer.png">
+          <div class="social-title-box">
+            <h3 class="middle-div">YOU MAY ALSO FIND US, ON:</h3>
+          </div>
+          <div class="hoz-line">  <!-- horizontal line-->
+          </div>
+          <div class="social-right-box center">
+            <div class="social-right-link middle-div">
+              <a target="_blank" href="https://twitter.com/PrinterpixUS">
+                <img alt="" src="img/social/Social-Twitter.png"></a>
+              <a target="_blank" href="https://www.facebook.com/PrinterPixUS">
+                <img alt="" src="img/social/Social-Facebook.png"></a>
+              <a target="_blank" href="https://www.youtube.com/user/printerpix">
+                <img alt="" src="img/social/Social-Youtube.png"></a>
+              <a target="_blank" href="https://uk.pinterest.com/printerpix/">
+                <img alt=""src="img/social/Social-Pinterest.png"></a>
+              <a target="_blank" href="https://instagram.com/printerpixuk/">
+                <img alt="" src="img/social/Social-Instagram.png"></a>   
+              <a target="_blank" href="http://printerpix.tumblr.com">
+                <img alt=""src="img/social/Social-Tumbler.png"></a>
+
+            </div>
           </div>
         </div>
-        </div>
+
+
       </div>
         <div class="clear"></div>
         <div> <!-- horizontal line-->
         </div>
         <div id="horz-social-link" class="social-out-box">
         <div class="social-box center ">
-        <div class="social-link middle-div">
-         <a target="_blank" href="https://www.facebook.com/PrinterPixUS"><img alt="" src="img/social/Social-Facebook.png"></a>
-            <a target="_blank" href="http://printerpix.tumblr.com"><img alt=""src="img/social/Social-Pinterest.png"></a>
-            <a target="_blank" href="https://instagram.com/printerpixus/"><img alt="" src="img/social/Social-Instagram.png"></a>
-            <a target="_blank" href="https://twitter.com/printerpix"><img alt="" src="img/social/Social-Twitter.png"></a>
-            <a target="_blank" href="https://www.youtube.com/user/printerpix"><img alt="" src="img/social/Social-Youtube.png"></a>
-        </div>
+          <div class="social-link middle-div">
+            <a target="_blank" href="https://twitter.com/PrinterpixUS">
+              <img alt="" src="img/social/Social-Twitter.png"></a>
+            <a target="_blank" href="https://www.facebook.com/PrinterPixUS">
+              <img alt="" src="img/social/Social-Facebook.png"></a>
+            <a target="_blank" href="https://www.youtube.com/user/printerpix">
+              <img alt="" src="img/social/Social-Youtube.png"></a>
+            <a target="_blank" href="https://uk.pinterest.com/printerpix/">
+              <img alt=""src="img/social/Social-Pinterest.png"></a>
+            <a target="_blank" href="https://instagram.com/printerpixuk/">
+              <img alt="" src="img/social/Social-Instagram.png"></a>   
+            <a target="_blank" href="http://printerpix.tumblr.com">
+              <img alt=""src="img/social/Social-Tumbler.png"></a>
+          </div>
         </div>
         </div>
         <div class="promo-box"> <!-- promotion image -->
           <div class="info-promo">
+            <a href="http://www.printerpix.com/AboutUs.html">
               <img alt="" src="img/Themes/banner/Trust-Footer.png">
+            </a>
           </div>
         </div>
         <div> <!-- horizontal line-->
