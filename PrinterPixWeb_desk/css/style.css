@@ -33,7 +33,16 @@ img {
 }
 section {
     margin: 0px;
+
+
    /* margin-bottom: 10px;*/
+}
+nav {
+ 
+ 
+}
+footer{
+
 }
 
 /*-----------------------------------------------------------------------------
@@ -87,14 +96,12 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 
 .pp_navigation { float: right; margin: 0px; }
 .pp_navigation ul { list-style: none; padding: 0px; float: right;}
-<<<<<<< HEAD
+
 .pp_navigation li {	display: inline;margin: 0px; margin-left: 15px; }
 .pp_navigation li a { color: #414141;  font-size: 1.1vw; text-decoration: none; padding: 0px 15px; }
-=======
 .pp_navigation li {	display: inline; font-size: 1.3em; margin: 0px; margin-left: 15px; }
 .pp_navigation li a { color: #414141; text-decoration: none; padding: 0px 15px; }
-.
->>>>>>> origin/desktop
+
 
 .pd_last{float: right;  text-align:right;}
 .pd_nav{
@@ -108,43 +115,52 @@ padding-right:36px; color: #fff; height: 34px; line-height: 30px;  font-size: 0.
 
 .pp_navigation { float: right; margin: 0px 15px; }
 .pp_navigation ul { list-style: none; }
-<<<<<<< HEAD
+.pp_navigation ul, .pp_navigation li { position: relative; }
 .pp_navigation li {	display: inline; margin: 0px 15px; }
 .pp_navigation li a { color: #414141; font-size: 1.2vw; text-decoration: none; padding: 0px 5px; }
 .pp_header-right { width: 80%; float: right;  /*margin-top: 2px; */}
- 
-=======
+
 .pp_navigation li {	display: inline; font-size: 1.3vw; margin: 0px 15px; }
 .pp_navigation li a { color: #414141; text-decoration: none; padding: 0px 5px; }
-.pp_header-right { width: 69%; float: right;  margin-top: 2px; }
+
 
 .pp_navigation ul ul {
     width: auto;
     height: auto;
-    margin: 0;
+    margin: 0px;
     padding: 5px 0;
     font-size: 9px;
     color: #322c29;
-    visibility: hidden;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0px;
     z-index: 10000;
-    box-shadow: rgba(0,0,0,.13) 2px -1px 2px;
-    z-index: 9;
+
 }
 .pp_navigation ul ul li {
-        background: none;
+    background: none;
     border: none;
     display: block;
     float: none;
     padding: 0;
     margin: 0;
     white-space: nowrap;
-        border-top: 3px solid transparent;
-        z-index: 999;
+    z-index: 999;
 }
->>>>>>> origin/desktop
+
+.pp_navigation ul li.hover, .pp_navigation ul li:hover a { position: relative; text-decoration: none; }
+.pp_navigation ul li:hover li a { background: none; }
+
+.pp_navigation ul ul li { background: none; border: none; display: block; 
+    float: none; padding: 0; margin: 0; white-space: nowrap; }
+.pp_navigation ul ul li a { display: block; margin: 0;
+  color: #322c29; line-height:22px; font-size:1.0vw; }
+.pp_navigation ul ul li:hover { background: #ebebeb; border: none; box-shadow: none; }
+.pp_navigation li:hover li a { color: #322c29; }
+/* LEVEL THREE */
+.pp_navigation ul ul ul { left: 100%; top: 0; }
+.pp_navigation ul li:hover ul { visibility: visible; }
+
 /* -------------------------------------------------------------------------------------*/
 
 .slider-container{}
@@ -177,7 +193,7 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 
 
 .pp_next { background: url(/Themes/images/sprite_arrow.png) no-repeat left top; width: 34px; height: 33px; display: block; text-indent: -9999px; position: absolute; top: 201px; z-index:300; }
-.promo-slide{}
+.promo-slide img{z-index: -1}
 .redHead,
 .descrip,
 .promo-code,
@@ -275,15 +291,9 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
     width: 100px;
   /*  background-image:url('../img/Themes/bestSeller/stars_small.gif');*/
 }
-.pr-snippet-stars{background:#fff;padding:.3em;float:left;margin-right:.3em;}
-
-.pr-snippet-stars .pr-stars-small,.pr-modal-container,.pr-stars
-{float:left;height:15px;line-height:15px;width:83px;background-image:url('..img/Themes/bestSeller/stars_small.gif');}
-.pr-snippet-stars .pr-snippet-rating-decimal{float:left;margin-right:.3em;height:15px;line-height:15px;font-size:85%;}
-.pr-snippet-stars .pr-snippet-rating-decimal{background-color:#414142;color:#fff;padding:0 .2em 0;}
-
-.footer-left-box {width: 80%; float: left; margin: 5px 0px; border: solid 1px; border-color: #acacac; margin-left: 10px;}
-.footer-right-box {width:18%; float: right; margin-top: 5px; text-align: right; display: block;}
+ 
+.footer-left-box {width: 79%; float: left; margin: 5px 0px; border: solid 1px; border-color: #acacac; margin-left: 10px;}
+.footer-right-box {width:19%; float: right; margin-top: 5px; display: block; border: solid 1px; border-color: #acacac;}
 .footer-menu-box {width: 100%;  height: 50px; padding: 0px 5px;}
 .footer-menu { width: 100%; font-size: 1.2em;}
 .footer-menu ul { list-style: none; margin: 5px 0px; padding-left: 2px;}
@@ -296,14 +306,15 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
 .products li {  display: list-item; float: none; width: 100%; margin: 2px 0px;}
 .products li a { color: #414141;}
 .social-box { width: 30%; 	height: 70px; }
+.social-title-box{width: 100%; height: 56px; text-align: center;}
+.social-title-box h3 { font-size: 1.08em; font-weight: normal; margin: 0px;}
+.social-right-box {height: 161px; width:57%;}
+.social-right-link a{ margin: 0px 3px;}
+.social-right-link img{ margin:3px 0px;}
+
 .social-link { 	width: 100%; height: auto; }
-.social-link a { margin: auto 5px;}
-.social-out-box{
-    width: 100%;
-    border: 1px solid;
-    margin-left: 10px;
-    border-color: #acacac;
-}
+.social-link a { margin: auto 5px; }
+.social-out-box{ width: 100%; border: 1px solid; margin-left: 10px; border-color: #acacac;}
 
 
 .flag-box { width: 100%; 	height: 70px; }
@@ -362,7 +373,7 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
     .pp_navigation li {}
     .pp_navigation li a {
         padding: 0px 10px;
-        font-size: 1.3vw;
+        font-size: 1.25vw;
     }
 }
 
@@ -463,5 +474,21 @@ position: relative; bottom: 11px; left: 49%; text-indent: -9999px; 	z-index: 999
         width: 80%;
     }
 }
-
-
+.appStore {
+    position: relative;    
+}
+.apple {
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    bottom: 50px;
+    left: 341px;
+}
+.android {
+    position: absolute;
+    width: 110px;
+    height: 36px;
+    bottom: 50px;
+    right: 28px;
+}
+ 

@@ -42,8 +42,8 @@ var data = {
     		img_url: "./img/Themes/headBanner/UK/07-Cases-without-promotion.jpg",
         title:"",
         description:"<strong>Your Happy Moments</strong>",
-        text_color:"#414141",
-        promo_des:"On a Special, Personalised,<br> Photo Phone Cover",
+        text_color: "#414141",
+        promo_des: "On a Special, Personalised,<br> Photo Phone Cover",
         button: "Personalised Now",
         button_color:"#cf207e",   
         customer_review:"" },
@@ -53,39 +53,39 @@ var data = {
     		img_url: "./img/Themes/headBanner/UK/08-Calendars-without-promotion.jpg",
         title:"",
         description:"<strong> Your Happy Days</strong>",
-        text_color:"#414141",
-        promo_des:"On Our Personalised<br> Photo Calendar",
-        button: "Personalised Now",
-        button_color:"#cf207e",   
-        customer_review:"" },
+        text_color: "#414141",
+        promo_des: "On Our Personalised<br> Photo Calendar",
+        button:  "Personalised Now",
+        button_color: "#cf207e",   
+        customer_review: "" },
         ],
   bestSeller:[
   	   
       {   
         url:  "/photo-books/ValentinoWhite", 
         img_url: "./img/Themes/bestSeller/UK/Photo-Book-Valentina.jpg",
-        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
-        title:"Valentina Photo book", 
+        customerStar: "./img/Themes/bestSeller/stars/star_4_5.png",
+        title: "Valentina Photo book", 
         description: "Perfect for weddings, birthdays and other celebrations, this Valentina Photobook is the perfect way to"},
      { 
         url: "/montage-canvas", 
         img_url: "./img/Themes/bestSeller/UK/Montage-Canvas.jpg",
-        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
-        title:"Collage Canvas",  
+        customerStar: "./img/Themes/bestSeller/stars/star_4_5.png",
+        title: "Collage Canvas",  
         description: "Record your memories in style with this fully customisable canvas. " },
  
      { 
        url: "/instagram-canvas/", 
         img_url: "./img/Themes/bestSeller/UK/Instagram_Canvas.jpg",
         customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
-        title:"Instagram Canvas",  
+        title: "Instagram Canvas",  
         description: "Perfect for publishing your favourite Instagram photos, this sturdy square canvas is a great way to decorate your home or office." },
         
        { 
         url: "/metal-prints/", 
         img_url: "./img/Themes/bestSeller/UK/Metal-Print.jpg", 
         customerStar:"./img/Themes/bestSeller/stars/no_star.png",
-        title:"Metal Prints", 
+        title: "Metal Prints", 
         description: "Upload a photo or select an image from our huge online library to print on this sturdy aluminium sheet" },
 
    		  ],
@@ -95,28 +95,28 @@ var data = {
         img_url: "./img/Themes/bestSeller/UK/Magic-Mug.jpg", 
         customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         isNew:"",
-        title:"Magic Mug",  
+        title: "Magic Mug",  
         description:"Using the latest heat-to-reveal technology, simply pour a hot drink to see your favourite photo magically appear." },
       { 
         url: "/Jigsaws-Wooden/", 
         img_url: "./img/Themes/bestSeller/UK/Wood-Jigsaw.jpg",
-        customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
+        customerStar: "./img/Themes/bestSeller/stars/star_4_5.png",
         isNew:"",
-        title:"Wooden Jigsaw",         
+        title: "Wooden Jigsaw",         
         description: "Great fun for the whole family, upload a photo or choose an image from our huge library to print on this full-colour jigsaw." },
       { 
         url: "/photo-cushion-gifts/", 
         img_url: "./img/Themes/bestSeller/UK/Cushion-Cover.jpg",
         customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         isNew:"",
-        title:"Cushion Cover", 
+        title: "Cushion Cover", 
         description: "Decorate your home with this personalised Cushion Cover." },
   		{ 	
   			url: "/Crystal-Photo-Frame", 
   			img_url: "./img/Themes/bestSeller/UK/Crystal-Frame.jpg",
         customerStar:"./img/Themes/bestSeller/stars/no_star.png",
         isNew:"",
-  			title:"Crystal Frame", 
+  			title: "Crystal Frame", 
   			description: "Sleek and sophisticated, print your favourite photos on this high quality crystal block." },
   		  		   
   ],
@@ -176,10 +176,24 @@ var menu = {
         description: "" },
 
       { 
-        url: "http://www.printerpix.co.uk/b2s", 
+        url: "http://www.printerpix.co.uk/b2s/", 
         img_url: "",
         title:"Occasions", 
-        description: "" } 
+        description: "",
+        Occasions:[ 
+          { 
+            sub_title: "Rugby Champion 2015",
+            sub_url:"#"
+
+          },
+         { 
+            sub_title: "Graduation",
+            sub_url:"#"
+
+          },
+        ],
+
+      } 
 
   ],
   nav_flag: [
@@ -233,17 +247,14 @@ var footer = {
         title:"Posters" },
       { 
         url: "/posters",      // need to define
-        title:"Stock Photography" },
+        title:"Posters" },
       { 
-        url: "/fineArts",     
-        title:"Fine Art" }
+        url: "/gift/?preselectedid=fefb800a-3235-4ed2-8e2b-871ac3d018e7#",     
+        title:"Gift" }
   ],
   Pricing:[
       { 
-        url: "/pricing",   
-        title:"Prices" },
-      { 
-        url: "/Payment-Methods.html", 
+        url: "/Payment-Methods.html",   
         title:"Payment Methods" },
       { 
         url: "/Delivery.html", 
@@ -252,27 +263,33 @@ var footer = {
   PhotoTips:[
       { 
         url: "/photoquality",  
+        title:"Photo Library" },
+      { 
+        url: "/finearts",  
+        title:"Fine Art Gallery" },
+      { 
+        url: "/photoquality",  
         title:"Photo Quality" },
       { 
-        url: "/Delivery.html", 
+        url: "/image-resolution", 
         title:"Image Resolution" }
   ],
   AboutUs: [
       { 
-        url: "/printerpixsuppliers", 
-        title:"Why Printpix?" },
-      { 
         url: "/AboutUs.html", 
         title:"About Us" },
       { 
-        url: "/testimonials.html", 
+        url:"/testimonials.html", 
         title:"Testimoials" },
       { 
-        url: "/terms-and-conditions.html",    
-        title:"Terms and Conditions" },
+        url: "/business-developmentB.aspx",    
+        title:"Business Development" },
+     { 
+        url: "/printerpixsuppliers/", 
+        title:"Why Supply Printerpix" },
       { 
         url: "/affiliates/",    
-        title:"Partners" }
+        title:"Affiliates" }
 
   ],
   CustomerCare: [
@@ -288,9 +305,12 @@ var footer = {
       { 
         url: "/complaints-procedure-policy.html",    
         title:"Complaints Procedure" },
+     { 
+        url: "/terms-and-conditions.html",    
+        title:"Terms and Conditions" },
       { 
-        url: "/",     // need to define
-        title:"Frequently Questions" }
+        url: "/norway-customs/",     // need to define
+        title:"Norway Customs" }
 
   ],
   SocialLink: [
