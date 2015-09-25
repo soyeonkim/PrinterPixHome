@@ -17,11 +17,11 @@ function initCycle () {
     }
 
     $('#slider-source').cycle({
-      fx: 'scrollVert',
-      speed: 600,
+      fx: 'fadeout',
+      timeout: 3000,
+      speed:800,
+      manualSpeed:300,
       sildes: 'div',
-      next :'#next_banner',
-      prev :'#prev_banner',
       pager: '#page-pager',
 
     });
@@ -44,6 +44,16 @@ function initCycle () {
 
 
   }
+  var template;
+
+  template = Handlebars.compile($('#promoSliderTemplate').html()); 
+  $('#promotion-slider-bar').append(template(data));
+
+  //  var template = Handlebars.compile($('#navTemplate').html()); 
+  //$('#nav-memu-bar').append(template);
+    template = Handlebars.compile($('#navTemplate').html()); 
+  $('#nav-memu-bar').append(template(menu));
+  
   initCycle();
 
     $('.flag-drop-down').dropit();

@@ -7,9 +7,9 @@ var data = {
         url: "http://www.printerpix.com/photo-books/PhotoHardCover/"/*"http://www.printerpix.com/photo-books/PhotoHardCover" */,  // link to go
         img_url: "./img/Themes/headBanner/US/Photo-Book.jpg", 
         title:"",
-        description:"Print Your Memories<br> on an Elegant Cutomizable<br>Photo Book", //promotion description
+        description:"Print Your Memories<br>on Photo Book", //promotion description
         text_color:"#414141",
-        promo_des:"",
+        promo_des:"Elegance and Simplicity<br> to make your memories unique",
         button: "Customize Now" , 
         button_color:"#cf207e",       
         customer_review:"" },     
@@ -18,7 +18,7 @@ var data = {
         url: "http://www.printerpix.com/photo-canvas", 
         img_url: "./img/Themes/headBanner/US/Canvas.jpg",
         title:"",
-        description:"<strong>NeverForget<br> Your Special Days</strong><br> with our customized <br> Luxury Canvas",
+        description:"<strong>Never Forget<br> Your Special Days</strong><br> with our customized <br> Luxury Canvas",
         text_color:"#414141",
         promo_des:"",
         button: "Customize Now" ,     
@@ -29,7 +29,7 @@ var data = {
     		url: "http://www.printerpix.com/metal-prints/", 
     		img_url: "./img/Themes/headBanner/US/Metal-Print.jpg",
         title:"",
-        description:"Print Your Memories<br> on an Elegant, Cutomizable<br>Metal Print", //promotion description
+        description:"Print Your Memories<br> on an Elegant, Customizable<br>Metal Print", //promotion description
         text_color:"#414141",
         promo_des:"",
         button: "Customize Now" ,  
@@ -40,7 +40,7 @@ var data = {
     		url: "http://www.printerpix.com/greeting-card/", 
     		img_url: "./img/Themes/headBanner/US/Greeting-Cards.jpg",
         title:"",
-        description:"<stong>Make Unique<br> Your Gift </stong><br> with our Customizable<br> Greeting Cards",
+        description:"<strong>Make Unique<br> Your Gift </strong><br> with our Customizable<br> Greeting Cards",
         text_color:"#414141",
         promo_des:"",
         button: "Customize Now",
@@ -51,7 +51,7 @@ var data = {
     		url: "http://www.printerpix.com/photo-instagram-prints", 
     		img_url: "./img/Themes/headBanner/US/Instagram-Prints.jpg",
         title:"",
-        description:"Print Your <stong>Instagram</stong><br> Memories on <br><stong>Instagram</stong> Prints",
+        description:"Print Your <strong>Instagram</strong><br> Memories on <br><strong>Instagram</strong> Prints",
         text_color:"#414141",
         promo_des:"",
         button: "Customize Now",
@@ -70,7 +70,7 @@ var data = {
         img_url: "./img/Themes/bestSeller/US/iPhone-6.jpg",
         customerStar:"./img/Themes/bestSeller/stars/star_4_5.png",
         title:"iPhone Case",        
-        description: "Protect your phone with this personalized case.Select a model, then upload a photo or choose an image from" },
+        description: "Protect your phone with this personalized case. Select a model, then upload a photo or choose an image from" },
      { 
         url:"/montage-canvas", 
         img_url: "./img/Themes/bestSeller/US/Montage-Canvas.jpg",
@@ -179,14 +179,14 @@ var menu = {
         title:"Occasions", 
         description: "",
         Occasions:[ 
-                {
-                  sub_url:"www.printerpix.com",
+              {
+                  sub_url:"http://www.printerpix.com/PixGraduateUS/",
                   sub_title:"Graduation"},
                {
-                  sub_url:"",
+                  sub_url:"http://www.printerpix.com/wedding-shop/",
                   sub_title:"Wedding"},
               {
-                  sub_url:"/happy-halloween14/",
+                  sub_url:"http://www.printerpix.com/happy-halloween14/",
                   sub_title:"Halloweens"},
                 ],
       } 
